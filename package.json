@@ -20,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/callapa1/nerina/issues"
   },
-  "homepage": "https://github.com/callapa1/nerina#readme",
-  "dependencies": {
-    "caveman": "^0.1.6"
-  }
+  "homepage": "https://github.com/callapa1/nerina#readme"
 }
