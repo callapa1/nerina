@@ -1,0 +1,27 @@
+{
+  "name": "nerina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/callapa1/nerina.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/callapa1/nerina/issues"
+  },
+  "homepage": "https://github.com/callapa1/nerina#readme",
+  "dependencies": {
+    "caveman": "^0.1.6"
+  }
+}
