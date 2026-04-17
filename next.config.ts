@@ -4,7 +4,10 @@ import type {NextConfig} from 'next';
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
-  reactStrictMode: true
+  reactStrictMode: true,
+  turbopack: {
+    root: process.cwd()
+  }
 };
 
 export default withNextIntl(nextConfig);

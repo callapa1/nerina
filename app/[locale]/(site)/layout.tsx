@@ -18,16 +18,23 @@ export default async function SiteLayout({children, params}: SiteLayoutProps) {
       <Header
         locale={locale}
         labels={{
-          home: nav('home'),
           about: nav('about'),
+          resume: nav('resume'),
           work: nav('work'),
           contact: nav('contact'),
           menu: nav('menu'),
-          localeLabel: nav('localeLabel')
+          localeLabel: nav('localeLabel'),
+          role: nav('role'),
+          resumeHref: nav('resumeHref')
         }}
       />
       <main>{children}</main>
-      <Footer text={footer('copyright')} />
+      <Footer
+        text={footer('copyright')}
+        emailLabel={footer('emailLabel')}
+        linkedInLabel={footer('linkedInLabel')}
+        linkedInHref={footer('linkedInHref')}
+      />
     </SiteShell>
   );
 }

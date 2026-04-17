@@ -43,4 +43,5 @@ Define stable agent roles so implementation stays consistent while we iterate qu
 - Step 1 (Scaffold): architect + qa-guardian
 - Step 2 (Locale routes): architect + i18n-curator + qa-guardian
 - Step 3 (Shared components): ui-builder + architect + i18n-curator
-- Next step (Page composition): ui-builder + architect + qa-guardian
+- Step 4 (Page composition): ui-builder + architect + qa-guardian
+- Next step (Responsive + QA closeout): ui-builder + i18n-curator + qa-guardian

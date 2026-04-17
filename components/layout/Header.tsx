@@ -4,49 +4,52 @@ import {MobileMenu} from './MobileMenu';
 type HeaderProps = {
   locale: string;
   labels: {
-    home: string;
     about: string;
+    resume: string;
     work: string;
     contact: string;
     menu: string;
     localeLabel: string;
+    role: string;
+    resumeHref: string;
   };
 };
 
 export function Header({locale, labels}: HeaderProps) {
   return (
-    <header className="mb-12 border-b border-black/10 pb-6">
-      <div className="flex items-center justify-between gap-6">
-        <Link href={`/${locale}`} className="text-lg font-semibold tracking-wide">
-          Nerina
-        </Link>
-        <nav className="hidden items-center gap-5 text-sm uppercase tracking-widest md:flex">
-          <Link href={`/${locale}`}>{labels.home}</Link>
-          <Link href={`/${locale}/about`}>{labels.about}</Link>
-          <Link href={`/${locale}/work`}>{labels.work}</Link>
-          <Link href={`/${locale}/contact`}>{labels.contact}</Link>
-          <span className="text-black/45">|</span>
-          <span className="text-black/45">{labels.localeLabel}</span>
-          <Link href="/en">EN</Link>
-          <Link href="/es">ES</Link>
+    <header className="mb-8 border-b border-black/30 pb-4 pt-1">
+      <div className="flex flex-wrap items-center justify-between gap-6">
+        <div>
+          <Link href={`/${locale}`} className="text-4xl font-semibold tracking-wide sm:text-5xl">
+            Nerina Berthelot
+          </Link>
+          <p className="mt-1 text-3xl tracking-wide text-black/85 sm:text-4xl">{labels.role}</p>
+        </div>
+        <nav className="hidden items-center gap-5 text-sm md:flex">
+          <Link className="teal-button" href={`/${locale}/about`}>
+            {labels.about}
+          </Link>
+          <a className="teal-button" href={labels.resumeHref} target="_blank" rel="noreferrer">
+            {labels.resume}
+          </a>
+          <Link className="teal-button" href={`/${locale}/contact`}>
+            {labels.contact}
+          </Link>
         </nav>
       </div>
-      <div className="mt-4 flex items-center justify-between gap-4 md:hidden">
-        <div className="flex items-center gap-3 text-xs uppercase tracking-[0.15em] text-black/70">
-          <span>{labels.localeLabel}</span>
-          <Link href="/en">EN</Link>
-          <Link href="/es">ES</Link>
+
+      <div className="mt-4 flex items-center justify-between gap-4 border-t border-black/25 pt-3">
+        <div className="flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-black/80">
+          <span className="sr-only">{labels.localeLabel}</span>
+          <Link className="teal-chip" href="/en">
+            EN
+          </Link>
+          <Link className="teal-chip" href="/es">
+            ES
+          </Link>
         </div>
-        <MobileMenu
-          locale={locale}
-          labels={{
-            menu: labels.menu,
-            home: labels.home,
-            about: labels.about,
-            work: labels.work,
-            contact: labels.contact
-          }}
-        />
+
+        <MobileMenu locale={locale} labels={labels} />
       </div>
     </header>
   );

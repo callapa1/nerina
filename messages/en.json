@@ -1,63 +1,66 @@
 {
   "Nav": {
-    "home": "Home",
     "about": "About",
+    "resume": "Resume",
     "work": "Work",
     "contact": "Contact",
     "menu": "Menu",
-    "localeLabel": "Lang"
+    "localeLabel": "Language",
+    "role": "UX/UI",
+    "resumeHref": "https://www.linkedin.com"
   },
   "Footer": {
-    "copyright": "2026 Nerina. Designed and built with care."
+    "copyright": "Nerina Berthelot UX/UI © 2026. All rights reserved.",
+    "emailLabel": "mail",
+    "linkedInLabel": "linkedin",
+    "linkedInHref": "https://www.linkedin.com"
   },
   "Home": {
-    "eyebrow": "Portfolio Scaffold",
-    "title": "Bilingual foundation ready",
-    "description": "This starter includes Next.js, TypeScript, Tailwind and locale routes at /en and /es."
+    "title": "Nerina Berthelot",
+    "role": "UX/UI",
+    "description": "Designer focused on systems, flows and structured digital experiences.",
+    "cta": "View work"
   },
   "About": {
-    "title": "About",
-    "description": "A concise profile page with reusable intro and body blocks.",
-    "paragraph1": "I design digital experiences with a strong eye for rhythm, spacing and practical usability.",
-    "paragraph2": "This section is now wired to shared UI primitives, so content can evolve without rewriting layout code."
+    "title": "About me",
+    "description": "How I got into systems design",
+    "paragraph1": "I came to systems design through a different path. I started in Fine Arts and Public Art, working in institutions and communities where context always shapes what gets built.",
+    "paragraph2": "That experience trained one core habit: understanding relationships, roles and conditions before proposing structure. Nothing exists in isolation; products evolve inside networks.",
+    "paragraph3": "When I moved into technology through QA and then UX/UI, the same questions returned. What gives digital structure meaning, and what allows it to be adopted in real environments?",
+    "paragraph4": "Today I design systems, not just interfaces. I prioritize internal logic, flow quality and sustainable decision-making so products respond clearly and consistently to user needs."
   },
   "Work": {
-    "title": "Work",
-    "description": "Featured projects rendered through a reusable grid and card model.",
-    "projects": [
-      {
-        "title": "Editorial Portfolio",
-        "summary": "A bilingual publishing site with strong typography and content-first navigation.",
-        "tags": ["Next.js", "i18n", "Design"]
-      },
-      {
-        "title": "Campaign Microsite",
-        "summary": "A focused launch page system with reusable sections and clear conversion flow.",
-        "tags": ["Marketing", "UI", "Motion"]
-      },
-      {
-        "title": "Studio Identity",
-        "summary": "A compact web identity package connecting visual language, story and contact entry points.",
-        "tags": ["Brand", "Web", "Strategy"]
-      }
-    ]
+    "heading": "My work",
+    "intro": "Selected projects focused on systems, workflows and structure for complex contexts.",
+    "projectLabel": "Project",
+    "descriptionLabel": "Description",
+    "project": {
+      "name": "ABC Comunidad",
+      "discipline": "Systems design · Information architecture · UI design",
+      "summary": "Structured communication system design focused on architecture and decision flow across institutional teams.",
+      "context": "Public education · Province of Buenos Aires, Argentina · 2025"
+    }
   },
   "Contact": {
-    "title": "Contact",
-    "description": "Clear contact paths with reusable CTA blocks.",
-    "paragraph1": "If you are building a portfolio, product page or campaign, lets shape it with intention and strong fundamentals.",
+    "title": "Professional contact",
+    "description": "Projects, collaboration or inquiries",
+    "form": {
+      "fullNameLabel": "Full name",
+      "fullNamePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Your email",
+      "messageLabel": "Your message",
+      "messagePlaceholder": "Text here...",
+      "submitLabel": "Send"
+    },
     "links": [
       {
         "label": "Email",
-        "href": "mailto:hello@nerina.dev"
+        "href": "mailto:nerinaberthelot@gmail.com"
       },
       {
         "label": "LinkedIn",
-        "href": "https://www.linkedin.com"
-      },
-      {
-        "label": "GitHub",
-        "href": "https://github.com"
+        "href": "https://www.linkedin.com/in/nerina-berthelot"
       }
     ]
   }

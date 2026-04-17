@@ -7,7 +7,8 @@ Bilingual portfolio scaffold built with Next.js App Router, TypeScript, Tailwind
 - Done: Project scaffold (Next.js + TypeScript + Tailwind)
 - Done: Locale routing (`/en`, `/es`) with `next-intl`
 - Done: Shared component system (layout/sections/ui)
-- In progress: Final page composition from `screenshots/` references
+- In progress: Screenshot-based page composition and responsive polish
+- In progress: Warning cleanup for Next.js 16 conventions
 
 ## Stack
 
@@ -61,6 +62,8 @@ components/
     PageIntro.tsx
     ProjectGrid.tsx
     ContactLinks.tsx
+    WorkFeature.tsx
+    ContactForm.tsx
   ui/
     SectionHeading.tsx
     ProjectCard.tsx
@@ -73,6 +76,10 @@ i18n/
 messages/
   en.json
   es.json
+
+proxy.ts
+next.config.ts
+eslint.config.mjs
 
 docs/
   portfolio-build-plan.md
@@ -103,6 +110,7 @@ The active decisions and status log are tracked in:
 ## Definition Of Done Per Step
 
 - Build passes (`npm run build`)
+- Lint passes (`npm run lint`)
 - Locale routes work for EN and ES
 - No hardcoded bilingual copy inside reusable components
 - Progress and agent docs updated

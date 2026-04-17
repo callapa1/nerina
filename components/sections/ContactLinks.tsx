@@ -9,11 +9,14 @@ type ContactLinksProps = {
 
 export function ContactLinks({items}: ContactLinksProps) {
   return (
-    <ul className="grid gap-3 text-sm uppercase tracking-[0.12em]">
+    <ul className="enter-fade [animation-delay:160ms] grid gap-5 text-xl text-black/85 sm:text-2xl">
       {items.map((item) => (
-        <li key={item.href}>
-          <a className="inline-flex rounded-full border border-black/15 px-4 py-2" href={item.href}>
-            {item.label}
+        <li className="flex items-center gap-3" key={item.href}>
+          <span className="inline-flex h-11 w-11 items-center justify-center rounded border border-black/35 text-lg">
+            {item.label.slice(0, 2).toLowerCase()}
+          </span>
+          <a className="underline decoration-black/45 underline-offset-4" href={item.href}>
+            {item.href.replace('mailto:', '')}
           </a>
         </li>
       ))}

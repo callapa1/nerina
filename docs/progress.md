@@ -15,15 +15,17 @@ Last updated: 2026-04-17
 7. Added project README plus tracked agent playbooks and registry docs.
 8. Added shared layout/sections/ui component system and wired all site pages to reusable blocks.
 9. Expanded EN/ES message structure to cover nav, footer, rich text, project cards and contact links.
+10. Started screenshot-faithful composition pass for Home/About/Work/Contact.
+11. Migrated `middleware.ts` to `proxy.ts` and set `turbopack.root` to remove Next.js warnings.
+12. Updated lint setup to ESLint flat config (`eslint.config.mjs`) for Next.js 16 compatibility.
 
 ### Next
 
-1. Compose pages with screenshot-based structure and spacing.
-2. Refine responsive behavior across mobile/tablet/desktop.
-3. Polish typography, motion and interaction states.
-4. Migrate `middleware.ts` to `proxy.ts` when ready.
+1. Finish responsive polish and visual fidelity against screenshot references.
+2. Validate EN/ES parity for all new page sections and labels.
+3. Run final build/lint/dev checks and push.
 
 ## Quality Notes
 
-- `npm run build` passes on current scaffold.
-- Next.js warns that `middleware.ts` is deprecated in favor of `proxy` (safe for now, can migrate later).
+- `middleware.ts` deprecation warning resolved by migration to `proxy.ts`.
+- Turbopack root warning resolved by explicit `turbopack.root` config.

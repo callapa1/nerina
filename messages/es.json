@@ -1,63 +1,66 @@
 {
   "Nav": {
-    "home": "Inicio",
     "about": "Sobre mi",
+    "resume": "CV",
     "work": "Proyectos",
     "contact": "Contacto",
     "menu": "Menu",
-    "localeLabel": "Idioma"
+    "localeLabel": "Idioma",
+    "role": "UX/UI",
+    "resumeHref": "https://www.linkedin.com"
   },
   "Footer": {
-    "copyright": "2026 Nerina. Disenado y construido con cuidado."
+    "copyright": "Nerina Berthelot UX/UI © 2026. Todos los derechos reservados.",
+    "emailLabel": "mail",
+    "linkedInLabel": "linkedin",
+    "linkedInHref": "https://www.linkedin.com"
   },
   "Home": {
-    "eyebrow": "Base del Portfolio",
-    "title": "Fundacion bilingue lista",
-    "description": "Este starter incluye Next.js, TypeScript, Tailwind y rutas por locale en /en y /es."
+    "title": "Nerina Berthelot",
+    "role": "UX/UI",
+    "description": "Disenadora enfocada en sistemas, flujos y experiencias digitales estructuradas.",
+    "cta": "Ver proyectos"
   },
   "About": {
     "title": "Sobre mi",
-    "description": "Una pagina de perfil clara con bloques reutilizables de intro y contenido.",
-    "paragraph1": "Diseno experiencias digitales con foco en ritmo visual, espaciado y usabilidad practica.",
-    "paragraph2": "Esta seccion ya usa componentes compartidos para que el contenido cambie sin reescribir el layout."
+    "description": "Como llegue al diseno de sistemas",
+    "paragraph1": "Llegue al diseno de sistemas por un camino distinto. Empece en Bellas Artes y Arte Publico, trabajando en instituciones y comunidades donde el contexto siempre define lo que se construye.",
+    "paragraph2": "Esa experiencia me dejo un habito central: entender relaciones, roles y condiciones antes de proponer estructura. Nada existe aislado; los productos evolucionan dentro de redes.",
+    "paragraph3": "Cuando pase a tecnologia desde QA y luego UX/UI, volvieron las mismas preguntas. Que le da sentido a una estructura digital y que permite su adopcion en entornos reales?",
+    "paragraph4": "Hoy diseno sistemas, no solo interfaces. Priorizo logica interna, calidad de flujo y decisiones sostenibles para que los productos respondan con claridad y consistencia a necesidades reales."
   },
   "Work": {
-    "title": "Proyectos",
-    "description": "Proyectos destacados renderizados con una grilla y tarjetas reutilizables.",
-    "projects": [
-      {
-        "title": "Portfolio Editorial",
-        "summary": "Un sitio bilingue de publicaciones con tipografia fuerte y navegacion guiada por contenido.",
-        "tags": ["Next.js", "i18n", "Diseno"]
-      },
-      {
-        "title": "Micrositio de Campana",
-        "summary": "Un sistema de pagina de lanzamiento con secciones reutilizables y conversion clara.",
-        "tags": ["Marketing", "UI", "Motion"]
-      },
-      {
-        "title": "Identidad de Estudio",
-        "summary": "Un paquete web compacto que conecta lenguaje visual, relato y puntos de contacto.",
-        "tags": ["Marca", "Web", "Estrategia"]
-      }
-    ]
+    "heading": "Mi trabajo",
+    "intro": "Proyectos seleccionados centrados en sistemas, flujos y estructura para contextos complejos.",
+    "projectLabel": "Proyecto",
+    "descriptionLabel": "Descripcion",
+    "project": {
+      "name": "ABC Comunidad",
+      "discipline": "Diseno de sistemas · Arquitectura de informacion · Diseno UI",
+      "summary": "Diseno de sistema de comunicacion estructurada, enfocado en arquitectura y flujo de decisiones entre equipos institucionales.",
+      "context": "Educacion publica · Provincia de Buenos Aires, Argentina · 2025"
+    }
   },
   "Contact": {
-    "title": "Contacto",
-    "description": "Canales de contacto claros con bloques de CTA reutilizables.",
-    "paragraph1": "Si estas armando un portfolio, una pagina de producto o una campana, trabajemos una base solida.",
+    "title": "Contacto profesional",
+    "description": "Proyectos, colaboraciones o consultas",
+    "form": {
+      "fullNameLabel": "Nombre completo",
+      "fullNamePlaceholder": "Tu nombre",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Tu email",
+      "messageLabel": "Tu mensaje",
+      "messagePlaceholder": "Escribe aqui...",
+      "submitLabel": "Enviar"
+    },
     "links": [
       {
         "label": "Email",
-        "href": "mailto:hello@nerina.dev"
+        "href": "mailto:nerinaberthelot@gmail.com"
       },
       {
         "label": "LinkedIn",
-        "href": "https://www.linkedin.com"
-      },
-      {
-        "label": "GitHub",
-        "href": "https://github.com"
+        "href": "https://www.linkedin.com/in/nerina-berthelot"
       }
     ]
   }

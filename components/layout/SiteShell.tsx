@@ -3,5 +3,9 @@ type SiteShellProps = {
 };
 
 export function SiteShell({children}: SiteShellProps) {
-  return <div className="mx-auto min-h-screen max-w-5xl px-6 py-8 sm:px-8">{children}</div>;
+  return (
+    <div className="mx-auto min-h-screen max-w-[1240px] border-x border-black/35 bg-[var(--paper)] px-6 py-4 sm:px-9">
+      {children}
+    </div>
+  );
 }
