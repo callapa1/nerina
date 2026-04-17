@@ -1,0 +1,25 @@
+{
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "Home": {
+    "eyebrow": "Portfolio Scaffold",
+    "title": "Bilingual foundation ready",
+    "description": "This starter includes Next.js, TypeScript, Tailwind and locale routes at /en and /es."
+  },
+  "About": {
+    "title": "About",
+    "description": "About page scaffolded and ready for final copy."
+  },
+  "Work": {
+    "title": "Work",
+    "description": "Work page scaffolded and ready for project cards."
+  },
+  "Contact": {
+    "title": "Contact",
+    "description": "Contact page scaffolded and ready for links and call to actions."
+  }
+}

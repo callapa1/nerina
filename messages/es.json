@@ -1,0 +1,25 @@
+{
+  "Nav": {
+    "home": "Inicio",
+    "about": "Sobre mi",
+    "work": "Proyectos",
+    "contact": "Contacto"
+  },
+  "Home": {
+    "eyebrow": "Base del Portfolio",
+    "title": "Fundacion bilingue lista",
+    "description": "Este starter incluye Next.js, TypeScript, Tailwind y rutas por locale en /en y /es."
+  },
+  "About": {
+    "title": "Sobre mi",
+    "description": "Pagina About armada y lista para el copy final."
+  },
+  "Work": {
+    "title": "Proyectos",
+    "description": "Pagina Work armada y lista para tarjetas de proyectos."
+  },
+  "Contact": {
+    "title": "Contacto",
+    "description": "Pagina Contact armada y lista para links y llamadas a la accion."
+  }
+}
