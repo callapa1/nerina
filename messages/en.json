@@ -3,7 +3,12 @@
     "home": "Home",
     "about": "About",
     "work": "Work",
-    "contact": "Contact"
+    "contact": "Contact",
+    "menu": "Menu",
+    "localeLabel": "Lang"
+  },
+  "Footer": {
+    "copyright": "2026 Nerina. Designed and built with care."
   },
   "Home": {
     "eyebrow": "Portfolio Scaffold",
@@ -12,14 +17,48 @@
   },
   "About": {
     "title": "About",
-    "description": "About page scaffolded and ready for final copy."
+    "description": "A concise profile page with reusable intro and body blocks.",
+    "paragraph1": "I design digital experiences with a strong eye for rhythm, spacing and practical usability.",
+    "paragraph2": "This section is now wired to shared UI primitives, so content can evolve without rewriting layout code."
   },
   "Work": {
     "title": "Work",
-    "description": "Work page scaffolded and ready for project cards."
+    "description": "Featured projects rendered through a reusable grid and card model.",
+    "projects": [
+      {
+        "title": "Editorial Portfolio",
+        "summary": "A bilingual publishing site with strong typography and content-first navigation.",
+        "tags": ["Next.js", "i18n", "Design"]
+      },
+      {
+        "title": "Campaign Microsite",
+        "summary": "A focused launch page system with reusable sections and clear conversion flow.",
+        "tags": ["Marketing", "UI", "Motion"]
+      },
+      {
+        "title": "Studio Identity",
+        "summary": "A compact web identity package connecting visual language, story and contact entry points.",
+        "tags": ["Brand", "Web", "Strategy"]
+      }
+    ]
   },
   "Contact": {
     "title": "Contact",
-    "description": "Contact page scaffolded and ready for links and call to actions."
+    "description": "Clear contact paths with reusable CTA blocks.",
+    "paragraph1": "If you are building a portfolio, product page or campaign, lets shape it with intention and strong fundamentals.",
+    "links": [
+      {
+        "label": "Email",
+        "href": "mailto:hello@nerina.dev"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com"
+      }
+    ]
   }
 }

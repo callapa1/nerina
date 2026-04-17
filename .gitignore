@@ -6,3 +6,5 @@ package-lock.json.*
 screenshots/
 .next/
 out/
+.agents/
+skills-lock.json

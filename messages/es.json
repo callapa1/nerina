@@ -3,7 +3,12 @@
     "home": "Inicio",
     "about": "Sobre mi",
     "work": "Proyectos",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "menu": "Menu",
+    "localeLabel": "Idioma"
+  },
+  "Footer": {
+    "copyright": "2026 Nerina. Disenado y construido con cuidado."
   },
   "Home": {
     "eyebrow": "Base del Portfolio",
@@ -12,14 +17,48 @@
   },
   "About": {
     "title": "Sobre mi",
-    "description": "Pagina About armada y lista para el copy final."
+    "description": "Una pagina de perfil clara con bloques reutilizables de intro y contenido.",
+    "paragraph1": "Diseno experiencias digitales con foco en ritmo visual, espaciado y usabilidad practica.",
+    "paragraph2": "Esta seccion ya usa componentes compartidos para que el contenido cambie sin reescribir el layout."
   },
   "Work": {
     "title": "Proyectos",
-    "description": "Pagina Work armada y lista para tarjetas de proyectos."
+    "description": "Proyectos destacados renderizados con una grilla y tarjetas reutilizables.",
+    "projects": [
+      {
+        "title": "Portfolio Editorial",
+        "summary": "Un sitio bilingue de publicaciones con tipografia fuerte y navegacion guiada por contenido.",
+        "tags": ["Next.js", "i18n", "Diseno"]
+      },
+      {
+        "title": "Micrositio de Campana",
+        "summary": "Un sistema de pagina de lanzamiento con secciones reutilizables y conversion clara.",
+        "tags": ["Marketing", "UI", "Motion"]
+      },
+      {
+        "title": "Identidad de Estudio",
+        "summary": "Un paquete web compacto que conecta lenguaje visual, relato y puntos de contacto.",
+        "tags": ["Marca", "Web", "Estrategia"]
+      }
+    ]
   },
   "Contact": {
     "title": "Contacto",
-    "description": "Pagina Contact armada y lista para links y llamadas a la accion."
+    "description": "Canales de contacto claros con bloques de CTA reutilizables.",
+    "paragraph1": "Si estas armando un portfolio, una pagina de producto o una campana, trabajemos una base solida.",
+    "links": [
+      {
+        "label": "Email",
+        "href": "mailto:hello@nerina.dev"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com"
+      }
+    ]
   }
 }
