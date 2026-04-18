@@ -14,15 +14,15 @@ type HeaderProps = {
 
 export function Header({locale, labels}: HeaderProps) {
   return (
-    <header className="mb-8 border-b border-black/30 pb-4 pt-1">
-      <div className="flex flex-wrap items-center justify-between gap-6">
-        <div>
-          <Link href={`/${locale}`} className="text-4xl font-semibold tracking-wide sm:text-5xl">
+    <header className="mb-8 border border-black/40 bg-[#e7e7e7] px-6 pb-3 pt-4 sm:h-[153px] sm:px-10">
+      <div className="flex items-start justify-between gap-6">
+        <div className="shrink-0">
+          <Link href={`/${locale}`} className="text-4xl font-semibold tracking-[0.02em] sm:text-5xl">
             Nerina Berthelot
           </Link>
-          <p className="mt-1 text-3xl tracking-wide text-black/85 sm:text-4xl">{labels.role}</p>
+          <p className="mt-1 text-3xl tracking-[0.02em] text-black/85 sm:text-[56px] sm:leading-[1.1]">{labels.role}</p>
         </div>
-        <nav className="hidden items-center text-sm sm:relative sm:left-5 sm:top-5 sm:flex sm:h-[57px] sm:w-[566px] sm:min-w-[550px] sm:gap-[124px]">
+        <nav className="hidden items-center justify-between text-sm sm:flex sm:h-[57px] sm:w-[566px] sm:min-w-[550px]">
           <Link className="nav-button" href={`/${locale}/about`}>
             {labels.about}
           </Link>
@@ -36,7 +36,7 @@ export function Header({locale, labels}: HeaderProps) {
       </div>
 
       <div className="mt-4 border-t border-black/25 pt-3">
-        <div className="locale-switch text-xs uppercase tracking-[0.15em] text-black/80">
+        <div className="locale-switch ml-auto text-xs uppercase tracking-[0.15em] text-black/80">
           <span className="sr-only">{labels.localeLabel}</span>
           <Link className="teal-chip" href="/en/work">
             EN
