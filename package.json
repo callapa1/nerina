@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Bilingual portfolio scaffold with Next.js and next-intl",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --webpack",
+    "dev:turbo": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint ."
