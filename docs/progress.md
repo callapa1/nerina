@@ -1,6 +1,6 @@
 # Progress Log
 
-Last updated: 2026-04-18 (evening)
+Last updated: 2026-04-18 (late)
 
 ## Milestones
 
@@ -28,6 +28,12 @@ Last updated: 2026-04-18 (evening)
 20. Implemented nav button state system (default/hover/active) and desktop-vs-mobile header behavior.
 21. Removed side `border-x` rails globally and enforced flat white background.
 22. Added `docs/design.md` as single-source UI spec for current implementation.
+23. Removed temporary mobile collapsible header menu and cleaned unused nav translation keys.
+24. Refined header container measurements and restored plain white header surface.
+25. Shifted key layout blocks to fluid widths, then reintroduced fixed values only under `500px` where requested.
+26. Set Home footer content width to fixed `211px` while keeping internal-page footer responsive.
+27. Added stable ids/classes across header/footer/home/about/work/contact sections for easier style and QA targeting.
+28. Synced docs and README structure with current component tree (no `MobileMenu.tsx`).
 
 ### Next
 

@@ -1,6 +1,6 @@
 # Design Spec
 
-Last updated: 2026-04-18
+Last updated: 2026-04-18 (late)
 
 ## Scope
 
@@ -25,14 +25,10 @@ This file captures the current visual rules implemented from screenshot referenc
 
 ## Header
 
-- Desktop/tablet: fixed nav button row is always visible on internal pages.
-- Mobile: collapsible menu only.
-- Nav button container target (desktop):
-  - width 566px
-  - height 57px
-  - min-width 550px
-  - gap 124px
-  - positioned with top/left offsets of 20px
+- Header main row target: 108px height, border-bottom 1px, `justify-between`, padding `16px 36px 8px 36px`.
+- Brand block target: 248x84 only under `500px`; fluid above.
+- Nav button row: desktop/tablet visible, hidden at `<=500px`.
+- Nav row uses fluid width on larger screens; fixed width constraints were removed.
 
 ### Nav Button States
 
@@ -42,19 +38,25 @@ This file captures the current visual rules implemented from screenshot referenc
 
 ## Locale Switch (EN/ES)
 
-- Wrapper: 96x40 with 16px gap.
+- Wrapper base: fluid width (`auto`), 37px height, 6px gap.
+- Under `500px`: wrapper restores fixed sizing (`150px` width, `36px` side paddings).
 - Each chip: 40x40 with 6px padding, underlined text, 18px regular.
 - On Home, EN/ES routes go to `/en/work` and `/es/work` (Hi page flow).
 
 ## Footer
 
 - Outer footer block: full width, 164px height, border-top 1px, vertically centered content.
-- Inner content block: 211x84.
+- Inner content block: Home uses fixed 211x84; internal pages are fluid, with 211x84 only under `500px`.
 - Icon row: 64x28 with two 28px icons and 8px center gap.
   - Mail icon: 28 x 22.4
   - LinkedIn icon: 28 x 28
-- Bottom text block: 211x48, top border 1px, padding-top 8px, gap 10px.
+- Bottom text block: Home fixed 211x48; internal pages fluid with 211x48 under `500px`; top border 1px, padding-top 8px, gap 10px.
 - Footer helper label (`mail · linkedin`) is intentionally removed.
+
+## Selector Hooks
+
+- Stable ids/classes were added for layout and sections to simplify QA and CSS targeting.
+- Key hooks include: `#site-header`, `#header-nav-buttons`, `#site-footer`, `#home-hero`, `#about-page`, `#work-page`, `#contact-page`, `#contact-form`, `#contact-links`.
 
 ## Notes
 

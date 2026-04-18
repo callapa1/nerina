@@ -58,7 +58,6 @@ components/
   layout/
     SiteShell.tsx
     Header.tsx
-    MobileMenu.tsx
     Footer.tsx
   sections/
     Hero.tsx
