@@ -12,6 +12,7 @@
   "Footer": {
     "copyright": "Nerina Berthelot UX/UI © 2026. Todos los derechos reservados.",
     "emailLabel": "mail",
+    "emailHref": "mailto:nerinaberthelot@gmail.com",
     "linkedInLabel": "linkedin",
     "linkedInHref": "https://www.linkedin.com"
   },
@@ -19,7 +20,12 @@
     "title": "Nerina Berthelot",
     "role": "UX/UI",
     "description": "Disenadora enfocada en sistemas, flujos y experiencias digitales estructuradas.",
-    "cta": "Ver proyectos"
+    "cta": "Ver proyectos",
+    "projectIconLabel": "Proyecto ABC Comunidad",
+    "emailIconLabel": "Enviar email a Nerina",
+    "emailHref": "mailto:nerinaberthelot@gmail.com",
+    "linkedInIconLabel": "LinkedIn de Nerina",
+    "linkedInHref": "https://www.linkedin.com/in/nerina-berthelot"
   },
   "About": {
     "title": "Sobre mi",
@@ -30,6 +36,8 @@
     "paragraph4": "Hoy diseno sistemas, no solo interfaces. Priorizo logica interna, calidad de flujo y decisiones sostenibles para que los productos respondan con claridad y consistencia a necesidades reales."
   },
   "Work": {
+    "heroTitle": "Hola, soy Nerina",
+    "heroDescription": "Disenadora UX/UI enfocada en sistemas, flujos y experiencias digitales estructuradas.",
     "heading": "Mi trabajo",
     "intro": "Proyectos seleccionados centrados en sistemas, flujos y estructura para contextos complejos.",
     "projectLabel": "Proyecto",

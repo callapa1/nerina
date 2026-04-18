@@ -1,0 +1,14 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Decorative teal orb">
+  <defs>
+    <radialGradient id="orbGradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(92 82) rotate(50) scale(170)">
+      <stop offset="0" stop-color="#E6FAFB"/>
+      <stop offset="0.58" stop-color="#8ED6DC"/>
+      <stop offset="1" stop-color="#0B7B86"/>
+    </radialGradient>
+  </defs>
+  <rect width="240" height="240" rx="24" fill="#F4F8F8"/>
+  <circle cx="120" cy="120" r="78" fill="url(#orbGradient)"/>
+  <circle cx="96" cy="92" r="20" fill="#FFFFFF" fill-opacity="0.55"/>
+  <circle cx="165" cy="162" r="10" fill="#FFFFFF" fill-opacity="0.35"/>
+  <rect x="14" y="14" width="212" height="212" rx="18" stroke="#1E2B2B" stroke-opacity="0.22" stroke-width="2"/>
+</svg>

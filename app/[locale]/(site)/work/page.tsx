@@ -7,6 +7,8 @@ export default async function WorkPage() {
   return (
     <section className="pb-8">
       <WorkFeature
+        heroTitle={t('heroTitle')}
+        heroDescription={t('heroDescription')}
         heading={t('heading')}
         intro={t('intro')}
         projectLabel={t('projectLabel')}

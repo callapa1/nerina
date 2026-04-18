@@ -31,6 +31,7 @@ export default async function SiteLayout({children, params}: SiteLayoutProps) {
       <main>{children}</main>
       <Footer
         text={footer('copyright')}
+        emailHref={footer('emailHref')}
         emailLabel={footer('emailLabel')}
         linkedInLabel={footer('linkedInLabel')}
         linkedInHref={footer('linkedInHref')}

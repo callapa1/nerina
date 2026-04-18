@@ -1,4 +1,8 @@
+import Image from 'next/image';
+
 type WorkFeatureProps = {
+  heroTitle: string;
+  heroDescription: string;
   heading: string;
   intro: string;
   projectLabel: string;
@@ -11,19 +15,26 @@ type WorkFeatureProps = {
   };
 };
 
-export function WorkFeature({heading, intro, projectLabel, descriptionLabel, project}: WorkFeatureProps) {
+export function WorkFeature({heroTitle, heroDescription, heading, intro, projectLabel, descriptionLabel, project}: WorkFeatureProps) {
   return (
-    <section className="space-y-6">
-      <div className="panel enter-fade">
-        <h2 className="text-4xl font-semibold sm:text-5xl">{heading}</h2>
-        <p className="mt-3 max-w-4xl text-2xl leading-snug text-black/85 sm:text-3xl">{intro}</p>
+    <section className="space-y-8">
+      <div className="enter-fade border-y border-black/20 py-6 text-center">
+        <h2 className="text-5xl font-semibold sm:text-6xl">{heroTitle}</h2>
+        <p className="mx-auto mt-3 max-w-4xl text-4xl leading-snug text-black/85 sm:text-5xl">{heroDescription}</p>
       </div>
 
-      <article className="panel enter-fade [animation-delay:120ms]">
-        <div className="grid gap-3 sm:grid-cols-3">
-          <div className="image-tile bg-[linear-gradient(140deg,#5d7f70,#a8c6b6)]" />
-          <div className="image-tile bg-[linear-gradient(140deg,#7489a9,#cfd8ea)]" />
-          <div className="image-tile bg-[linear-gradient(140deg,#a97f63,#dfc1a6)]" />
+      <div className="enter-fade [animation-delay:80ms]">
+        <h3 className="text-5xl font-semibold sm:text-6xl">{heading}</h3>
+        <p className="mt-3 max-w-5xl text-3xl leading-snug text-black/85 sm:text-4xl">{intro}</p>
+      </div>
+
+      <article className="panel enter-fade [animation-delay:140ms]">
+        <div className="grid gap-0.5 sm:grid-cols-3">
+          <div className="image-tile grid place-items-center bg-[linear-gradient(150deg,#7ba18f,#b4cec0)]">
+            <Image src="/illustrations/abcComunidad.svg" alt="" aria-hidden="true" width={240} height={220} />
+          </div>
+          <div className="image-tile bg-[linear-gradient(140deg,#8da0ba,#cdd7e4)]" />
+          <div className="image-tile bg-[linear-gradient(140deg,#af8d77,#dec4ad)]" />
         </div>
 
         <div className="mt-6 grid gap-4 text-black/85 sm:grid-cols-[140px_1fr] sm:items-start">
