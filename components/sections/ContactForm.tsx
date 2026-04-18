@@ -18,7 +18,7 @@ export function ContactForm({
   submitLabel
 }: ContactFormProps) {
   return (
-    <form className="enter-fade [animation-delay:80ms] space-y-4" action="#" method="post">
+    <form className="enter-fade [animation-delay:80ms] flex flex-col gap-4" action="#" method="post">
       <div>
         <label className="mb-1 block text-3xl" htmlFor="full-name">
           {fullNameLabel}
@@ -40,7 +40,7 @@ export function ContactForm({
         <textarea className="field-input min-h-52 resize-y" id="message" name="message" placeholder={messagePlaceholder} />
       </div>
 
-      <button className="teal-button mt-3" type="submit">
+      <button className="teal-button mt-3 self-center" type="submit">
         {submitLabel}
       </button>
     </form>

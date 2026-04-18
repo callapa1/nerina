@@ -12,7 +12,7 @@ export default async function ContactPage() {
   ];
 
   return (
-    <section className="space-y-10 pb-8">
+    <section className="space-y-12 pb-8 pt-8">
       <PageIntro title={t('title')} description={t('description')} />
 
       <div className="grid gap-10 md:grid-cols-[1.05fr_0.95fr]">
@@ -26,7 +26,7 @@ export default async function ContactPage() {
           submitLabel={t('form.submitLabel')}
         />
 
-        <div className="md:pt-16">
+        <div className="md:pt-20">
           <ContactLinks items={links} />
         </div>
       </div>

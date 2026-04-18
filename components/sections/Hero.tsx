@@ -14,10 +14,10 @@ export function Hero({title, role}: HeroProps) {
           <span className="block font-[400]">{role}</span>
         </p>
         <div className="locale-switch mx-auto mt-8">
-          <Link className="teal-chip" href="/en">
+          <Link className="teal-chip" href="/en/work">
             EN
           </Link>
-          <Link className="teal-chip" href="/es">
+          <Link className="teal-chip" href="/es/work">
             ES
           </Link>
         </div>
