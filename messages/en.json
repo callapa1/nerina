@@ -7,14 +7,14 @@
     "menu": "Menu",
     "localeLabel": "Language",
     "role": "UX/UI",
-    "resumeHref": "https://www.linkedin.com"
+    "resumeHref": "https://www.linkedin.com/in/nerina-berthelot/"
   },
   "Footer": {
     "copyright": "Nerina Berthelot UX/UI © 2026. All rights reserved.",
     "emailLabel": "mail",
     "emailHref": "mailto:nerinaberthelot@gmail.com",
     "linkedInLabel": "linkedin",
-    "linkedInHref": "https://www.linkedin.com"
+    "linkedInHref": "https://www.linkedin.com/in/nerina-berthelot/"
   },
   "Home": {
     "title": "Nerina Berthelot",
@@ -25,7 +25,7 @@
     "emailIconLabel": "Email Nerina",
     "emailHref": "mailto:nerinaberthelot@gmail.com",
     "linkedInIconLabel": "Nerina LinkedIn",
-    "linkedInHref": "https://www.linkedin.com/in/nerina-berthelot"
+    "linkedInHref": "https://www.linkedin.com/in/nerina-berthelot/"
   },
   "About": {
     "title": "About me",
@@ -68,7 +68,7 @@
       },
       {
         "label": "LinkedIn",
-        "href": "https://www.linkedin.com/in/nerina-berthelot"
+        "href": "https://www.linkedin.com/in/nerina-berthelot/"
       }
     ]
   }

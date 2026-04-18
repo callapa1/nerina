@@ -6,11 +6,12 @@ type FooterProps = {
   linkedInLabel: string;
   linkedInHref: string;
   text: string;
+  withTopMargin?: boolean;
 };
 
-export function Footer({emailHref, emailLabel, linkedInLabel, linkedInHref, text}: FooterProps) {
+export function Footer({emailHref, emailLabel, linkedInLabel, linkedInHref, text, withTopMargin = true}: FooterProps) {
   return (
-    <footer className="mt-20 border-t border-black/30 py-10 text-center">
+    <footer className={`${withTopMargin ? 'mt-20' : 'mt-0'} border-t border-black/30 py-10 text-center`}>
       <div className="mx-auto mb-2 flex w-fit items-center gap-2">
         <a
           className="inline-flex h-9 w-9 items-center justify-center rounded border border-black/25 bg-white/70"

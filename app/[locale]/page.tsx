@@ -8,17 +8,20 @@ export default async function HomePage() {
   const footer = await getTranslations('Footer');
 
   return (
-    <SiteShell>
-      <main>
-        <Hero title={home('title')} role={home('role')} />
-      </main>
-      <Footer
-        text={footer('copyright')}
-        emailHref={footer('emailHref')}
-        emailLabel={footer('emailLabel')}
-        linkedInLabel={footer('linkedInLabel')}
-        linkedInHref={footer('linkedInHref')}
-      />
+    <SiteShell showSideBorders={false}>
+      <div className="flex min-h-[calc(100vh-2rem)] flex-col">
+        <main className="flex-1">
+          <Hero title={home('title')} role={home('role')} />
+        </main>
+        <Footer
+          text={footer('copyright')}
+          emailHref={footer('emailHref')}
+          emailLabel={footer('emailLabel')}
+          linkedInLabel={footer('linkedInLabel')}
+          linkedInHref={footer('linkedInHref')}
+          withTopMargin={false}
+        />
+      </div>
     </SiteShell>
   );
 }
