@@ -12,10 +12,10 @@ export default async function ContactPage() {
   ];
 
   return (
-    <section id="contact-page" className="space-y-12 pb-8 pt-8">
+    <section id="contact-page" className="mx-auto w-[95%] space-y-12 pb-8 pt-8">
       <PageIntro id="contact-page-intro" title={t('title')} description={t('description')} />
 
-      <div id="contact-content-grid" className="grid gap-10 md:grid-cols-[1.05fr_0.95fr]">
+      <div id="contact-content-grid" className="grid h-[485px] gap-10 md:grid-cols-[1.05fr_0.95fr]">
         <ContactForm
           fullNameLabel={t('form.fullNameLabel')}
           fullNamePlaceholder={t('form.fullNamePlaceholder')}

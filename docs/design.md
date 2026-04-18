@@ -1,6 +1,6 @@
 # Design Spec
 
-Last updated: 2026-04-18 (late)
+Last updated: 2026-04-18
 
 ## Scope
 
@@ -57,6 +57,12 @@ This file captures the current visual rules implemented from screenshot referenc
 
 - Stable ids/classes were added for layout and sections to simplify QA and CSS targeting.
 - Key hooks include: `#site-header`, `#header-nav-buttons`, `#site-footer`, `#home-hero`, `#about-page`, `#work-page`, `#contact-page`, `#contact-form`, `#contact-links`.
+
+## Tailwind Setup
+
+- Tailwind v4 (`tailwindcss@4.2.2`) with `@tailwindcss/postcss@4.2.2`.
+- CSS entrypoint: `@import "tailwindcss"` in `app/globals.css` (v3-style `@tailwind` directives removed).
+- `tailwind.config.ts` is a legacy artifact and has no effect in v4; config lives in CSS via `@theme`.
 
 ## Notes
 

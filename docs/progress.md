@@ -1,6 +1,6 @@
 # Progress Log
 
-Last updated: 2026-04-18 (late)
+Last updated: 2026-04-18
 
 ## Milestones
 
@@ -34,6 +34,7 @@ Last updated: 2026-04-18 (late)
 26. Set Home footer content width to fixed `211px` while keeping internal-page footer responsive.
 27. Added stable ids/classes across header/footer/home/about/work/contact sections for easier style and QA targeting.
 28. Synced docs and README structure with current component tree (no `MobileMenu.tsx`).
+29. Migrated CSS entrypoint from Tailwind v3 directives (`@tailwind base/components/utilities`) to Tailwind v4 `@import "tailwindcss"`, aligning with the installed `tailwindcss@4.2.2` + `@tailwindcss/postcss@4.2.2` stack.
 
 ### Next
 

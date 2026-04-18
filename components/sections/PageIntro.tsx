@@ -8,7 +8,7 @@ type PageIntroProps = {
 
 export function PageIntro({id, title, description}: PageIntroProps) {
   return (
-    <div id={id}>
+    <div id={id} className={id === 'contact-page-intro' ? 'h-[81px] w-[446px]' : undefined}>
       <SectionHeading title={title} subtitle={description} />
     </div>
   );
