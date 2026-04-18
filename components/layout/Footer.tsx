@@ -12,22 +12,22 @@ type FooterProps = {
 export function Footer({emailHref, emailLabel, linkedInLabel, linkedInHref, text, withTopMargin = true}: FooterProps) {
   return (
     <footer className={`${withTopMargin ? 'mt-20' : 'mt-0'} border-t border-black/30 py-10 text-center`}>
-      <div className="mx-auto mb-2 flex w-fit items-center gap-2">
+      <div className="mx-auto mb-2 flex w-fit items-center justify-center gap-3">
         <a
-          className="inline-flex h-9 w-9 items-center justify-center rounded border border-black/25 bg-white/70"
+          className="inline-flex h-7 w-7 items-center justify-center"
           href={emailHref}
           aria-label={emailLabel}
         >
-          <Image src="/illustrations/mail.svg" alt="" aria-hidden="true" width={20} height={16} />
+          <Image src="/illustrations/mail.svg" alt="" aria-hidden="true" width={28} height={22} />
         </a>
         <a
-          className="inline-flex h-9 w-9 items-center justify-center rounded border border-black/25 bg-white/70"
+          className="inline-flex h-7 w-7 items-center justify-center"
           href={linkedInHref}
           target="_blank"
           rel="noreferrer"
           aria-label={linkedInLabel}
         >
-          <Image src="/illustrations/linkedin.svg" alt="" aria-hidden="true" width={20} height={20} />
+          <Image src="/illustrations/linkedin.svg" alt="" aria-hidden="true" width={28} height={28} />
         </a>
       </div>
       <p className="mx-auto mb-2 h-px w-56 bg-black/45" aria-hidden />

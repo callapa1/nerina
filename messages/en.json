@@ -18,14 +18,7 @@
   },
   "Home": {
     "title": "Nerina Berthelot",
-    "role": "UX/UI",
-    "description": "Designer focused on systems, flows and structured digital experiences.",
-    "cta": "View work",
-    "projectIconLabel": "ABC Comunidad project",
-    "emailIconLabel": "Email Nerina",
-    "emailHref": "mailto:nerinaberthelot@gmail.com",
-    "linkedInIconLabel": "Nerina LinkedIn",
-    "linkedInHref": "https://www.linkedin.com/in/nerina-berthelot/"
+    "role": "UX/UI"
   },
   "About": {
     "title": "About me",

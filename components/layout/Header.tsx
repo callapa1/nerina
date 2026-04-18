@@ -38,11 +38,11 @@ export function Header({locale, labels}: HeaderProps) {
         </nav>
       </div>
 
-      <div className="mt-4 flex items-center justify-between gap-4 border-t border-black/25 pt-3">
-        <div className="flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-black/80">
-          <span className="sr-only">{labels.localeLabel}</span>
-          <Link className="teal-chip" href="/en">
-            EN
+        <div className="mt-4 flex items-center justify-between gap-4 border-t border-black/25 pt-3">
+          <div className="locale-switch text-xs uppercase tracking-[0.15em] text-black/80">
+            <span className="sr-only">{labels.localeLabel}</span>
+            <Link className="teal-chip" href="/en">
+              EN
           </Link>
           <Link className="teal-chip" href="/es">
             ES

@@ -19,7 +19,6 @@ body {
   min-height: 100vh;
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Manrope', 'Segoe UI', sans-serif;
 }
 
 a {
@@ -56,17 +55,30 @@ a {
 
 .teal-chip {
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 6px;
   border: 1px solid rgb(0 0 0 / 0.28);
-  background: var(--teal-soft);
-  box-shadow: 3px 3px 0 var(--teal);
-  min-width: 2.5rem;
-  min-height: 2rem;
-  padding: 0.2rem 0.5rem;
-  font-size: 1.05rem;
+  background: #d3ecee;
+  box-shadow: 3px 3px 3px #075e65, 3px 3px 3px #075e65;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #000;
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.locale-switch {
+  display: flex;
+  width: 96px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
 .field-input {
@@ -109,12 +121,6 @@ a {
   .teal-button {
     min-height: 2.8rem;
     min-width: 5.7rem;
-    font-size: 1rem;
-  }
-
-  .teal-chip {
-    min-height: 2rem;
-    min-width: 2.5rem;
     font-size: 1rem;
   }
 
