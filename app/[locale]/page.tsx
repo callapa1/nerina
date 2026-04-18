@@ -8,7 +8,7 @@ export default async function HomePage() {
   const footer = await getTranslations('Footer');
 
   return (
-    <SiteShell fullWidth>
+    <SiteShell>
       <div className="flex min-h-[calc(100vh-2rem)] flex-col">
         <main className="flex-1 w-full">
           <Hero title={home('title')} role={home('role')} />

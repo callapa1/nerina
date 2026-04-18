@@ -6,14 +6,14 @@ export default async function AboutPage() {
   const t = await getTranslations('About');
 
   return (
-    <section className="space-y-8 pb-8">
-      <PageIntro title={t('title')} description={t('description')} />
+    <section id="about-page" className="space-y-8 pb-8">
+      <PageIntro id="about-page-intro" title={t('title')} description={t('description')} />
 
-      <RichTextBlock card paragraphs={[t('paragraph1'), t('paragraph2')]} />
+      <RichTextBlock id="about-block-1" card paragraphs={[t('paragraph1'), t('paragraph2')]} />
 
-      <RichTextBlock card paragraphs={[t('paragraph3')]} />
+      <RichTextBlock id="about-block-2" card paragraphs={[t('paragraph3')]} />
 
-      <RichTextBlock card paragraphs={[t('paragraph4')]} />
+      <RichTextBlock id="about-block-3" card paragraphs={[t('paragraph4')]} />
     </section>
   );
 }

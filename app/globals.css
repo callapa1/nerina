@@ -109,11 +109,13 @@ p {
 
 .locale-switch {
   display: flex;
-  width: 96px;
-  height: 40px;
+  width: auto;
+  height: 37px;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 6px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .field-input {
@@ -161,5 +163,13 @@ p {
 
   .field-input {
     font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .locale-switch {
+    width: 150px;
+    padding-left: 36px;
+    padding-right: 36px;
   }
 }

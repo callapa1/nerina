@@ -1,11 +1,12 @@
 type RichTextBlockProps = {
+  id?: string;
   paragraphs: string[];
   card?: boolean;
 };
 
-export function RichTextBlock({paragraphs, card = false}: RichTextBlockProps) {
+export function RichTextBlock({id, paragraphs, card = false}: RichTextBlockProps) {
   return (
-    <div className="grid gap-5 text-black/85">
+    <div id={id} className="grid gap-5 text-black/85">
       {paragraphs.map((paragraph, index) => (
         <p
           key={`${index}-${paragraph.slice(0, 24)}`}
