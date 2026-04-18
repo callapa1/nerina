@@ -20,9 +20,7 @@ export default async function SiteLayout({children, params}: SiteLayoutProps) {
         labels={{
           about: nav('about'),
           resume: nav('resume'),
-          work: nav('work'),
           contact: nav('contact'),
-          menu: nav('menu'),
           localeLabel: nav('localeLabel'),
           role: nav('role'),
           resumeHref: nav('resumeHref')

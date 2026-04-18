@@ -1,14 +1,11 @@
 import Link from 'next/link';
-import {MobileMenu} from './MobileMenu';
 
 type HeaderProps = {
   locale: string;
   labels: {
     about: string;
     resume: string;
-    work: string;
     contact: string;
-    menu: string;
     localeLabel: string;
     role: string;
     resumeHref: string;
@@ -38,7 +35,7 @@ export function Header({locale, labels}: HeaderProps) {
         </nav>
       </div>
 
-      <div className="mt-4 flex items-center justify-between gap-4 border-t border-black/25 pt-3">
+      <div className="mt-4 border-t border-black/25 pt-3">
         <div className="locale-switch text-xs uppercase tracking-[0.15em] text-black/80">
           <span className="sr-only">{labels.localeLabel}</span>
           <Link className="teal-chip" href="/en/work">
@@ -47,10 +44,6 @@ export function Header({locale, labels}: HeaderProps) {
           <Link className="teal-chip" href="/es/work">
             ES
           </Link>
-        </div>
-
-        <div className="sm:hidden">
-          <MobileMenu locale={locale} labels={labels} />
         </div>
       </div>
     </header>
