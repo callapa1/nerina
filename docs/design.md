@@ -58,6 +58,14 @@ This file captures the current visual rules implemented from screenshot referenc
 - Stable ids/classes were added for layout and sections to simplify QA and CSS targeting.
 - Key hooks include: `#site-header`, `#header-nav-buttons`, `#site-footer`, `#home-hero`, `#about-page`, `#work-page`, `#contact-page`, `#contact-form`, `#contact-links`.
 
+## Contact Page
+
+- `#contact-page-intro`: 446×81px. Title: Inter 700, 30px, 140% line-height, 2% tracking. Subtitle: Inter 400 italic, 28px, 140% line-height, 2% tracking.
+- `#contact-content-grid`: 1372px wide, `mx-auto`, `justify-items-center`.
+- `#contact-form` (`ContactForm`): 500×485px, max-w-500px, gap 40px, px 36px.
+- `#contact-links-wrap`: 415×168px, gap 8px, px 40px, py 44px.
+- Font rule: Inter only — ignore any other font specs, they are outdated.
+
 ## Tailwind Setup
 
 - Tailwind v4 (`tailwindcss@4.2.2`) with `@tailwindcss/postcss@4.2.2`.

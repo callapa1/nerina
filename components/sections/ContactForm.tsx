@@ -18,7 +18,7 @@ export function ContactForm({
   submitLabel
 }: ContactFormProps) {
   return (
-    <form id="contact-form" className="enter-fade [animation-delay:80ms] flex flex-col gap-4" action="#" method="post">
+    <form id="contact-form" className="enter-fade [animation-delay:80ms] flex h-[485px] w-[500px] max-w-[500px] flex-col gap-[40px] px-[36px]" action="#" method="post">
       <div id="contact-form-full-name-group">
         <label className="mb-1 block text-3xl" htmlFor="full-name">
           {fullNameLabel}

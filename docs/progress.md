@@ -35,6 +35,8 @@ Last updated: 2026-04-18
 27. Added stable ids/classes across header/footer/home/about/work/contact sections for easier style and QA targeting.
 28. Synced docs and README structure with current component tree (no `MobileMenu.tsx`).
 29. Migrated CSS entrypoint from Tailwind v3 directives (`@tailwind base/components/utilities`) to Tailwind v4 `@import "tailwindcss"`, aligning with the installed `tailwindcss@4.2.2` + `@tailwindcss/postcss@4.2.2` stack.
+30. Applied screenshot-spec sizing and typography to contact page intro (`#contact-page-intro`: 446×81; title 30px bold Inter; subtitle 28px italic Inter).
+31. Structured contact grid layout: `#contact-content-grid` 1372px centered; `#contact-form-wrap` wrapper added; `#contact-form` 500×485 px-36 gap-40; `#contact-links-wrap` 415×168 px-40 py-44 gap-8. Grid items centered horizontally via `justify-items-center`.
 
 ### Next
 
