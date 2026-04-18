@@ -8,9 +8,9 @@ export default async function HomePage() {
   const footer = await getTranslations('Footer');
 
   return (
-    <SiteShell showSideBorders={false}>
+    <SiteShell showSideBorders={false} fullWidth>
       <div className="flex min-h-[calc(100vh-2rem)] flex-col">
-        <main className="flex-1">
+        <main className="flex-1 w-full">
           <Hero title={home('title')} role={home('role')} />
         </main>
         <Footer
