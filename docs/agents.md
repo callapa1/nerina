@@ -1,6 +1,6 @@
 # Agent Registry
 
-Last updated: 2026-04-17
+Last updated: 2026-04-18
 
 ## Purpose
 
@@ -44,4 +44,5 @@ Define stable agent roles so implementation stays consistent while we iterate qu
 - Step 2 (Locale routes): architect + i18n-curator + qa-guardian
 - Step 3 (Shared components): ui-builder + architect + i18n-curator
 - Step 4 (Page composition): ui-builder + architect + qa-guardian
+- Step 5 (Design-spec lock): ui-builder + architect + qa-guardian
 - Next step (Responsive + QA closeout): ui-builder + i18n-curator + qa-guardian

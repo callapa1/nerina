@@ -43,8 +43,9 @@ Contenido:
 ```txt
 app/
   [locale]/
+    page.tsx
+    layout.tsx
     (site)/
-      page.tsx
       about/page.tsx
       work/page.tsx
       contact/page.tsx
@@ -79,13 +80,22 @@ messages/
 5. Ajustar responsive (mobile/tablet/desktop).
 6. Hacer visual polish final (espaciados, tipografia, hover/focus).
 
+## Decision de routing actual
+
+- `/{locale}` se usa como Home inicial (sin header superior).
+- `/{locale}/work` funciona como pagina "Hi" con header completo y CTA narrativa.
+- About/Work/Contact comparten layout de `app/[locale]/(site)/layout.tsx`.
+
 ## Estado actual de referencias visuales
 
 Capturas disponibles en `screenshots/`:
 
 - `home.png`
+- `Hi.png`
 - `About.png`
-- `Work.png`
 - `Contact.png`
+- `navButtonStates.png`
+
+Especificaciones de diseno implementadas: `docs/design.md`.
 
 Nota: para fidelidad completa responsive, sumar versiones mobile de cada pantalla.

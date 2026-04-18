@@ -14,7 +14,7 @@ type MobileMenuProps = {
 
 export function MobileMenu({locale, labels}: MobileMenuProps) {
   return (
-    <details className="md:hidden">
+    <details>
       <summary className="cursor-pointer list-none rounded-full border border-black/20 px-4 py-2 text-xs uppercase tracking-[0.2em]">
         {labels.menu}
       </summary>

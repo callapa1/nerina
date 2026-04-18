@@ -52,6 +52,37 @@ p {
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
+.nav-button {
+  display: inline-flex;
+  width: 106px;
+  height: 57px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border: 1px solid #505050;
+  border-radius: 8px;
+  background: #f5f5f5;
+  box-shadow: 4px 4px 8px #075e65;
+  padding: 16px 24px;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 140%;
+  transition: background-color 150ms ease, color 150ms ease, transform 150ms ease, box-shadow 150ms ease;
+}
+
+.nav-button:hover {
+  border-width: 1.5px;
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 9px #075e65;
+}
+
+.nav-button:active,
+.nav-button[aria-current='page'] {
+  border-width: 1px;
+  background: #0f666d;
+  color: #f4f4f4;
+}
+
 .teal-button:hover {
   transform: translate(-2px, -2px);
   box-shadow: 6px 6px 0 var(--teal);

@@ -7,8 +7,10 @@ Bilingual portfolio scaffold built with Next.js App Router, TypeScript, Tailwind
 - Done: Project scaffold (Next.js + TypeScript + Tailwind)
 - Done: Locale routing (`/en`, `/es`) with `next-intl`
 - Done: Shared component system (layout/sections/ui)
-- In progress: Screenshot-based page composition and responsive polish
+- Done: Screenshot-based composition for Home/Hi/About/Contact core layouts
+- In progress: Responsive polish + final visual parity pass
 - Done: Next.js 16 warning cleanup (`proxy.ts` migration + ESLint flat config)
+- Done: Local Inter font integration and component-level typography tuning
 
 ## Stack
 
@@ -33,6 +35,7 @@ Bilingual portfolio scaffold built with Next.js App Router, TypeScript, Tailwind
 ```bash
 npm install
 npm run dev
+npm run dev:turbo
 npm run build
 npm run lint
 ```
@@ -42,8 +45,8 @@ npm run lint
 ```txt
 app/
   [locale]/
+    page.tsx
     (site)/
-      page.tsx
       about/page.tsx
       work/page.tsx
       contact/page.tsx
@@ -82,6 +85,7 @@ next.config.ts
 eslint.config.mjs
 
 docs/
+  design.md
   portfolio-build-plan.md
   agents.md
   progress.md
@@ -105,6 +109,7 @@ This repository uses role-based working guides in `agents/`.
 The active decisions and status log are tracked in:
 
 - `docs/agents.md`
+- `docs/design.md`
 - `docs/progress.md`
 
 ## Definition Of Done Per Step
