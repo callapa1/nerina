@@ -8,7 +8,7 @@ Bilingual portfolio scaffold built with Next.js App Router, TypeScript, Tailwind
 - Done: Locale routing (`/en`, `/es`) with `next-intl`
 - Done: Shared component system (layout/sections/ui)
 - In progress: Screenshot-based page composition and responsive polish
-- In progress: Warning cleanup for Next.js 16 conventions
+- Done: Next.js 16 warning cleanup (`proxy.ts` migration + ESLint flat config)
 
 ## Stack
 

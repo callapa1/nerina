@@ -1,6 +1,6 @@
 # Progress Log
 
-Last updated: 2026-04-17
+Last updated: 2026-04-18
 
 ## Milestones
 
@@ -18,6 +18,7 @@ Last updated: 2026-04-17
 10. Started screenshot-faithful composition pass for Home/About/Work/Contact.
 11. Migrated `middleware.ts` to `proxy.ts` and set `turbopack.root` to remove Next.js warnings.
 12. Updated lint setup to ESLint flat config (`eslint.config.mjs`) for Next.js 16 compatibility.
+13. Synced docs to reflect resolved warnings and current remaining milestones.
 
 ### Next
 
