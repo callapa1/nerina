@@ -37,6 +37,23 @@
       "discipline": "Diseno de sistemas · Arquitectura de informacion · Diseno UI",
       "summary": "Diseno de sistema de comunicacion estructurada, enfocado en arquitectura y flujo de decisiones entre equipos institucionales.",
       "context": "Educacion publica · Provincia de Buenos Aires, Argentina · 2025"
+    },
+    "caseStudy": {
+      "heroTagline": "Una solucion digital disenada para docentes",
+      "heroBlurb": "Diseno de una plataforma de comunicacion institucional estructurada para entornos educativos.",
+      "rail": {
+        "context": "Contexto",
+        "contextItems": ["Origen", "Propuesta", "Decision central"],
+        "users": "Usuarios",
+        "usersItems": ["Rol docente", "Insights"],
+        "mvp": "MVP",
+        "structure": "Estructura",
+        "structureItems": ["Entrada", "Canales privados", "Comunidades"]
+      },
+      "sectionNumber": "1. Contexto",
+      "sectionQuestion": "Como surgio esta iniciativa?",
+      "sectionParagraph1": "A partir de mi experiencia personal dando clases en la Provincia de Buenos Aires, Argentina, observe que hacia 2025 la comunicacion entre instituciones educativas publicas y familias se caracteriza por la convivencia entre canales formales tradicionales y canales tecnologicos informales.",
+      "sectionParagraph2": "Aunque existe una transicion en curso hacia plataformas digitales, este proceso esta atravesado por desafios propios del sistema educativo publico: fuerte centralizacion administrativa, gran diversidad de necesidades y flujos de comunicacion fragmentados entre actores institucionales."
     }
   },
   "Contact": {

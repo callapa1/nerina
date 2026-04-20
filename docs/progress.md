@@ -1,6 +1,6 @@
 # Progress Log
 
-Last updated: 2026-04-23
+Last updated: 2026-04-24
 
 ## Milestones
 
@@ -49,11 +49,12 @@ Last updated: 2026-04-23
 41. Enabled rich-text About translations so inline `<b>` markup in EN/ES message files renders as bold text.
 42. Refined localized Work page typography, removed extra borders/shadow from the project card, and switched the image strip to real portfolio assets.
 43. Split stylesheet organization into `base.css`, `components.css`, `work.css`, and `contact.css`, keeping `app/globals.css` as import hub.
+44. Replaced placeholder `/{locale}/work` route with dedicated localized case-study page modeled on `screenshots/Work.PNG`, including hero image, left rail, and first context section.
 
 ### Next
 
 1. Final responsive pass for mobile/tablet spacing on all pages.
-2. Decide real content and behavior for placeholder `/{locale}/work` route.
+2. Continue building the remaining sections of the `/{locale}/work` case study below the first context block.
 3. Capture final screenshot set and compare against refs one-by-one.
 
 ## Quality Notes

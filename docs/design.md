@@ -1,6 +1,6 @@
 # Design Spec
 
-Last updated: 2026-04-23
+Last updated: 2026-04-24
 
 ## Scope
 
@@ -8,7 +8,7 @@ This file captures the current visual rules implemented from screenshot referenc
 
 - Root landing page (`/`) has no top header and uses hero + shared footer.
 - Localized pages (`/[locale]`, `/[locale]/about`, `/[locale]/work`, `/[locale]/contact`) use shared header/footer layout.
-- Primary references: `screenshots/home.png`, `screenshots/Hi.png`, `screenshots/About.png`, `screenshots/Contact.png`, `screenshots/navButtonStates.png`.
+- Primary references: `screenshots/home.png`, `screenshots/Hi.png`, `screenshots/Work.PNG`, `screenshots/About.png`, `screenshots/Contact.png`, `screenshots/navButtonStates.png`.
 
 ## Typography
 
@@ -69,6 +69,8 @@ This file captures the current visual rules implemented from screenshot referenc
 - `#work-project-card` has no outer border or shadow.
 - Image strip uses real assets in left-to-right order: `abc`, `telefono`, `persona`.
 - Image strip has no gaps or outer padding; images sit flush edge-to-edge.
+- `/{locale}/work` is now a dedicated case-study page based on `screenshots/Work.PNG`, not the same layout as localized root.
+- Case-study page uses a full-bleed classroom hero (`aula.png`), centered ABC logo overlay, white rounded blurb card, turquoise left rail, and first context section content.
 
 ## Selector Hooks
 

@@ -37,6 +37,23 @@
       "discipline": "Systems design · Information architecture · UI design",
       "summary": "Structured communication system design focused on architecture and decision flow across institutional teams.",
       "context": "Public education · Province of Buenos Aires, Argentina · 2025"
+    },
+    "caseStudy": {
+      "heroTagline": "A digital solution designed for teachers",
+      "heroBlurb": "Design of a structured institutional communication platform for educational environments.",
+      "rail": {
+        "context": "Context",
+        "contextItems": ["Origin", "Proposal", "Core decision"],
+        "users": "Users",
+        "usersItems": ["Teacher role", "Insights"],
+        "mvp": "MVP",
+        "structure": "Structure",
+        "structureItems": ["Entry", "Private channels", "Communities"]
+      },
+      "sectionNumber": "1. Context",
+      "sectionQuestion": "How did this initiative emerge?",
+      "sectionParagraph1": "Based on personal experience teaching in the Province of Buenos Aires, Argentina, I observed that by 2025 communication between public educational institutions and families is characterized by the coexistence of formal traditional channels and informal technological channels.",
+      "sectionParagraph2": "Although there is an ongoing transition toward digital platforms, this process is shaped by challenges specific to the public education system: strong administrative centralization, a wide diversity of needs, and fragmented communication flows across institutional actors."
     }
   },
   "Contact": {
