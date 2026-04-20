@@ -119,4 +119,5 @@ The active decisions and status log are tracked in:
 - Lint passes (`npm run lint`)
 - Root route stays at `/` and locale routes work for EN and ES
 - No hardcoded bilingual copy inside reusable components
+- Before any push, check whether docs need updating
 - Progress and agent docs updated

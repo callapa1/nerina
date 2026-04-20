@@ -1,6 +1,6 @@
 # Agent Registry
 
-Last updated: 2026-04-18
+Last updated: 2026-04-21
 
 ## Purpose
 
@@ -31,11 +31,13 @@ Define stable agent roles so implementation stays consistent while we iterate qu
 - Runs build/lint checks and route sanity checks.
 - Tracks regressions introduced by new changes.
 - Confirms done criteria before pushing.
+- Before any push, checks whether `README.md`, `docs/design.md`, `docs/progress.md`, or `docs/portfolio-build-plan.md` need updates.
 
 ## Update Rules
 
 - Update this file when a role changes scope.
 - Update `docs/progress.md` after each completed milestone.
+- Before any push, review whether project docs need syncing with code changes.
 - Keep role names stable unless there is a strong reason to rename.
 
 ## Current Assignment

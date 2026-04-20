@@ -22,7 +22,7 @@ export default async function ContactPage() {
         subtitleClassName="text-[28px] font-normal italic leading-[140%] tracking-[0.02em]"
       />
 
-      <div id="contact-content-grid" className="mx-auto grid h-[485px] w-[1372px] justify-items-center gap-10 md:grid-cols-[1.05fr_0.95fr]">
+      <div id="contact-content-grid" className="mx-auto flex h-[485px] w-[1372px] items-start justify-center gap-10">
         <div id="contact-form-wrap">
           <ContactForm
             fullNameLabel={t('form.fullNameLabel')}

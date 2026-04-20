@@ -24,11 +24,8 @@ a {
   text-decoration: none;
 }
 
+h1,
 p {
-  margin: 0;
-}
-
-h1 {
   margin: 0;
 }
 
@@ -39,10 +36,15 @@ h1 {
   padding: 1.2rem;
 }
 
-.teal-button {
+.teal-button,
+.nav-button,
+.teal-chip {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.teal-button {
   border: 1px solid rgb(0 0 0 / 0.35);
   border-radius: 0.65rem;
   background: #ffffff;
@@ -55,11 +57,8 @@ h1 {
 }
 
 .nav-button {
-  display: inline-flex;
   width: 106px;
   height: 57px;
-  align-items: center;
-  justify-content: center;
   gap: 4px;
   border: 1px solid #505050;
   border-radius: 8px;
@@ -91,10 +90,7 @@ h1 {
 }
 
 .teal-chip {
-  display: inline-flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 40px;
   height: 40px;
   padding: 6px;
@@ -116,8 +112,7 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  padding-left: 0;
-  padding-right: 0;
+  padding-inline: 0;
 }
 
 .field-input {
@@ -171,11 +166,12 @@ textarea.field-input {
   align-items: center;
   padding: 8px;
   gap: 10px;
-  width: 222px;
-  height: 71px;
+  width: 107px;
+  height: 66px;
   background: #c4c4c4;
-  border: 2px solid #000000;
-  box-shadow: 8px 8px 3px #075e65, inset 8px 8px 0px rgba(255, 255, 255, 0.6);
+  border: 2px solid #000;
+  border-radius: 8px;
+  box-shadow: 8px 8px 3px #075e65, inset 8px 8px 0 rgb(255 255 255 / 0.6);
   flex: none;
   flex-grow: 0;
   cursor: pointer;
@@ -186,24 +182,24 @@ textarea.field-input {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 8px 16px;
+  padding: 8px;
   gap: 10px;
-  width: 206px;
-  height: 55px;
+  width: 91px;
+  height: 50px;
   border: 1px dashed #595959;
   flex: none;
   flex-grow: 0;
 }
 
 #contact-form-submit-frame span {
-  width: 174px;
-  height: 39px;
+  width: auto;
+  height: auto;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 140%;
-  color: #000000;
+  color: #000;
   flex: none;
   flex-grow: 0;
 }
@@ -223,7 +219,6 @@ textarea.field-input {
 @media (max-width: 500px) {
   .locale-switch {
     width: 150px;
-    padding-left: 36px;
-    padding-right: 36px;
+    padding-inline: 36px;
   }
 }
