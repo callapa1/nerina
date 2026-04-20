@@ -18,26 +18,32 @@ type WorkFeatureProps = {
 export function WorkFeature({heroTitle, heroDescription, heading, intro, projectLabel, descriptionLabel, project}: WorkFeatureProps) {
   return (
     <section id="work-feature" className="space-y-8">
-      <div id="work-hero" className="enter-fade border-y border-black/20 py-6 text-center">
-        <h2 className="text-5xl font-semibold sm:text-6xl">{heroTitle}</h2>
-        <p className="mx-auto mt-3 max-w-4xl text-4xl leading-snug text-black/85 sm:text-5xl">{heroDescription}</p>
+      <div id="work-hero" className="enter-fade flex flex-col items-center justify-center py-6 text-center">
+        <h2 className="text-[30px] font-bold leading-[140%] tracking-[0.02em]">{heroTitle}</h2>
+        <p className="mx-auto mt-3 max-w-4xl text-center text-[30px] font-normal leading-[140%] tracking-[0.02em] text-black/85">
+          {heroDescription}
+        </p>
       </div>
 
       <div id="work-intro" className="enter-fade [animation-delay:80ms]">
-        <h3 className="text-5xl font-semibold sm:text-6xl">{heading}</h3>
-        <p className="mt-3 max-w-5xl text-3xl leading-snug text-black/85 sm:text-4xl">{intro}</p>
+        <h3 className="text-[30px] font-bold leading-[140%] tracking-[0.02em]">{heading}</h3>
+        <p className="mt-3 max-w-5xl text-[28px] font-normal leading-[140%] tracking-[0.02em] text-black/85">{intro}</p>
       </div>
 
-      <article id="work-project-card" className="panel enter-fade [animation-delay:140ms]">
-        <div id="work-image-grid" className="grid gap-0.5 sm:grid-cols-3">
+      <article id="work-project-card" className="panel enter-fade gap-0 p-0 shadow-none [animation-delay:140ms]">
+        <div id="work-image-grid" className="grid gap-0 sm:grid-cols-3">
           <div className="image-tile grid place-items-center bg-[linear-gradient(150deg,#7ba18f,#b4cec0)]">
-            <Image src="/illustrations/abcComunidad.svg" alt="" aria-hidden="true" width={240} height={220} />
+            <Image src="/images/portfolio/abc.png" alt="" aria-hidden="true" width={456} height={303} className="h-full w-full object-cover" />
           </div>
-          <div className="image-tile bg-[linear-gradient(140deg,#8da0ba,#cdd7e4)]" />
-          <div className="image-tile bg-[linear-gradient(140deg,#af8d77,#dec4ad)]" />
+          <div className="image-tile grid place-items-center bg-[linear-gradient(140deg,#8da0ba,#cdd7e4)]">
+            <Image src="/images/portfolio/telefono.png" alt="" aria-hidden="true" width={456} height={303} className="h-full w-full object-cover" />
+          </div>
+          <div className="image-tile grid place-items-center bg-[linear-gradient(140deg,#af8d77,#dec4ad)]">
+            <Image src="/images/portfolio/persona.jpg" alt="" aria-hidden="true" width={456} height={303} className="h-full w-full object-cover" />
+          </div>
         </div>
 
-        <div id="work-project-meta" className="mt-6 grid gap-4 text-black/85 sm:grid-cols-[140px_1fr] sm:items-start">
+        <div id="work-project-meta" className="mt-6 grid gap-4 px-4 pb-4 text-black/85 sm:grid-cols-[140px_1fr] sm:items-start">
           <p className="text-xl">{projectLabel}</p>
           <div>
             <h3 className="text-4xl font-semibold">{project.name}</h3>

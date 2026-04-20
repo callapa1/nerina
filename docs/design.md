@@ -1,6 +1,6 @@
 # Design Spec
 
-Last updated: 2026-04-21
+Last updated: 2026-04-23
 
 ## Scope
 
@@ -62,6 +62,14 @@ This file captures the current visual rules implemented from screenshot referenc
 - Shared localized `main` uses fixed `max-w-[1440px]` and is centered.
 - Root `/` main also uses fixed `max-w-[1440px]` and is centered.
 
+## Work Page
+
+- Localized root Work hero uses centered typography: title 30px bold, subtitle 30px regular.
+- Work intro uses title 30px bold and body 28px regular.
+- `#work-project-card` has no outer border or shadow.
+- Image strip uses real assets in left-to-right order: `abc`, `telefono`, `persona`.
+- Image strip has no gaps or outer padding; images sit flush edge-to-edge.
+
 ## Selector Hooks
 
 - Stable ids/classes were added for layout and sections to simplify QA and CSS targeting.
@@ -79,6 +87,7 @@ This file captures the current visual rules implemented from screenshot referenc
 
 - Tailwind v4 (`tailwindcss@4.2.2`) with `@tailwindcss/postcss@4.2.2`.
 - CSS entrypoint: `@import "tailwindcss"` in `app/globals.css` (v3-style `@tailwind` directives removed).
+- `app/globals.css` now acts as import hub for `app/styles/base.css`, `components.css`, `common.css`, `work.css`, and `contact.css`.
 - `tailwind.config.ts` is a legacy artifact and has no effect in v4; config lives in CSS via `@theme`.
 
 ## Notes

@@ -1,0 +1,9 @@
+#work-hero,
+#work-project-card,
+#work-project-card .image-tile {
+  border: 0;
+}
+
+#work-project-card {
+  box-shadow: none;
+}

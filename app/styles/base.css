@@ -1,0 +1,47 @@
+:root {
+  --background: #ffffff;
+  --paper: #ffffff;
+  --foreground: #151515;
+  --teal: #0b7b86;
+  --teal-soft: #c8ebed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .teal-button {
+    min-height: 2.8rem;
+    min-width: 5.7rem;
+    font-size: 1rem;
+  }
+
+  .field-input {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .locale-switch {
+    width: 150px;
+    padding-inline: 36px;
+  }
+}

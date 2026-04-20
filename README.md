@@ -55,6 +55,12 @@ app/
     layout.tsx
   globals.css
   layout.tsx
+  styles/
+    base.css
+    components.css
+    common.css
+    work.css
+    contact.css
 
 components/
   layout/
@@ -80,6 +86,14 @@ i18n/
 messages/
   en.json
   es.json
+
+public/
+  images/
+    portfolio/
+      abc.png
+      aula.png
+      persona.jpg
+      telefono.png
 
 proxy.ts
 next.config.ts

@@ -1,6 +1,6 @@
 # Progress Log
 
-Last updated: 2026-04-22
+Last updated: 2026-04-23
 
 ## Milestones
 
@@ -47,6 +47,8 @@ Last updated: 2026-04-22
 39. Replaced header and footer border lines with real `hr` separators.
 40. Removed `w-screen` usage from shell and separators to eliminate horizontal overflow from scrollbar width.
 41. Enabled rich-text About translations so inline `<b>` markup in EN/ES message files renders as bold text.
+42. Refined localized Work page typography, removed extra borders/shadow from the project card, and switched the image strip to real portfolio assets.
+43. Split stylesheet organization into `base.css`, `components.css`, `work.css`, and `contact.css`, keeping `app/globals.css` as import hub.
 
 ### Next
 
