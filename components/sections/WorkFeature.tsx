@@ -43,17 +43,17 @@ export function WorkFeature({heroTitle, heroDescription, heading, intro, project
           </div>
         </div>
 
-        <div id="work-project-meta" className="mt-6 grid gap-4 px-4 pb-4 text-black/85 sm:grid-cols-[140px_1fr] sm:items-start">
-          <p className="text-xl">{projectLabel}</p>
+        <div id="work-project-meta" className="mt-6 grid gap-x-4 gap-y-0 px-4 pb-4 text-black/85 sm:grid-cols-[140px_1fr] sm:items-start">
+          <p className="text-[24px] leading-[140%] tracking-[0]">{projectLabel}</p>
           <div>
-            <h3 className="text-4xl font-semibold">{project.name}</h3>
-            <p className="mt-1 text-xl text-black/75">{project.discipline}</p>
+            <h3 className="text-[26px] font-semibold leading-[140%] tracking-[0]">{project.name}</h3>
+            <p className="mt-1 text-[24px] font-normal leading-[140%] tracking-[0] text-black/75">{project.discipline}</p>
           </div>
 
-          <p className="text-xl">{descriptionLabel}</p>
-          <div className="space-y-2 text-xl leading-relaxed sm:text-2xl">
-            <p>{project.summary}</p>
-            <p className="font-medium">{project.context}</p>
+          <p className="text-[24px] leading-[140%] tracking-[0]">{descriptionLabel}</p>
+          <div className="text-[24px] leading-[140%] tracking-[0]">
+            <p className="font-medium">{project.summary}</p>
+            <p className="font-normal">{project.context}</p>
           </div>
         </div>
       </article>
