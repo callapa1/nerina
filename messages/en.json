@@ -15,19 +15,18 @@
     "linkedInHref": "https://www.linkedin.com/in/nerina-berthelot/"
   },
   "Home": {
-    "title": "Hi, I’m Nerina",
+    "title": "Hi, I'm Nerina",
     "role": "UX/UI"
   },
   "About": {
     "title": "About me",
     "description": "How I got into systems design",
-    "paragraph1": "I came to systems design through a different path. I started in Fine Arts and Public Art, working in institutions and communities where context always shapes what gets built.",
-    "paragraph2": "That experience trained one core habit: understanding relationships, roles and conditions before proposing structure. Nothing exists in isolation; products evolve inside networks.",
-    "paragraph3": "When I moved into technology through QA and then UX/UI, the same questions returned. What gives digital structure meaning, and what allows it to be adopted in real environments?",
-    "paragraph4": "Today I design systems, not just interfaces. I prioritize internal logic, flow quality and sustainable decision-making so products respond clearly and consistently to user needs."
+    "paragraph1": "I came to systems design through a different path. I started my professional career in Fine Arts, specializing in Public Art — in what happens in the spaces we move through every day. For years <b>I worked on how context shapes what we produce and how communities make it their own.</b> I participated in and led projects across different territories, did research, and worked in educational institutions.\n\nThat experience trained something specific: the ability to read relationships, networks, and systems — to understand roles, rules, and dynamics before introducing any external structure. And to recognize that <b>nothing we produce exists in isolation: it takes shape within a network of actors, conditions, and uses that continuously transform it.</b>",
+    "paragraph2": "When I moved into technology — first through QA and then into UX/UI — the same questions reappeared:\n\n<b>What meaning does what we produce have without a context that enables and sustains it?\nHow are the relationships that shape it organized?\nWhat makes a structure adopted and appropriated in a real environment?</b>",
+    "paragraph3": "Today I work at the intersection of those questions. <b>I design systems, not interfaces</b>: I prioritize relationships, internal logic, and flows that shape a product before defining how it looks.\n\nMy interest in quality assurance, a field I continue to develop in, directly influences how I design. <b>I incorporate quality criteria from early stages</b>, anticipating friction, considering edge cases, and aiming for systems that respond clearly, consistently, and reliably to real user needs.\n\nAlong this line, I also explore automation as a way to extend a system's capabilities without adding friction for the people who use it.\n\n<b>I'm drawn to complex but deeply human contexts</b>: multi-role environments where organizational structure is part of the design problem. <b>That's where systems design becomes most meaningful.</b>"
   },
   "Work": {
-    "heroTitle": "Hi, I’m Nerina",
+    "heroTitle": "Hi, I'm Nerina",
     "heroDescription": "UX/UI Designer focused on systems, flows and structured digital experiences.",
     "heading": "My work",
     "intro": "Selected projects focused on systems, workflows and structure for complex contexts.",

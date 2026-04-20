@@ -30,10 +30,18 @@ p {
 }
 
 .panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  flex-grow: 0;
+  order: 0;
   border: 1px solid rgb(0 0 0 / 0.22);
   background: rgb(255 255 255 / 0.42);
-  box-shadow: 0 8px 16px rgb(0 0 0 / 0.12);
-  padding: 1.2rem;
+  box-shadow: 10px 10px 10px rgb(0 0 0 / 0.25);
+  padding: 16px;
+  gap: 16px;
 }
 
 .teal-button,

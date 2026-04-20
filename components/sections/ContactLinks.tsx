@@ -11,7 +11,7 @@ type ContactLinksProps = {
 
 export function ContactLinks({items}: ContactLinksProps) {
   return (
-    <ul id="contact-links" className="enter-fade [animation-delay:160ms] grid gap-4 text-xl text-black/85 sm:text-2xl">
+    <ul id="contact-links" className="enter-fade [animation-delay:160ms] grid gap-4 text-[22px] text-black/85">
       {items.map((item) => (
         <li className="contact-link-item flex items-center gap-3" key={item.href}>
           <span className="inline-flex h-7 w-7 items-center justify-center">

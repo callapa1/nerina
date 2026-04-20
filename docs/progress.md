@@ -1,6 +1,6 @@
 # Progress Log
 
-Last updated: 2026-04-21
+Last updated: 2026-04-22
 
 ## Milestones
 
@@ -46,6 +46,7 @@ Last updated: 2026-04-21
 38. Applied fixed `max-w-[1440px]` to shared header and main containers.
 39. Replaced header and footer border lines with real `hr` separators.
 40. Removed `w-screen` usage from shell and separators to eliminate horizontal overflow from scrollbar width.
+41. Enabled rich-text About translations so inline `<b>` markup in EN/ES message files renders as bold text.
 
 ### Next
 
