@@ -1,6 +1,6 @@
 # Progress Log
 
-Last updated: 2026-04-18
+Last updated: 2026-04-21
 
 ## Milestones
 
@@ -37,11 +37,20 @@ Last updated: 2026-04-18
 29. Migrated CSS entrypoint from Tailwind v3 directives (`@tailwind base/components/utilities`) to Tailwind v4 `@import "tailwindcss"`, aligning with the installed `tailwindcss@4.2.2` + `@tailwindcss/postcss@4.2.2` stack.
 30. Applied screenshot-spec sizing and typography to contact page intro (`#contact-page-intro`: 446×81; title 30px bold Inter; subtitle 28px italic Inter).
 31. Structured contact grid layout: `#contact-content-grid` 1372px centered; `#contact-form-wrap` wrapper added; `#contact-form` 500×485 px-36 gap-40; `#contact-links-wrap` 415×168 px-40 py-44 gap-8. Grid items centered horizontally via `justify-items-center`.
+32. Unified footer into single shared component variant and replaced footer copy-block top border with an `hr`.
+33. Reworked routing so `/` stays unprefixed, while `/en` and `/es` serve localized primary pages.
+34. Moved current "Hi" / work feature content from `/{locale}/work` to `/{locale}` and left `/{locale}/work` as placeholder route.
+35. Updated locale-switch links and brand block navigation to target localized roots consistently.
+36. Kept root as headerless landing page while all localized site pages share same `Header` component.
+37. Synced docs with current route tree and layout behavior.
+38. Applied fixed `max-w-[1440px]` to shared header and main containers.
+39. Replaced header and footer border lines with real `hr` separators.
+40. Removed `w-screen` usage from shell and separators to eliminate horizontal overflow from scrollbar width.
 
 ### Next
 
 1. Final responsive pass for mobile/tablet spacing on all pages.
-2. Validate EN/ES parity after recent route and layout refinements.
+2. Decide real content and behavior for placeholder `/{locale}/work` route.
 3. Capture final screenshot set and compare against refs one-by-one.
 
 ## Quality Notes

@@ -26,7 +26,7 @@ export default async function SiteLayout({children, params}: SiteLayoutProps) {
           resumeHref: nav('resumeHref')
         }}
       />
-      <main className="pt-10">{children}</main>
+      <main className="mx-auto w-full max-w-[1440px] pt-10">{children}</main>
       <Footer
         text={footer('copyright')}
         emailHref={footer('emailHref')}

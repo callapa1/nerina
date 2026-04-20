@@ -9,7 +9,7 @@ export default function LandingPage() {
   return (
     <SiteShell>
       <div className="flex min-h-[calc(100vh-2rem)] flex-col">
-        <main className="flex-1 w-full">
+        <main className="mx-auto flex-1 w-full max-w-[1440px]">
           <Hero title="Nerina Berthelot" role="UX/UI" />
         </main>
         <Footer

@@ -1,13 +1,13 @@
 # Design Spec
 
-Last updated: 2026-04-18
+Last updated: 2026-04-21
 
 ## Scope
 
 This file captures the current visual rules implemented from screenshot references.
 
-- Home page (`/[locale]`) has no top header and uses full-width hero + full-width footer.
-- Internal pages (`/[locale]/about`, `/work`, `/contact`) use the shared header/footer layout.
+- Root landing page (`/`) has no top header and uses hero + shared footer.
+- Localized pages (`/[locale]`, `/[locale]/about`, `/[locale]/work`, `/[locale]/contact`) use shared header/footer layout.
 - Primary references: `screenshots/home.png`, `screenshots/Hi.png`, `screenshots/About.png`, `screenshots/Contact.png`, `screenshots/navButtonStates.png`.
 
 ## Typography
@@ -25,7 +25,9 @@ This file captures the current visual rules implemented from screenshot referenc
 
 ## Header
 
-- Header main row target: 108px height, border-bottom 1px, `justify-between`, padding `16px 36px 8px 36px`.
+- Header container uses fixed `max-w-[1440px]` centered in page.
+- Header main row target: 108px height, `justify-between`, padding `16px 36px 8px 36px`.
+- Bottom separator is real full-width `hr`, not element border.
 - Brand block target: 248x84 only under `500px`; fluid above.
 - Nav button row: desktop/tablet visible, hidden at `<=500px`.
 - Nav row uses fluid width on larger screens; fixed width constraints were removed.
@@ -41,17 +43,24 @@ This file captures the current visual rules implemented from screenshot referenc
 - Wrapper base: fluid width (`auto`), 37px height, 6px gap.
 - Under `500px`: wrapper restores fixed sizing (`150px` width, `36px` side paddings).
 - Each chip: 40x40 with 6px padding, underlined text, 18px regular.
-- On Home, EN/ES routes go to `/en/work` and `/es/work` (Hi page flow).
+- Locale chips route to localized roots: `/en` and `/es`.
 
 ## Footer
 
-- Outer footer block: full width, 164px height, border-top 1px, vertically centered content.
-- Inner content block: Home uses fixed 211x84; internal pages are fluid, with 211x84 only under `500px`.
+- Footer top separator is real full-width `hr`, pinned to top edge.
+- Outer footer block: full width, 164px height, vertically centered content.
+- Inner content block: all pages use fixed 211x84.
 - Icon row: 64x28 with two 28px icons and 8px center gap.
   - Mail icon: 28 x 22.4
   - LinkedIn icon: 28 x 28
-- Bottom text block: Home fixed 211x48; internal pages fluid with 211x48 under `500px`; top border 1px, padding-top 8px, gap 10px.
+- Bottom text block: 211x48 on all pages; uses `hr` separator, padding-top 8px, gap 10px.
 - Footer helper label (`mail · linkedin`) is intentionally removed.
+
+## Width Rules
+
+- Outermost visible shell uses `w-full`, not `w-screen`, to avoid scrollbar-induced horizontal overflow.
+- Shared localized `main` uses fixed `max-w-[1440px]` and is centered.
+- Root `/` main also uses fixed `max-w-[1440px]` and is centered.
 
 ## Selector Hooks
 

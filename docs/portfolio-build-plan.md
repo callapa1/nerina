@@ -82,9 +82,10 @@ messages/
 
 ## Decision de routing actual
 
-- `/{locale}` se usa como Home inicial (sin header superior).
-- `/{locale}/work` funciona como pagina "Hi" con header completo y CTA narrativa.
-- About/Work/Contact comparten layout de `app/[locale]/(site)/layout.tsx`.
+- `/` funciona como landing root sin header superior.
+- `/{locale}` funciona como pagina localizada principal (actual contenido tipo "Hi").
+- `/{locale}/work` queda reservado como placeholder para uso futuro.
+- `/{locale}`, `/{locale}/about`, `/{locale}/work` y `/{locale}/contact` comparten layout de `app/[locale]/(site)/layout.tsx`.
 
 ## Estado actual de referencias visuales
 

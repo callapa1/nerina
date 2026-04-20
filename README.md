@@ -21,6 +21,7 @@ Bilingual portfolio scaffold built with Next.js App Router, TypeScript, Tailwind
 
 ## Routes
 
+- `/`
 - `/en`
 - `/en/about`
 - `/en/work`
@@ -44,9 +45,10 @@ npm run lint
 
 ```txt
 app/
+  page.tsx
   [locale]/
-    page.tsx
     (site)/
+      page.tsx
       about/page.tsx
       work/page.tsx
       contact/page.tsx
@@ -115,6 +117,6 @@ The active decisions and status log are tracked in:
 
 - Build passes (`npm run build`)
 - Lint passes (`npm run lint`)
-- Locale routes work for EN and ES
+- Root route stays at `/` and locale routes work for EN and ES
 - No hardcoded bilingual copy inside reusable components
 - Progress and agent docs updated

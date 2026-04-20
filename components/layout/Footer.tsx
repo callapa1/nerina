@@ -10,7 +10,8 @@ type FooterProps = {
 
 export function Footer({emailHref, emailLabel, linkedInLabel, linkedInHref, text}: FooterProps) {
   return (
-    <footer id="site-footer" className="mt-0 flex h-[164px] w-full items-center justify-center border-t border-black/30 text-center">
+    <footer id="site-footer" className="relative mt-0 flex h-[164px] w-full items-center justify-center text-center">
+      <hr aria-hidden="true" className="absolute left-1/2 top-0 w-full -translate-x-1/2 border-0 border-t border-black/30" />
       <div id="footer-content" className="mx-auto flex h-[84px] w-[211px] flex-col items-center justify-between">
         <div id="footer-icon-row" className="flex h-7 w-[64px] shrink-0 items-center justify-between">
           <a
