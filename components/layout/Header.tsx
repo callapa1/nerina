@@ -18,12 +18,14 @@ export function Header({locale, labels}: HeaderProps) {
       <div className="header-frame flex h-full w-full flex-col justify-between">
         <div id="header-main-row" className="mx-auto h-[108px] w-full border-b border-black/30 pb-2 pl-9 pr-9 pt-4">
           <div id="header-primary-content" className="mx-auto flex h-[84px] w-[1368px] items-center justify-between gap-6">
-            <div id="brand-block" className="h-[84px] w-[248px] shrink-0 text-center">
-              <Link href={`/${locale}`} className="text-[30px] font-[600] leading-[140%] tracking-[0.02em] text-black/90">
-                Nerina Berthelot
-              </Link>
-              <p className="text-[30px] font-[400] leading-[140%] tracking-[0.02em] text-black/90">{labels.role}</p>
-            </div>
+            <Link
+              id="brand-block"
+              href={`/${locale}`}
+              className="block h-[84px] w-[248px] shrink-0 text-center text-black/90"
+            >
+              <span className="block text-[30px] font-[600] leading-[140%] tracking-[0.02em]">Nerina Berthelot</span>
+              <span className="block text-[30px] font-[400] leading-[140%] tracking-[0.02em]">{labels.role}</span>
+            </Link>
             <nav id="header-nav-buttons" className="flex h-[57px] w-[800px] items-center justify-between text-sm max-[500px]:hidden">
               <Link className="nav-button" href={`/${locale}/about`}>
                 {labels.about}
@@ -44,10 +46,10 @@ export function Header({locale, labels}: HeaderProps) {
             className="flex h-[37px] w-[150px] items-center justify-center gap-[6px] !pl-9 !pr-9 text-xs uppercase tracking-[0.15em] text-black/80"
           >
             <span className="sr-only">{labels.localeLabel}</span>
-            <Link className="teal-chip" href="/en/work">
+            <Link className="teal-chip" href="/en">
               EN
             </Link>
-            <Link className="teal-chip" href="/es/work">
+            <Link className="teal-chip" href="/es">
               ES
             </Link>
           </div>

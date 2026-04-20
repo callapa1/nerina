@@ -6,21 +6,12 @@ type FooterProps = {
   linkedInLabel: string;
   linkedInHref: string;
   text: string;
-  withTopMargin?: boolean;
 };
 
-export function Footer({emailHref, emailLabel, linkedInLabel, linkedInHref, text, withTopMargin = true}: FooterProps) {
-  const homeFooter = withTopMargin === false;
-
+export function Footer({emailHref, emailLabel, linkedInLabel, linkedInHref, text}: FooterProps) {
   return (
-    <footer
-      id="site-footer"
-      className={`${withTopMargin ? 'mt-20' : 'mt-0'} flex h-[164px] w-full items-center justify-center border-t border-black/30 text-center`}
-    >
-      <div
-        id="footer-content"
-        className={`mx-auto flex h-[84px] flex-col items-center justify-between ${homeFooter ? 'w-[211px]' : 'w-full max-[500px]:w-[211px]'}`}
-      >
+    <footer id="site-footer" className="mt-0 flex h-[164px] w-full items-center justify-center border-t border-black/30 text-center">
+      <div id="footer-content" className="mx-auto flex h-[84px] w-[211px] flex-col items-center justify-between">
         <div id="footer-icon-row" className="flex h-7 w-[64px] shrink-0 items-center justify-between">
           <a
             className="inline-flex h-7 w-7 shrink-0 items-center justify-center"
@@ -48,8 +39,9 @@ export function Footer({emailHref, emailLabel, linkedInLabel, linkedInHref, text
         </div>
         <div
           id="footer-copy-block"
-          className={`box-border flex h-[48px] flex-col items-center justify-start gap-2.5 border-t border-black/30 pt-[8px] ${homeFooter ? 'w-[211px]' : 'w-full max-[500px]:w-[211px]'}`}
+          className="box-border flex h-[48px] w-[211px] flex-col items-center justify-start gap-2.5 pt-[8px]"
         >
+          <hr aria-hidden="true" className="w-full border-0 border-t border-black/30" />
           <p className="text-center text-[14px] font-normal leading-[140%] tracking-[0] text-black/70">{text}</p>
         </div>
       </div>
