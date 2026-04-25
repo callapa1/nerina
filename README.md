@@ -8,7 +8,7 @@ Bilingual portfolio scaffold built with Next.js App Router, TypeScript, Tailwind
 - Done: Locale routing (`/en`, `/es`) with `next-intl`
 - Done: Shared component system (layout/sections/ui)
 - Done: Screenshot-based composition for Home/Hi/About/Contact core layouts
-- Done: Dedicated localized Work case-study route plus shared footer/header alignment refinements
+- Done: Dedicated localized Work case-study route with full-bleed hero, section-driven EN/ES content, shared footer/header alignment refinements and stable selector hooks
 - In progress: Responsive polish + final visual parity pass
 - Done: Next.js 16 warning cleanup (`proxy.ts` migration + ESLint flat config)
 - Done: Local Inter font integration and component-level typography tuning
@@ -72,6 +72,7 @@ components/
     ProjectGrid.tsx
     ContactLinks.tsx
     WorkFeature.tsx
+    WorkCaseStudy.tsx
     ContactForm.tsx
   ui/
     SectionHeading.tsx

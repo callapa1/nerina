@@ -1,40 +1,123 @@
 import Image from 'next/image';
+import type {ReactNode} from 'react';
 
 type WorkCaseStudyProps = {
-  heroBlurb: string;
-  rail: {
-    context: string;
-    contextItems: string[];
-    users: string;
-    usersItems: string[];
-    mvp: string;
-    structure: string;
-    structureItems: string[];
-  };
-  sectionNumber: string;
-  sectionQuestion: string;
-  sectionParagraph1: string;
-  sectionParagraph2: string;
+  caseStudy: CaseStudyContent;
 };
 
-export function WorkCaseStudy({
-  heroBlurb,
-  rail,
-  sectionNumber,
-  sectionQuestion,
-  sectionParagraph1,
-  sectionParagraph2
-}: WorkCaseStudyProps) {
+type CaseStudyContent = {
+  hero: {
+    blurb: string;
+  };
+  rail: Array<{
+    label: string;
+    items: string[];
+  }>;
+  sections: CaseStudySection[];
+};
+
+type CaseStudySection = {
+  id: string;
+  number: string;
+  blocks: CaseStudyBlock[];
+};
+
+type TextBlock = {
+  type: 'heading' | 'subheading' | 'paragraph' | 'callout';
+  text: string;
+};
+
+type CaseStudyBlock =
+  | TextBlock
+  | {
+      type: 'bullets';
+      items: string[];
+    }
+  | {
+      type: 'definitionList';
+      items: Array<{
+        title: string;
+        text: string;
+      }>;
+    };
+
+function renderRichText(text: string): ReactNode {
+  return text
+    .split(/(<strong>.*?<\/strong>)/g)
+    .filter(Boolean)
+    .map((part, index) => {
+      const match = part.match(/^<strong>(.*)<\/strong>$/);
+
+      return match ? <strong key={index}>{match[1]}</strong> : part;
+    });
+}
+
+function renderBlock(block: CaseStudyBlock, sectionId: string, index: number) {
+  if (block.type === 'heading') {
+    return (
+      <h3 key={index} className="mt-6 text-[30px] font-semibold leading-[120%] tracking-[-0.022em] text-[#075e65] first:mt-0">
+        {block.text}
+      </h3>
+    );
+  }
+
+  if (block.type === 'subheading') {
+    return (
+      <h4 key={index} className="mt-6 text-[18px] font-bold leading-[145%] text-black">
+        {block.text}
+      </h4>
+    );
+  }
+
+  if (block.type === 'paragraph') {
+    return <p key={index}>{renderRichText(block.text)}</p>;
+  }
+
+  if (block.type === 'callout') {
+    return (
+      <p key={index} className="font-bold text-black">
+        {renderRichText(block.text)}
+      </p>
+    );
+  }
+
+  if (block.type === 'bullets') {
+    return (
+      <ul key={index} className="list-disc space-y-1 pl-5">
+        {block.items.map((item) => (
+          <li key={item}>{renderRichText(item)}</li>
+        ))}
+      </ul>
+    );
+  }
+
+  if (block.type === 'definitionList') {
+    return (
+    <div key={index} id={`${sectionId}-definition-list-${index + 1}`} className="space-y-4">
+      {block.items.map((item) => (
+        <div key={item.title}>
+          <p className="font-bold text-black">{item.title}</p>
+          <p>{renderRichText(item.text)}</p>
+        </div>
+      ))}
+    </div>
+    );
+  }
+
+  return null;
+}
+
+export function WorkCaseStudy({caseStudy}: WorkCaseStudyProps) {
   return (
     <section id="work-case-study" className="pb-8">
-      <section id="work-case-hero" className="relative left-1/2 -mt-[74px] w-screen -translate-x-1/2 overflow-hidden">
+      <section id="work-case-hero" className="relative left-1/2 -mt-[89px] w-screen -translate-x-1/2 overflow-hidden">
         <Image src="/images/portfolio/aula.png" alt="" aria-hidden="true" width={1536} height={1024} priority className="h-auto w-full" />
         <div id="work-case-hero-overlay" className="absolute inset-0 bg-black/10" />
 
         <div id="work-case-hero-content" className="absolute inset-0 z-10 flex flex-col items-center justify-center px-6 text-center text-white">
           <Image src="/illustrations/abcComunidad.svg" alt="" aria-hidden="true" width={300} height={220} className="h-auto w-[300px]" />
           <div id="work-case-hero-blurb" className="mt-12 w-full max-w-[800px] rounded-[28px] bg-white px-8 py-4 text-[28px] font-normal leading-[140%] tracking-[0.01em] text-[#0b6f79] shadow-[0_4px_20px_rgba(0,0,0,0.12)]">
-            {heroBlurb}
+            {caseStudy.hero.blurb}
           </div>
         </div>
       </section>
@@ -42,42 +125,28 @@ export function WorkCaseStudy({
       <section id="work-case-content" className="flex w-full bg-white">
         <aside id="work-case-rail" className="w-[180px] shrink-0 bg-[#d9ecef] px-6 py-4 text-[15px] leading-[140%] text-black/85">
           <div id="work-case-rail-content" className="space-y-4 border-r-2 border-[#0b6f79] pr-4">
-            <div id="work-case-rail-context">
-              <p className="font-semibold">{rail.context}</p>
-              {rail.contextItems.map((item) => (
-                <p key={item}>-{item}</p>
-              ))}
-            </div>
-
-            <div id="work-case-rail-users">
-              <p className="font-semibold">{rail.users}</p>
-              {rail.usersItems.map((item) => (
-                <p key={item}>-{item}</p>
-              ))}
-            </div>
-
-            <p className="font-semibold">{rail.mvp}</p>
-
-            <div id="work-case-rail-structure">
-              <p className="font-semibold">{rail.structure}</p>
-              {rail.structureItems.map((item) => (
-                <p key={item}>-{item}</p>
-              ))}
-            </div>
+            {caseStudy.rail.map((item) => (
+              <div id={`work-case-rail-${item.label.toLowerCase().replaceAll(' ', '-')}`} key={item.label}>
+                <p className="font-semibold">{item.label}</p>
+                {item.items.map((railItem) => (
+                  <p key={railItem}>-{railItem}</p>
+                ))}
+              </div>
+            ))}
           </div>
         </aside>
 
-        <div id="work-case-body" className="flex-1 px-8 py-4">
-          <h2 className="type-title-30 text-black">{sectionNumber}</h2>
-          <h3 className="mt-6 text-[24px] font-bold leading-[140%] tracking-[0.01em] text-[#0b6f79] underline underline-offset-4">
-            {sectionQuestion}
-          </h3>
-
-          <div id="work-case-text-block" className="mt-4 max-w-[980px] space-y-6 text-[20px] leading-[150%] tracking-[0.01em] text-black/85">
-            <p>
-              <span className="font-medium">{sectionParagraph1}</span>
-            </p>
-            <p>{sectionParagraph2}</p>
+        <div id="work-case-body" className="flex-1 space-y-12 px-8 py-4">
+          {caseStudy.sections.map((section) => (
+            <section id={`work-case-section-${section.id}`} key={section.id} className="max-w-[980px]">
+              <h2 className="text-[35px] font-bold leading-[120%] text-[#424343]">{section.number}</h2>
+              <div id={`work-case-text-block-${section.id}`} className="mt-4 space-y-5 text-[20px] leading-[150%] tracking-[0.01em] text-black/85">
+                {section.blocks.map((block, index) => renderBlock(block, section.id, index))}
+              </div>
+            </section>
+          ))}
+          <div id="work-case-final-logo" className="flex justify-center py-12">
+            <Image src="/illustrations/abcComunidad.svg" alt="" aria-hidden="true" width={300} height={220} className="h-auto w-[300px]" />
           </div>
         </div>
       </section>

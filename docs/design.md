@@ -25,8 +25,9 @@ This file captures the current visual rules implemented from screenshot referenc
 
 ## Header
 
-- Header container uses fixed `max-w-[1440px]` centered in page.
+- Header container and `#header-frame` use fixed 165px height with `max-w-[1440px]` centered in page.
 - Header main row target: 108px height, `justify-between`, padding `16px 36px 8px 36px`.
+- Header main row owns the white background; the locale row remains transparent so page hero imagery can sit behind EN/ES chips.
 - Header no longer renders bottom separator `hr`.
 - Brand block target: fixed 248x84.
 - Nav button row: desktop/tablet visible, hidden at `<=500px`.
@@ -78,14 +79,25 @@ This file captures the current visual rules implemented from screenshot referenc
 - `#work-project-card` has no outer border or shadow.
 - Image strip uses real assets in left-to-right order: `abc`, `telefono`, `persona`.
 - Image strip has no gaps between images; whole strip is inset to header alignment using `px-9`.
-- On hover, `#work-image-grid` reveals a bottom-centered CTA button (`View project`) positioned 32px from the bottom edge.
-- `/{locale}/work` is now a dedicated case-study page based on `screenshots/Work.PNG`, not the same layout as localized root.
-- Case-study page uses a full-bleed classroom hero (`aula.png`), centered ABC logo overlay, white rounded blurb card, turquoise left rail, and first context section content.
+- On hover, `#work-image-grid` slightly blurs its images and reveals a bottom-centered CTA button (`View project`) positioned 32px from the bottom edge.
+- `/{locale}/work` is now a dedicated case-study page based on `screenshots/Work.PNG` plus `screenshots/Work1.png` through `screenshots/Work9.png`, not the same layout as localized root.
+- Case-study page uses a full-bleed classroom hero (`aula.png`) pulled up to meet the bottom of `#header-main-row`.
+- Case-study hero image preserves the original 1536×1024 ratio (`3:2`) with `w-full h-auto`, not `fill/object-cover` cropping.
+- Case-study hero overlay centers the all-white `abcComunidad.svg` logo above the blurb card.
+- Case-study hero tagline text is removed.
+- `#work-case-hero-blurb`: max width 800px, 28px text, white rounded card, teal text.
+- Case-study content uses a dynamic turquoise left rail plus section-driven content from `messages/*.json`.
+- `caseStudy.sections[]` is the source for numbered sections and supports `heading`, `subheading`, `paragraph`, `bullets`, `definitionList`, and `callout` blocks.
+- Case-study section numbers use Inter 700, 35px, 120% line-height, `#424343`.
+- Case-study `heading` blocks use Inter 600, 30px, 120% line-height, `-0.022em` tracking, `#075E65`.
+- Case-study `subheading` blocks use Inter 700, 18px, 145% line-height.
+- Current implemented case-study sections: Context, Users, MVP, Information Architecture, User Flows, Interface, Conclusion.
+- Screenshot diagrams/interface images are not yet wired as production assets; original images should be added separately and referenced by stable image IDs when available.
 
 ## Selector Hooks
 
 - Stable ids/classes were added for layout and sections to simplify QA and CSS targeting.
-- Key hooks include: `#site-header`, `#header-nav-buttons`, `#site-footer`, `#home-hero`, `#about-page`, `#work-page`, `#contact-page`, `#contact-form`, `#contact-links`.
+- Key hooks include: `#site-shell`, `#site-page-frame`, `#site-main`, `#site-header`, `#header-frame`, `#header-main-row`, `#header-nav-buttons`, `#site-footer`, `#home-hero`, `#about-page`, `#work-page`, `#work-case-hero`, `#work-case-hero-blurb`, `#work-case-section-*`, `#contact-page`, `#contact-form`, `#contact-links`.
 
 ## Contact Page
 

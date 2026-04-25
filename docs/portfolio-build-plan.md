@@ -31,6 +31,8 @@ Componentes compartidos:
 - `ProjectCard`: item de portfolio.
 - `ProjectGrid`: grilla/lista de proyectos.
 - `ContactLinks`: email/redes/CTA.
+- `WorkFeature`: bloque de Home localizado con proyecto destacado e imagenes hover.
+- `WorkCaseStudy`: pagina de caso dedicada para `/{locale}/work`.
 
 Contenido:
 
@@ -61,6 +63,7 @@ components/
     ProjectGrid.tsx
     ContactLinks.tsx
     WorkFeature.tsx
+    WorkCaseStudy.tsx
     ContactForm.tsx
   ui/
     SectionHeading.tsx
@@ -86,6 +89,8 @@ messages/
 - `/` funciona como landing root sin header superior.
 - `/{locale}` funciona como pagina localizada principal (actual contenido tipo "Hi").
 - `/{locale}/work` funciona como pagina de case study dedicada basada en `screenshots/Work.PNG`.
+- El hero de `/{locale}/work` usa imagen full-bleed, mantiene ratio 3:2, se superpone bajo los botones EN/ES y muestra logo ABC blanco + blurb card.
+- El contenido del case study vive en `messages/*.json` bajo `Work.caseStudy.sections[]`, con bloques tipados para texto, listas, definiciones y destacados.
 - `/{locale}`, `/{locale}/about`, `/{locale}/work` y `/{locale}/contact` comparten layout de `app/[locale]/(site)/layout.tsx`.
 
 ## Estado actual de referencias visuales
@@ -97,6 +102,7 @@ Capturas disponibles en `screenshots/`:
 - `About.png`
 - `Contact.png`
 - `Work.PNG`
+- `Work1.png` a `Work9.png`
 - `navButtonStates.png`
 
 Especificaciones de diseno implementadas: `docs/design.md`.

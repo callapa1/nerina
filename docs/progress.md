@@ -56,11 +56,16 @@ Last updated: 2026-04-25
 48. Moved localized horizontal padding out of `SiteShell` and around only `Header` + `main`, allowing footer separator to span full page width naturally.
 49. Realigned localized Home work intro, image strip, and project meta blocks to match `#header-main-row` inset.
 50. Consolidated CSS into `base.css`, `components.css`, and `pages.css`, and added hover CTA behavior to the localized Home work image grid.
+51. Simplified teal CTA centering, added image blur on localized Home work grid hover, and pushed the hover CTA update.
+52. Refined `/{locale}/work` case-study hero: full-bleed 3:2 classroom image, transparent locale row overlap, white ABC logo, no tagline, larger 800px/28px blurb card.
+53. Added stable IDs to relevant structural wrappers, work feature blocks, case-study hero/content blocks, and rich text panels.
+54. Refactored Work case-study messages into a section/block model and populated EN/ES content from `screenshots/Work1.png` through `Work9.png`.
+55. Updated `WorkCaseStudy` to render dynamic rail items and text blocks (`heading`, `subheading`, `paragraph`, `bullets`, `definitionList`, `callout`) from messages.
 
 ### Next
 
 1. Final responsive pass for mobile/tablet spacing on all pages.
-2. Continue building remaining sections of the `/{locale}/work` case study below first context block.
+2. Add original case-study diagrams/interface assets and wire them into section image blocks.
 3. Capture final screenshot set and compare against refs one-by-one.
 
 ## Quality Notes
