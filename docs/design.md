@@ -1,6 +1,6 @@
 # Design Spec
 
-Last updated: 2026-04-24
+Last updated: 2026-04-25
 
 ## Scope
 
@@ -27,38 +27,46 @@ This file captures the current visual rules implemented from screenshot referenc
 
 - Header container uses fixed `max-w-[1440px]` centered in page.
 - Header main row target: 108px height, `justify-between`, padding `16px 36px 8px 36px`.
-- Bottom separator is real full-width `hr`, not element border.
-- Brand block target: 248x84 only under `500px`; fluid above.
+- Header no longer renders bottom separator `hr`.
+- Brand block target: fixed 248x84.
 - Nav button row: desktop/tablet visible, hidden at `<=500px`.
-- Nav row uses fluid width on larger screens; fixed width constraints were removed.
+- Nav row uses fixed 800px width.
 
 ### Nav Button States
 
-- Base: 106x57, padding 16px 24px, radius 8px, border 1px.
+- Base: 57px height, content-fit width, padding 16px 24px, radius 8px, border 1px.
 - Hover: same size/padding/radius with border 1.5px.
 - Active/current: same size/padding/radius with border 1px and dark fill.
 
 ## Locale Switch (EN/ES)
 
-- Wrapper base: fluid width (`auto`), 37px height, 6px gap.
+- Header locale switch: 158x37 with 8px gap.
+- Home hero locale switch: 343x70, stacked vertically.
+- Home hero locale label: `Choose language`, 16px regular, 140% line-height.
+- Home hero locale buttons row: 96px wide, `justify-between`.
 - Under `500px`: wrapper restores fixed sizing (`150px` width, `36px` side paddings).
 - Each chip: 40x40 with 6px padding, underlined text, 18px regular.
 - Locale chips route to localized roots: `/en` and `/es`.
 
 ## Footer
 
+- Footer sits outside localized content padding wrapper, so top separator can span full page width with normal `w-full`.
 - Footer top separator is real full-width `hr`, pinned to top edge.
 - Outer footer block: full width, 164px height, vertically centered content.
-- Inner content block: all pages use fixed 211x84.
+- Inner content block: fixed 259x132 with 24px padding.
 - Icon row: 64x28 with two 28px icons and 8px center gap.
-  - Mail icon: 28 x 22.4
-  - LinkedIn icon: 28 x 28
-- Bottom text block: 211x48 on all pages; uses `hr` separator, padding-top 8px, gap 10px.
+- Mail icon: 28 x 22.4
+- LinkedIn icon: 28 x 28
+- Footer icons use black fill.
+- Inner divider between icon row and copy block is a real 1px `hr`.
+- Bottom text block: 211x48 with padding-top 8px; inner `<p>` width is 212px.
 - Footer helper label (`mail · linkedin`) is intentionally removed.
 
 ## Width Rules
 
 - Outermost visible shell uses `w-full`, not `w-screen`, to avoid scrollbar-induced horizontal overflow.
+- `SiteShell` provides vertical padding only (`py-4`).
+- Localized site layout applies horizontal padding on the `Header` + `main` wrapper (`px-6 sm:px-9`).
 - Shared localized `main` uses fixed `max-w-[1440px]` and is centered.
 - Root `/` main also uses fixed `max-w-[1440px]` and is centered.
 
@@ -66,9 +74,10 @@ This file captures the current visual rules implemented from screenshot referenc
 
 - Localized root Work hero uses centered typography: title 30px bold, subtitle 30px regular.
 - Work intro uses title 30px bold and body 28px regular.
+- `#work-intro`, `#work-image-grid`, and `#work-project-meta` use `px-9` to align horizontally with `#header-main-row`.
 - `#work-project-card` has no outer border or shadow.
 - Image strip uses real assets in left-to-right order: `abc`, `telefono`, `persona`.
-- Image strip has no gaps or outer padding; images sit flush edge-to-edge.
+- Image strip has no gaps between images; whole strip is inset to header alignment using `px-9`.
 - `/{locale}/work` is now a dedicated case-study page based on `screenshots/Work.PNG`, not the same layout as localized root.
 - Case-study page uses a full-bleed classroom hero (`aula.png`), centered ABC logo overlay, white rounded blurb card, turquoise left rail, and first context section content.
 
@@ -82,14 +91,16 @@ This file captures the current visual rules implemented from screenshot referenc
 - `#contact-page-intro`: 446×81px. Title: Inter 700, 30px, 140% line-height, 2% tracking. Subtitle: Inter 400 italic, 28px, 140% line-height, 2% tracking.
 - `#contact-content-grid`: 1372px wide, `mx-auto`, `justify-items-center`.
 - `#contact-form` (`ContactForm`): 500×485px, max-w-500px, gap 40px, px 36px.
+- Submit button: 107×66, background `#00B2C1`, radius 8px, shadow `6px 6px 4px #075E65`, white 24px semibold text.
 - `#contact-links-wrap`: 415×168px, gap 8px, px 40px, py 44px.
+- Contact links use dedicated mail/linkedin SVGs with `#333333` icon fill.
 - Font rule: Inter only — ignore any other font specs, they are outdated.
 
 ## Tailwind Setup
 
 - Tailwind v4 (`tailwindcss@4.2.2`) with `@tailwindcss/postcss@4.2.2`.
 - CSS entrypoint: `@import "tailwindcss"` in `app/globals.css` (v3-style `@tailwind` directives removed).
-- `app/globals.css` now acts as import hub for `app/styles/base.css`, `components.css`, `common.css`, `work.css`, and `contact.css`.
+- `app/globals.css` now acts as import hub for `app/styles/base.css`, `components.css`, `work.css`, and `contact.css`.
 - `tailwind.config.ts` is a legacy artifact and has no effect in v4; config lives in CSS via `@theme`.
 
 ## Notes

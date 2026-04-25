@@ -21,9 +21,8 @@ Regla: si algo se repite 2+ veces, se abstrae en componente.
 
 Componentes compartidos:
 
-- `SiteShell`: wrapper general con max-width, paddings y estructura base.
+- `SiteShell`: wrapper general de pagina y padding vertical base; padding horizontal del sitio vive en layout interior para permitir footer full-bleed.
 - `Header`: logo/nombre, navegacion principal y switch EN/ES.
-- `MobileMenu`: menu responsive para mobile.
 - `Footer`: links y copyright.
 - `SectionHeading`: titulo/subtitulo reutilizable.
 - `Hero`: bloque principal de Home.
@@ -42,25 +41,27 @@ Contenido:
 
 ```txt
 app/
+  page.tsx
   [locale]/
-    page.tsx
-    layout.tsx
     (site)/
+      page.tsx
       about/page.tsx
       work/page.tsx
       contact/page.tsx
+    layout.tsx
 
 components/
   layout/
     SiteShell.tsx
     Header.tsx
-    MobileMenu.tsx
     Footer.tsx
   sections/
     Hero.tsx
     PageIntro.tsx
     ProjectGrid.tsx
     ContactLinks.tsx
+    WorkFeature.tsx
+    ContactForm.tsx
   ui/
     SectionHeading.tsx
     ProjectCard.tsx
@@ -84,7 +85,7 @@ messages/
 
 - `/` funciona como landing root sin header superior.
 - `/{locale}` funciona como pagina localizada principal (actual contenido tipo "Hi").
-- `/{locale}/work` queda reservado como placeholder para uso futuro.
+- `/{locale}/work` funciona como pagina de case study dedicada basada en `screenshots/Work.PNG`.
 - `/{locale}`, `/{locale}/about`, `/{locale}/work` y `/{locale}/contact` comparten layout de `app/[locale]/(site)/layout.tsx`.
 
 ## Estado actual de referencias visuales
@@ -95,6 +96,7 @@ Capturas disponibles en `screenshots/`:
 - `Hi.png`
 - `About.png`
 - `Contact.png`
+- `Work.PNG`
 - `navButtonStates.png`
 
 Especificaciones de diseno implementadas: `docs/design.md`.

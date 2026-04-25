@@ -1,6 +1,6 @@
 # Progress Log
 
-Last updated: 2026-04-24
+Last updated: 2026-04-25
 
 ## Milestones
 
@@ -50,11 +50,16 @@ Last updated: 2026-04-24
 42. Refined localized Work page typography, removed extra borders/shadow from the project card, and switched the image strip to real portfolio assets.
 43. Split stylesheet organization into `base.css`, `components.css`, `work.css`, and `contact.css`, keeping `app/globals.css` as import hub.
 44. Replaced placeholder `/{locale}/work` route with dedicated localized case-study page modeled on `screenshots/Work.PNG`, including hero image, left rail, and first context section.
+45. Refined Home locale switch into two-line layout with explicit `Choose language` label and balanced EN/ES chip row.
+46. Restyled contact submit button, removed obsolete inner wrapper, and split footer-vs-contact icon fills into dedicated assets.
+47. Simplified CSS import structure by removing `app/styles/common.css` and collapsing duplicate contact submit rules.
+48. Moved localized horizontal padding out of `SiteShell` and around only `Header` + `main`, allowing footer separator to span full page width naturally.
+49. Realigned localized Home work intro, image strip, and project meta blocks to match `#header-main-row` inset.
 
 ### Next
 
 1. Final responsive pass for mobile/tablet spacing on all pages.
-2. Continue building the remaining sections of the `/{locale}/work` case study below the first context block.
+2. Continue building remaining sections of the `/{locale}/work` case study below first context block.
 3. Capture final screenshot set and compare against refs one-by-one.
 
 ## Quality Notes

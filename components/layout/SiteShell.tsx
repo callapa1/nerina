@@ -4,7 +4,7 @@ type SiteShellProps = {
 
 export function SiteShell({children}: SiteShellProps) {
   return (
-    <div className="min-h-screen w-full bg-[var(--paper)] px-6 py-4 sm:px-9">
+    <div className="min-h-screen w-full bg-[var(--paper)] py-4">
       {children}
     </div>
   );
