@@ -9,6 +9,7 @@ type CaseStudyContent = {
   hero: {
     blurb: string;
   };
+  topLabel: string;
   rail: Array<{
     label: string;
     items: string[];
@@ -116,23 +117,30 @@ export function WorkCaseStudy({caseStudy}: WorkCaseStudyProps) {
 
         <div id="work-case-hero-content" className="absolute inset-0 z-10 flex flex-col items-center justify-center px-6 text-center text-white">
           <Image src="/illustrations/abcComunidad.svg" alt="" aria-hidden="true" width={300} height={220} className="h-auto w-[300px]" />
-          <div id="work-case-hero-blurb" className="mt-12 w-full max-w-[800px] rounded-[28px] bg-white px-8 py-4 text-[28px] font-normal leading-[140%] tracking-[0.01em] text-[#0b6f79] shadow-[0_4px_20px_rgba(0,0,0,0.12)]">
+          <div id="work-case-hero-blurb" className="mt-12 w-full max-w-[800px] rounded-[40px] bg-white px-8 py-4 text-[28px] font-normal leading-[140%] tracking-[0.01em] text-[#0b6f79] shadow-[0_4px_20px_rgba(0,0,0,0.12)]">
             {caseStudy.hero.blurb}
           </div>
         </div>
       </section>
 
       <section id="work-case-content" className="flex w-full bg-white">
-        <aside id="work-case-rail" className="w-[180px] shrink-0 bg-[#d9ecef] px-6 py-4 text-[15px] leading-[140%] text-black/85">
-          <div id="work-case-rail-content" className="space-y-4 border-r-2 border-[#0b6f79] pr-4">
-            {caseStudy.rail.map((item) => (
-              <div id={`work-case-rail-${item.label.toLowerCase().replaceAll(' ', '-')}`} key={item.label}>
-                <p className="font-semibold">{item.label}</p>
-                {item.items.map((railItem) => (
-                  <p key={railItem}>-{railItem}</p>
-                ))}
-              </div>
-            ))}
+        <aside id="work-case-rail" className="box-border flex h-[661px] w-[198px] shrink-0 flex-col items-center justify-center gap-[60px] border-b border-r border-black bg-[#d7eeee] pb-[40px] pl-[36px] pr-[16px] pt-[20px] text-[15px] leading-[140%] text-black/85 shadow-[3px_3px_3px_#075e65,3px_3px_3px_#075e65]">
+          <div id="work-case-rail-content" className="flex h-full flex-col justify-between pr-4">
+            <div id="work-case-rail-items" className="space-y-4">
+              {caseStudy.rail.map((item) => (
+                <div id={`work-case-rail-${item.label.toLowerCase().replaceAll(' ', '-')}`} key={item.label}>
+                  <p className="font-semibold">{item.label}</p>
+                  {item.items.map((railItem) => (
+                    <p key={railItem}>-{railItem}</p>
+                  ))}
+                </div>
+              ))}
+            </div>
+
+            <a id="work-case-rail-top-link" className="inline-flex items-center justify-center gap-2 text-[20px] font-medium leading-[140%] text-black" href="#work-case-hero">
+              {caseStudy.topLabel}
+              <Image src="/icons/top.svg" alt="" aria-hidden="true" width={24} height={15} className="h-[15px] w-6" />
+            </a>
           </div>
         </aside>
 

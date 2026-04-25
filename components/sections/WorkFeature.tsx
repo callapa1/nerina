@@ -58,13 +58,13 @@ export function WorkFeature({heroTitle, heroDescription, heading, intro, project
 
         <div id="work-project-meta" className="mt-6 grid w-full gap-x-4 gap-y-0 pb-4 text-black/85 sm:grid-cols-[140px_1fr] sm:items-start">
           <p className="type-meta-label tracking-[0]">{projectLabel}</p>
-          <div id="work-project-title-block">
-            <h3 className="text-[26px] font-semibold leading-[140%] tracking-[0]">{project.name}</h3>
+          <div id="work-project-title-block" className="self-start">
+            <h3 className="m-0 text-[26px] font-semibold leading-[140%] tracking-[0]">{project.name}</h3>
             <p className="type-meta-label mt-1 tracking-[0]">{project.discipline}</p>
           </div>
 
           <p className="type-meta-label tracking-[0]">{descriptionLabel}</p>
-          <div id="work-project-description-block">
+          <div id="work-project-description-block" className="self-start">
             <p className="text-[20px] font-medium leading-[140%] tracking-[0] text-black">{project.summary}</p>
             <p className="type-meta-label tracking-[0]">
               {contextLines.map((line) => (

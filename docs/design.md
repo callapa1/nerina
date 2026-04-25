@@ -85,8 +85,10 @@ This file captures the current visual rules implemented from screenshot referenc
 - Case-study hero image preserves the original 1536×1024 ratio (`3:2`) with `w-full h-auto`, not `fill/object-cover` cropping.
 - Case-study hero overlay centers the all-white `abcComunidad.svg` logo above the blurb card.
 - Case-study hero tagline text is removed.
-- `#work-case-hero-blurb`: max width 800px, 28px text, white rounded card, teal text.
+- `#work-case-hero-blurb`: max width 800px, 28px text, 40px radius white card, teal text.
 - Case-study content uses a dynamic turquoise left rail plus section-driven content from `messages/*.json`.
+- `#work-case-rail`: 198×661px, flex column centered, gap 60px, padding `20px 16px 40px 36px`, background `#D7EEEE`, right+bottom black border, duplicate teal shadow `3px 3px 3px #075E65`.
+- `#work-case-rail-content` includes a bottom `#work-case-rail-top-link` (`Inicio`/`Top`) with `top.svg` icon on the right, linking to `#work-case-hero`; text uses Inter 500, 20px, 140% line-height.
 - `caseStudy.sections[]` is the source for numbered sections and supports `heading`, `subheading`, `paragraph`, `bullets`, `definitionList`, and `callout` blocks.
 - Case-study section numbers use Inter 700, 35px, 120% line-height, `#424343`.
 - Case-study `heading` blocks use Inter 600, 30px, 120% line-height, `-0.022em` tracking, `#075E65`.

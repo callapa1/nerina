@@ -43,6 +43,7 @@
       "hero": {
         "blurb": "Diseño de una plataforma de comunicacion institucional estructurada para entornos educativos."
       },
+      "topLabel": "Inicio",
       "rail": [
         {"label": "Contexto", "items": ["Origen", "Propuesta", "Decision clave"]},
         {"label": "Usuarios", "items": ["Rol docente", "Hallazgos"]},

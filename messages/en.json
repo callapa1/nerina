@@ -43,6 +43,7 @@
       "hero": {
         "blurb": "Design of a structured institutional communication platform for educational environments."
       },
+      "topLabel": "Top",
       "rail": [
         {"label": "Context", "items": ["Origin", "Proposal", "Core decision"]},
         {"label": "Users", "items": ["Teacher role", "Findings"]},
