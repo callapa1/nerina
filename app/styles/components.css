@@ -12,6 +12,34 @@
   gap: 16px;
 }
 
+.type-title-30 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+}
+
+.type-subtitle-28-italic {
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+}
+
+.type-meta-label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  color: #c4c4c4;
+}
+
+.type-form-label {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
 .teal-button,
 .nav-button,
 .teal-chip {

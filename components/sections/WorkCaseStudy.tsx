@@ -71,7 +71,7 @@ export function WorkCaseStudy({
         </aside>
 
         <div className="flex-1 px-8 py-4">
-          <h2 className="text-[30px] font-bold leading-[140%] tracking-[0.02em] text-black">{sectionNumber}</h2>
+          <h2 className="type-title-30 text-black">{sectionNumber}</h2>
           <h3 className="mt-6 text-[24px] font-bold leading-[140%] tracking-[0.01em] text-[#0b6f79] underline underline-offset-4">
             {sectionQuestion}
           </h3>

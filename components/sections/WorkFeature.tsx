@@ -19,14 +19,14 @@ export function WorkFeature({heroTitle, heroDescription, heading, intro, project
   return (
     <section id="work-feature" className="space-y-8">
       <div id="work-hero" className="enter-fade flex flex-col items-center justify-center py-6 text-center">
-        <h2 className="text-[30px] font-bold leading-[140%] tracking-[0.02em]">{heroTitle}</h2>
+        <h2 className="type-title-30">{heroTitle}</h2>
         <p className="mx-auto mt-3 max-w-4xl text-center text-[30px] font-normal leading-[140%] tracking-[0.02em] text-black/85">
           {heroDescription}
         </p>
       </div>
 
       <div id="work-intro" className="enter-fade px-9 [animation-delay:80ms]">
-        <h3 className="text-[30px] font-bold leading-[140%] tracking-[0.02em]">{heading}</h3>
+        <h3 className="type-title-30">{heading}</h3>
         <p className="mt-3 max-w-5xl text-[28px] font-normal leading-[140%] tracking-[0.02em] text-black/85">{intro}</p>
       </div>
 
@@ -44,16 +44,16 @@ export function WorkFeature({heroTitle, heroDescription, heading, intro, project
         </div>
 
         <div id="work-project-meta" className="mt-6 grid gap-x-4 gap-y-0 px-9 pb-4 text-black/85 sm:grid-cols-[140px_1fr] sm:items-start">
-          <p className="text-[24px] leading-[140%] tracking-[0]">{projectLabel}</p>
+          <p className="type-meta-label tracking-[0]">{projectLabel}</p>
           <div>
             <h3 className="text-[26px] font-semibold leading-[140%] tracking-[0]">{project.name}</h3>
-            <p className="mt-1 text-[24px] font-normal leading-[140%] tracking-[0] text-black/75">{project.discipline}</p>
+            <p className="type-meta-label mt-1 tracking-[0]">{project.discipline}</p>
           </div>
 
-          <p className="text-[24px] leading-[140%] tracking-[0]">{descriptionLabel}</p>
-          <div className="text-[24px] leading-[140%] tracking-[0]">
-            <p className="font-medium">{project.summary}</p>
-            <p className="font-normal">{project.context}</p>
+          <p className="type-meta-label tracking-[0]">{descriptionLabel}</p>
+          <div>
+            <p className="text-[20px] font-medium leading-[140%] tracking-[0] text-black">{project.summary}</p>
+            <p className="type-meta-label tracking-[0]">{project.context}</p>
           </div>
         </div>
       </article>

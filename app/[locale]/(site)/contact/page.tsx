@@ -18,8 +18,8 @@ export default async function ContactPage() {
         className="h-[81px] w-[446px]"
         title={t('title')}
         description={t('description')}
-        titleClassName="text-[30px] font-bold leading-[140%] tracking-[0.02em]"
-        subtitleClassName="text-[28px] font-normal italic leading-[140%] tracking-[0.02em]"
+        titleClassName="type-title-30"
+        subtitleClassName="type-subtitle-28-italic"
       />
 
       <div id="contact-content-grid" className="mx-auto flex h-[485px] w-[1372px] items-start justify-center gap-10">
