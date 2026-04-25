@@ -29,13 +29,14 @@
     "heroTitle": "Hi, I'm Nerina",
     "heroDescription": "UX/UI Designer focused on systems, flows and structured digital experiences.",
     "heading": "My work",
-    "intro": "Selected projects focused on systems, workflows and structure for complex contexts.",
+    "intro": "Selected projects focused on designing digital systems and workflows, with an emphasis on structure, flows and decision-making in complex contexts.",
     "projectLabel": "Project",
     "descriptionLabel": "Description",
+    "projectCtaLabel": "View project",
     "project": {
       "name": "ABC Comunidad",
       "discipline": "Systems design · Information architecture · UI design",
-      "summary": "Structured communication system design focused on architecture and decision flow across institutional teams.",
+      "summary": "Structured communication system design, focused on architecture and flows within the institutional context of use.",
       "context": "Public education · Province of Buenos Aires, Argentina · 2025"
     },
     "caseStudy": {

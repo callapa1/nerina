@@ -73,11 +73,12 @@ This file captures the current visual rules implemented from screenshot referenc
 ## Work Page
 
 - Localized root Work hero uses centered typography: title 30px bold, subtitle 30px regular.
-- Work intro uses title 30px bold and body 28px regular.
+- Work intro uses title 30px bold and body 28px light italic.
 - `#work-intro`, `#work-image-grid`, and `#work-project-meta` use `px-9` to align horizontally with `#header-main-row`.
 - `#work-project-card` has no outer border or shadow.
 - Image strip uses real assets in left-to-right order: `abc`, `telefono`, `persona`.
 - Image strip has no gaps between images; whole strip is inset to header alignment using `px-9`.
+- On hover, `#work-image-grid` reveals a bottom-centered CTA button (`View project`) positioned 32px from the bottom edge.
 - `/{locale}/work` is now a dedicated case-study page based on `screenshots/Work.PNG`, not the same layout as localized root.
 - Case-study page uses a full-bleed classroom hero (`aula.png`), centered ABC logo overlay, white rounded blurb card, turquoise left rail, and first context section content.
 
@@ -100,7 +101,7 @@ This file captures the current visual rules implemented from screenshot referenc
 
 - Tailwind v4 (`tailwindcss@4.2.2`) with `@tailwindcss/postcss@4.2.2`.
 - CSS entrypoint: `@import "tailwindcss"` in `app/globals.css` (v3-style `@tailwind` directives removed).
-- `app/globals.css` now acts as import hub for `app/styles/base.css`, `components.css`, `work.css`, and `contact.css`.
+- `app/globals.css` now acts as import hub for `app/styles/base.css`, `components.css`, and `pages.css`.
 - `tailwind.config.ts` is a legacy artifact and has no effect in v4; config lives in CSS via `@theme`.
 
 ## Notes

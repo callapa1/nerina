@@ -42,7 +42,7 @@ export function ContactForm({
         </div>
       </div>
 
-      <button id="contact-form-submit" className="mt-auto self-center" type="submit">
+      <button id="contact-form-submit" className="teal-cta-button mt-auto self-center" type="submit">
         {submitLabel}
       </button>
     </form>

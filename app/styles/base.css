@@ -26,22 +26,3 @@ h1,
 p {
   margin: 0;
 }
-
-@media (max-width: 900px) {
-  .teal-button {
-    min-height: 2.8rem;
-    min-width: 5.7rem;
-    font-size: 1rem;
-  }
-
-  .field-input {
-    font-size: 1.35rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .locale-switch {
-    width: 150px;
-    padding-inline: 36px;
-  }
-}

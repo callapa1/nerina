@@ -59,8 +59,7 @@ app/
   styles/
     base.css
     components.css
-    work.css
-    contact.css
+    pages.css
 
 components/
   layout/

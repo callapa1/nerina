@@ -17,7 +17,7 @@ export function Header({locale, labels}: HeaderProps) {
     <header id="site-header" className="mx-auto mb-8 h-[150px] w-full max-w-[1440px] bg-white">
       <div className="header-frame flex h-full w-full flex-col justify-between">
         <div id="header-main-row" className="mx-auto h-[108px] w-full pb-2 pl-9 pr-9 pt-4">
-          <div id="header-primary-content" className="mx-auto flex h-[84px] w-[1368px] items-center justify-between gap-6">
+          <div id="header-primary-content" className="mx-auto flex h-[84px] w-full max-w-[1368px] items-center justify-between gap-6">
             <Link
               id="brand-block"
               href={`/${locale}`}
@@ -26,7 +26,7 @@ export function Header({locale, labels}: HeaderProps) {
               <span className="block text-[30px] font-[600] leading-[140%] tracking-[0.02em]">Nerina Berthelot</span>
               <span className="block text-[30px] font-[400] leading-[140%] tracking-[0.02em]">{labels.role}</span>
             </Link>
-            <nav id="header-nav-buttons" className="flex h-[57px] w-[800px] items-center justify-between text-sm max-[500px]:hidden">
+            <nav id="header-nav-buttons" className="flex h-[57px] w-full max-w-[800px] items-center justify-between text-sm max-[500px]:hidden">
               <Link className="nav-button" href={`/${locale}/about`}>
                 {labels.about}
               </Link>

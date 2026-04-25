@@ -13,6 +13,7 @@ export default async function LocalizedHomePage() {
         intro={t('intro')}
         projectLabel={t('projectLabel')}
         descriptionLabel={t('descriptionLabel')}
+        projectCtaLabel={t('projectCtaLabel')}
         project={{
           name: t('project.name'),
           discipline: t('project.discipline'),

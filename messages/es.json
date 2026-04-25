@@ -32,6 +32,7 @@
     "intro": "Proyectos seleccionados centrados en sistemas, flujos y estructura para contextos complejos.",
     "projectLabel": "Proyecto",
     "descriptionLabel": "Descripcion",
+    "projectCtaLabel": "View project",
     "project": {
       "name": "ABC Comunidad",
       "discipline": "Diseño de sistemas · Arquitectura de informacion · Diseño UI",

@@ -55,6 +55,7 @@ Last updated: 2026-04-25
 47. Simplified CSS import structure by removing `app/styles/common.css` and collapsing duplicate contact submit rules.
 48. Moved localized horizontal padding out of `SiteShell` and around only `Header` + `main`, allowing footer separator to span full page width naturally.
 49. Realigned localized Home work intro, image strip, and project meta blocks to match `#header-main-row` inset.
+50. Consolidated CSS into `base.css`, `components.css`, and `pages.css`, and added hover CTA behavior to the localized Home work image grid.
 
 ### Next
 
