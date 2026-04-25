@@ -1,7 +1,7 @@
 {
   "Nav": {
     "about": "Sobre mi",
-    "resume": "CV",
+    "resume": "Ver CV",
     "contact": "Contacto",
     "localeLabel": "Idioma",
     "role": "UX/UI",
@@ -20,7 +20,7 @@
   },
   "About": {
     "title": "Sobre mi",
-    "description": "Como llegue al diseno de sistemas",
+    "description": "Como llegue al diseño de sistemas",
     "paragraph1": "Llegué al diseño de sistemas por un camino distinto. Inicié mi recorrido en las Artes Plásticas, especializándome en el arte público: en lo que sucede en los espacios que transitamos cotidianamente. <b>Durante años trabajé en cómo el contexto da forma a lo que producimos y en cómo las comunidades se apropian de esas producciones</b>. Participé y dirigí proyectos en distintos territorios, investigué y trabajé en instituciones educativas.\n\nEsa experiencia entrenó algo concreto: la capacidad de leer interrelaciones, redes y sistemas; de entender roles, reglas y dinámicas antes de introducir estructuras externas. Y de comprender que <b>ninguna producción existe de forma aislada: se configura dentro de un entramado de actores, condiciones y usos que la transforman constantemente.</b>",
     "paragraph2": "Cuando me acerqué a la tecnología, primero a través del QA y luego hacia el UX/UI, reaparecieron las mismas preguntas:\n\n<b>¿Qué sentido tiene lo que producimos sin un contexto que lo habilite y lo sostenga?\n¿Cómo se organizan las relaciones que le dan forma?\n¿Qué hace que una estructura se adoptada y apropiada en un entorno real?</b>",
     "paragraph3": "Hoy trabajo en la intersección de esas preguntas. <b>Diseño sistemas, no interfaces</b>: priorizo las interrelaciones, la lógica interna y los flujos que dan forma a un producto antes de definir cómo se ve.\n\nMi interés en el aseguramiento de calidad, campo en el que continúo formándome, influye directamente en cómo diseño: <b>incorporo criterios de calidad</b> desde etapas tempranas, anticipando fricciones, contemplando casos borde y buscando que los sistemas respondan de forma clara, consistente y confiable a necesidades reales.\nEn esta línea, exploro también la automatización como una forma de extender las capacidades de un sistema sin agregar fricción para quienes lo usan.\n<b>Me interesan los contextos complejos pero profundamente humanos</b>: entornos con múltiples roles donde la estructura organizacional forma parte del problema de diseño. <b>Es ahí donde el diseño de sistemas cobra mayor sentido.</b>"
@@ -34,13 +34,13 @@
     "descriptionLabel": "Descripcion",
     "project": {
       "name": "ABC Comunidad",
-      "discipline": "Diseno de sistemas · Arquitectura de informacion · Diseno UI",
-      "summary": "Diseno de sistema de comunicacion estructurada, enfocado en arquitectura y flujo de decisiones entre equipos institucionales.",
+      "discipline": "Diseño de sistemas · Arquitectura de informacion · Diseño UI",
+      "summary": "Diseño de sistema de comunicacion estructurada, enfocado en arquitectura y flujo de decisiones entre equipos institucionales.",
       "context": "Educacion publica · Provincia de Buenos Aires, Argentina · 2025"
     },
     "caseStudy": {
       "heroTagline": "Una solucion digital disenada para docentes",
-      "heroBlurb": "Diseno de una plataforma de comunicacion institucional estructurada para entornos educativos.",
+      "heroBlurb": "Diseño de una plataforma de comunicacion institucional estructurada para entornos educativos.",
       "rail": {
         "context": "Contexto",
         "contextItems": ["Origen", "Propuesta", "Decision central"],
