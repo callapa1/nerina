@@ -7,7 +7,6 @@ export default async function WorkPage() {
   return (
     <section id="work-page" className="pb-8">
       <WorkCaseStudy
-        heroTagline={t('caseStudy.heroTagline')}
         heroBlurb={t('caseStudy.heroBlurb')}
         rail={{
           context: t('caseStudy.rail.context'),

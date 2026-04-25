@@ -8,8 +8,8 @@ export default function LandingPage() {
 
   return (
     <SiteShell>
-      <div className="flex min-h-[calc(100vh-2rem)] flex-col">
-        <main className="mx-auto flex-1 w-full max-w-[1440px]">
+      <div id="landing-page-frame" className="flex min-h-[calc(100vh-2rem)] flex-col">
+        <main id="landing-main" className="mx-auto flex-1 w-full max-w-[1440px]">
           <Hero title="Nerina Berthelot" role="UX/UI" />
         </main>
         <Footer

@@ -15,7 +15,7 @@ export default async function SiteLayout({children, params}: SiteLayoutProps) {
 
   return (
     <SiteShell>
-      <div className="px-6 sm:px-9">
+      <div id="site-page-frame" className="px-6 sm:px-9">
         <Header
           locale={locale}
           labels={{
@@ -27,7 +27,7 @@ export default async function SiteLayout({children, params}: SiteLayoutProps) {
             resumeHref: nav('resumeHref')
           }}
         />
-        <main className="mx-auto w-full max-w-[1440px]">{children}</main>
+        <main id="site-main" className="mx-auto w-full max-w-[1440px]">{children}</main>
       </div>
       <Footer
         text={footer('copyright')}

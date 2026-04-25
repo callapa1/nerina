@@ -14,9 +14,9 @@ type HeaderProps = {
 
 export function Header({locale, labels}: HeaderProps) {
   return (
-    <header id="site-header" className="mx-auto mb-8 h-[150px] w-full max-w-[1440px] bg-white">
-      <div className="header-frame flex h-full w-full flex-col justify-between">
-        <div id="header-main-row" className="mx-auto h-[108px] w-full pb-2 pl-9 pr-9 pt-4">
+    <header id="site-header" className="relative z-20 mx-auto mb-8 h-[150px] w-full max-w-[1440px]">
+      <div id="header-frame" className="header-frame flex h-full w-full flex-col justify-between">
+        <div id="header-main-row" className="mx-auto h-[108px] w-full bg-white pb-2 pl-9 pr-9 pt-4">
           <div id="header-primary-content" className="mx-auto flex h-[84px] w-full max-w-[1368px] items-center justify-between gap-6">
             <Link
               id="brand-block"

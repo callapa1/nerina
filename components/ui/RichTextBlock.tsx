@@ -9,7 +9,7 @@ export function RichTextBlock({id, paragraphs, card = false}: RichTextBlockProps
     <div id={id} className="grid gap-5 text-black/85">
       {paragraphs.map((paragraph, index) =>
         card ? (
-          <div key={index} className="panel">
+          <div key={index} id={id ? `${id}-panel-${index + 1}` : undefined} className="panel">
             <p className="text-lg leading-relaxed sm:text-xl">{paragraph}</p>
           </div>
         ) : (
