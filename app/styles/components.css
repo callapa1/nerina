@@ -188,12 +188,20 @@ textarea.field-input {
   border: 1px solid rgb(0 0 0 / 0.2);
 }
 
-#work-image-grid .image-tile img {
-  transition: filter 150ms ease;
+#work-image-grid::after {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  content: "";
+  opacity: 0;
+  backdrop-filter: blur(6px);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
+  transition: opacity 150ms ease;
 }
 
-#work-image-grid:hover .image-tile img {
-  filter: blur(2px);
+#work-image-grid:hover::after {
+  opacity: 1;
 }
 
 .enter-fade {

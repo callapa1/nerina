@@ -79,7 +79,7 @@ This file captures the current visual rules implemented from screenshot referenc
 - `#work-project-card` has no outer border or shadow.
 - Image strip uses real assets in left-to-right order: `abc`, `telefono`, `persona`.
 - Image strip has no gaps between images; whole strip is inset to header alignment using `px-9`.
-- On hover, `#work-image-grid` slightly blurs its images and reveals a bottom-centered CTA button (`View project`) positioned 32px from the bottom edge.
+- On hover, `#work-image-grid` applies a gradient blur overlay from 0px at the top to 6px at the bottom and reveals a bottom-centered CTA button (`View project`) positioned 32px from the bottom edge.
 - `/{locale}/work` is now a dedicated case-study page based on `screenshots/Work.PNG` plus `screenshots/Work1.png` through `screenshots/Work9.png`, not the same layout as localized root.
 - Case-study page uses a full-bleed classroom hero (`aula.png`) pulled up to meet the bottom of `#header-main-row`.
 - Case-study hero image preserves the original 1536×1024 ratio (`3:2`) with `w-full h-auto`, not `fill/object-cover` cropping.
