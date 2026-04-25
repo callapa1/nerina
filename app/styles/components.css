@@ -33,7 +33,7 @@
 }
 
 .nav-button {
-  width: 106px;
+  width: fit-content;
   height: 57px;
   gap: 4px;
   border: 1px solid #505050;
@@ -44,6 +44,7 @@
   font-size: 1.15rem;
   font-weight: 400;
   line-height: 140%;
+  white-space: nowrap;
   transition: background-color 150ms ease, color 150ms ease, transform 150ms ease, box-shadow 150ms ease;
 }
 

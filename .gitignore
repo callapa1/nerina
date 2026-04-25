@@ -3,8 +3,10 @@ npm-debug.log*
 package-lock.json.*
 .DS_Store
 .opencode/
+.claude/settings.local.json
 screenshots/
 .next/
 out/
 .agents/
 skills-lock.json
+next-env.d.ts
