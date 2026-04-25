@@ -1,11 +1,8 @@
 #contact-form-submit {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-#contact-form-submit {
-  flex-direction: column;
   padding: 8px;
   gap: 10px;
   width: 107px;
@@ -16,9 +13,6 @@
   box-shadow: 6px 6px 4px #075e65;
   flex: none;
   cursor: pointer;
-}
-
-#contact-form-submit {
   font-weight: 600;
   font-size: 24px;
   line-height: 140%;

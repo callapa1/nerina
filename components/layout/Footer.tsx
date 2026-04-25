@@ -38,7 +38,7 @@ export function Footer({emailHref, emailLabel, linkedInLabel, linkedInHref, text
             <Image src="/illustrations/linkedin.svg" alt="" aria-hidden="true" width={28} height={28} className="h-7 w-7" />
           </a>
         </div>
-        <hr aria-hidden="true" className="w-full border-0 border-t border-black/30" />
+        <hr aria-hidden="true" className="w-full border-0 border-t-[1px] border-black/30" />
         <div
           id="footer-copy-block"
           className="box-border flex h-[48px] w-[211px] flex-col items-center justify-start gap-2.5 pt-[8px]"
