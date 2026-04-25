@@ -1,5 +1,4 @@
-#contact-form-submit,
-#contact-form-submit-frame {
+#contact-form-submit {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,26 +10,17 @@
   gap: 10px;
   width: 107px;
   height: 66px;
-  background: #c4c4c4;
-  border: 2px solid #000;
+  background: #00b2c1;
+  border: 0;
   border-radius: 8px;
-  box-shadow: 8px 8px 3px #075e65, inset 8px 8px 0 rgb(255 255 255 / 0.6);
+  box-shadow: 6px 6px 4px #075e65;
   flex: none;
   cursor: pointer;
 }
 
-#contact-form-submit-frame {
-  padding: 8px;
-  gap: 10px;
-  width: 91px;
-  height: 50px;
-  border: 1px dashed #595959;
-  flex: none;
-}
-
-#contact-form-submit-frame span {
-  font-weight: 400;
-  font-size: 28px;
+#contact-form-submit {
+  font-weight: 600;
+  font-size: 24px;
   line-height: 140%;
-  color: #000;
+  color: #fff;
 }

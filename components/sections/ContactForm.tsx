@@ -43,9 +43,7 @@ export function ContactForm({
       </div>
 
       <button id="contact-form-submit" className="mt-auto self-center" type="submit">
-        <div id="contact-form-submit-frame">
-          <span>{submitLabel}</span>
-        </div>
+        {submitLabel}
       </button>
     </form>
   );

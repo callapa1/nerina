@@ -16,7 +16,7 @@ export function ContactLinks({items}: ContactLinksProps) {
         <li className="contact-link-item flex items-center gap-3" key={item.href}>
           <span className="inline-flex h-7 w-7 items-center justify-center">
             <Image
-              src={item.href.startsWith('mailto:') ? '/illustrations/mail.svg' : '/illustrations/linkedin.svg'}
+              src={item.href.startsWith('mailto:') ? '/illustrations/contact-mail.svg' : '/illustrations/contact-linkedin.svg'}
               alt=""
               aria-hidden="true"
               width={28}
