@@ -45,103 +45,299 @@
       },
       "topLabel": "Top",
       "rail": [
-        {"label": "Context", "items": ["Origin", "Proposal", "Core decision"]},
-        {"label": "Users", "items": ["Teacher role", "Findings"]},
-        {"label": "MVP", "items": []},
-        {"label": "Structure", "items": ["Entry", "Private channels", "Communities", "Settings"]},
-        {"label": "Flows", "items": []},
-        {"label": "Interface", "items": ["Visual", "Application"]},
-        {"label": "Conclusion", "items": []}
+        {
+          "label": "Context",
+          "items": [
+            "Origin",
+            "Proposal",
+            "Core decision"
+          ]
+        },
+        {
+          "label": "Users",
+          "items": [
+            "Teacher role",
+            "Findings"
+          ]
+        },
+        {
+          "label": "MVP",
+          "items": []
+        },
+        {
+          "label": "Structure",
+          "items": [
+            "Entry",
+            "Private channels",
+            "Communities",
+            "Settings"
+          ]
+        },
+        {
+          "label": "Flows",
+          "items": []
+        },
+        {
+          "label": "Interface",
+          "items": [
+            "Visual",
+            "Application"
+          ]
+        },
+        {
+          "label": "Conclusion",
+          "items": []
+        }
       ],
       "sections": [
         {
           "id": "context",
           "number": "1. Context",
           "blocks": [
-            {"type": "heading", "text": "How did this initiative emerge?"},
-            {"type": "paragraph", "text": "Based on personal teaching experience in the Province of Buenos Aires, Argentina, we observed that by 2025 <strong>communication</strong> between <strong>public educational institutions</strong> and <strong>families</strong> is characterized by the coexistence of <strong>formal traditional media</strong> (communication notebooks, notes, in-person meetings) and <strong>informal technological media</strong> (instant messaging groups)."},
-            {"type": "paragraph", "text": "Although there is an ongoing transition toward digital platforms, this process is shaped by challenges specific to the public education system: strong administrative centralization, a wide diversity of needs, and a large number of users involved."},
-            {"type": "paragraph", "text": "This situation creates <strong>difficulties in ensuring clear, centralized communication with institutional backing.</strong>"},
-            {"type": "heading", "text": "Proposal"},
-            {"type": "paragraph", "text": "Design a digital solution that:"},
-            {"type": "bullets", "items": ["Centralizes and structures communication between teachers and families within an institutional framework.", "Optimizes exchange flows, ensuring security, traceability and information clarity.", "Supports teacher work dynamics while considering the rules and limitations of the public education system."]},
-            {"type": "heading", "text": "Key design decision"},
-            {"type": "paragraph", "text": "A fundamental project decision was to <strong>integrate the platform into the ABC educational environment</strong>, dependent on the General Directorate of Culture and Education of the Province of Buenos Aires (Argentina), instead of designing an independent solution. This integration is not only a technical decision, but a strategic definition tied to legitimacy, adoption and institutional sustainability."},
-            {"type": "subheading", "text": "Why ABC?"},
-            {"type": "definitionList", "items": [{"title": "Service unification", "text": "Users do not need to manage multiple platforms. A single access credential simplifies the user experience."}, {"title": "Greater adoption and legitimacy", "text": "As part of the ABC ecosystem, the platform gains institutional backing and increases the possibility of real adoption by schools."}, {"title": "Use of existing infrastructure", "text": "The solution relies on the technical and security framework already available in ABC, avoiding the need to replicate authentication, data storage or user management from scratch."}, {"title": "Centralized data", "text": "Academic and administrative information remains within a single system: fewer duplicate records and fewer information management errors."}, {"title": "Scalability and sustainability", "text": "By integrating with a centralized official system, the platform can be sustained and evolve over time as part of continuous development."}]}
+            {
+              "type": "heading",
+              "text": "How did this initiative emerge?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Based on personal teaching experience in the Province of Buenos Aires, Argentina, we observed that by 2025 <strong>communication</strong> between <strong>public educational institutions</strong> and <strong>families</strong> is characterized by the coexistence of <strong>formal traditional media</strong> (communication notebooks, notes, in-person meetings) and <strong>informal technological media</strong> (instant messaging groups).\n\nAlthough there is an ongoing transition toward digital platforms, this process is shaped by challenges specific to the public education system: strong administrative centralization, a wide diversity of needs, and a large number of users involved.\n\nThis situation creates <strong>difficulties in ensuring clear, centralized communication with institutional backing.</strong>"
+            },
+            {
+              "type": "heading",
+              "text": "Proposal"
+            },
+            {
+              "type": "paragraph",
+              "text": "Design a digital solution that:"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Centralizes and structures communication between teachers and families within an institutional framework.",
+                "Optimizes exchange flows, ensuring security, traceability and information clarity.",
+                "Supports teacher work dynamics while considering the rules and limitations of the public education system."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Key design decision"
+            },
+            {
+              "type": "paragraph",
+              "text": "A fundamental project decision was to <strong>integrate the platform into the ABC educational environment</strong>, dependent on the General Directorate of Culture and Education of the Province of Buenos Aires (Argentina), instead of designing an independent solution. This integration is not only a technical decision, but a strategic definition tied to legitimacy, adoption and institutional sustainability."
+            },
+            {
+              "type": "subheading",
+              "text": "Why ABC?"
+            },
+            {
+              "type": "definitionList",
+              "items": [
+                {
+                  "title": "Service unification",
+                  "text": "Users do not need to manage multiple platforms. A single access credential simplifies the user experience."
+                },
+                {
+                  "title": "Greater adoption and legitimacy",
+                  "text": "As part of the ABC ecosystem, the platform gains institutional backing and increases the possibility of real adoption by schools."
+                },
+                {
+                  "title": "Use of existing infrastructure",
+                  "text": "The solution relies on the technical and security framework already available in ABC, avoiding the need to replicate authentication, data storage or user management from scratch."
+                },
+                {
+                  "title": "Centralized data",
+                  "text": "Academic and administrative information remains within a single system: fewer duplicate records and fewer information management errors."
+                },
+                {
+                  "title": "Scalability and sustainability",
+                  "text": "By integrating with a centralized official system, the platform can be sustained and evolve over time as part of continuous development."
+                }
+              ]
+            }
           ]
         },
         {
           "id": "users",
           "number": "2. Users",
           "blocks": [
-            {"type": "heading", "text": "Teacher role"},
-            {"type": "paragraph", "text": "Given the system scope and the diversity of actors involved, an intentional design focus was defined."},
-            {"type": "paragraph", "text": "Although the platform includes multiple institutional roles —families, school leaders and management teams—, <strong>the project focused specifically on the teacher user</strong>, not only because teachers function as the central node of the communication system (responsible for generating, organizing and validating the information that circulates), but also <strong>because they concentrate the greatest operational load and the main friction points of the current system.</strong>"},
-            {"type": "paragraph", "text": "This focus made it possible to explore real problems in teaching work —such as channel overload, lack of formality, authorization management and permanent availability—, establishing a solid structural basis for later extending the system to other user profiles."},
-            {"type": "heading", "text": "Findings"},
-            {"type": "paragraph", "text": "The research included surveys and interviews with primary school teachers in the Province of Buenos Aires. The findings revealed a systemic pattern: <strong>digital communication in schools is already happening, but outside institutional channels.</strong>"},
-            {"type": "definitionList", "items": [{"title": "Channel fragmentation over institutional tools", "text": "WhatsApp —both groups and direct messages— concentrates more than 50% of daily communication with families. ABC, while an institutional management tool, does not cover that communication dimension. This does not reflect a preference for informality, but the absence of a structured digital channel within the institutional environment for this type of exchange."}, {"title": "Operational friction in high-impact tasks", "text": "While routine tasks such as checking the calendar or accessing the student list were rated as easy, managing permissions and authorizations was systematically perceived as difficult: exactly the tasks that require traceability, formality and clear records."}, {"title": "Demand for structure, not only features", "text": "The most requested features —read confirmations, digital signature and document sending— are not isolated characteristics. They reflect the need for communication that leaves a formal record and carries institutional weight."}, {"title": "Protecting time as a design requirement", "text": "Messages outside working hours were identified as the main problem. This is not a notification preference: it is a structural need to define where institutional time ends and personal time begins."}]},
-            {"type": "callout", "text": "100% of participants expressed interest in a unified digital solution, not as a new tool, but with a legitimate institutional framework for communication that already exists."}
+            {
+              "type": "heading",
+              "text": "Teacher role"
+            },
+            {
+              "type": "paragraph",
+              "text": "Given the system scope and the diversity of actors involved, an intentional design focus was defined.\n\nAlthough the platform includes multiple institutional roles —families, school leaders and management teams—, <strong>the project focused specifically on the teacher user</strong>, not only because teachers function as the central node of the communication system (responsible for generating, organizing and validating the information that circulates), but also <strong>because they concentrate the greatest operational load and the main friction points of the current system.</strong>\n\nThis focus made it possible to explore real problems in teaching work —such as channel overload, lack of formality, authorization management and permanent availability—, establishing a solid structural basis for later extending the system to other user profiles."
+            },
+            {
+              "type": "heading",
+              "text": "Findings"
+            },
+            {
+              "type": "paragraph",
+              "text": "The research included surveys and interviews with primary school teachers in the Province of Buenos Aires. The findings revealed a systemic pattern: <strong>digital communication in schools is already happening, but outside institutional channels.</strong>"
+            },
+            {
+              "type": "definitionList",
+              "items": [
+                {
+                  "title": "Channel fragmentation over institutional tools",
+                  "text": "WhatsApp —both groups and direct messages— concentrates more than 50% of daily communication with families. ABC, while an institutional management tool, does not cover that communication dimension. This does not reflect a preference for informality, but the absence of a structured digital channel within the institutional environment for this type of exchange."
+                },
+                {
+                  "title": "Operational friction in high-impact tasks",
+                  "text": "While routine tasks such as checking the calendar or accessing the student list were rated as easy, managing permissions and authorizations was systematically perceived as difficult: exactly the tasks that require traceability, formality and clear records."
+                },
+                {
+                  "title": "Demand for structure, not only features",
+                  "text": "The most requested features —read confirmations, digital signature and document sending— are not isolated characteristics. They reflect the need for communication that leaves a formal record and carries institutional weight."
+                },
+                {
+                  "title": "Protecting time as a design requirement",
+                  "text": "Messages outside working hours were identified as the main problem. This is not a notification preference: it is a structural need to define where institutional time ends and personal time begins."
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "text": "100% of participants expressed interest in a unified digital solution, not as a new tool, but with a legitimate institutional framework for communication that already exists."
+            }
           ]
         },
         {
           "id": "mvp",
           "number": "3. MVP",
           "blocks": [
-            {"type": "paragraph", "text": "<strong>The Minimum Viable Product was defined by prioritizing the indispensable features needed to validate the communication system and relieve the teacher's main friction points.</strong>"},
-            {"type": "heading", "text": "Essential"},
-            {"type": "definitionList", "items": [{"title": "User authentication", "text": "Teacher login."}, {"title": "Communication", "text": "Private messaging with delivery and read confirmation. Announcement board with information hierarchized by priority level and with the option to allow or disable replies. Notification system. Digital signature for teachers and family guardians."}, {"title": "My students", "text": "Student list with contact information."}, {"title": "Settings", "text": "Time preferences for receiving notifications."}]},
-            {"type": "heading", "text": "Desirable"},
-            {"type": "definitionList", "items": [{"title": "Calendar", "text": "School calendar integration for planning classes, meetings and school events."}, {"title": "My students", "text": "Student profile with academic information. Health certificate. Attendance record. Digital report card and academic reports."}]}
+            {
+              "type": "paragraph",
+              "text": "<strong>The Minimum Viable Product was defined by prioritizing the indispensable features needed to validate the communication system and relieve the teacher's main friction points.</strong>"
+            },
+            {
+              "type": "heading",
+              "text": "Essential"
+            },
+            {
+              "type": "definitionList",
+              "items": [
+                {
+                  "title": "User authentication",
+                  "text": "Teacher login."
+                },
+                {
+                  "title": "Communication",
+                  "text": "Private messaging with delivery and read confirmation. Announcement board with information hierarchized by priority level and with the option to allow or disable replies. Notification system. Digital signature for teachers and family guardians."
+                },
+                {
+                  "title": "My students",
+                  "text": "Student list with contact information."
+                },
+                {
+                  "title": "Settings",
+                  "text": "Time preferences for receiving notifications."
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Desirable"
+            },
+            {
+              "type": "definitionList",
+              "items": [
+                {
+                  "title": "Calendar",
+                  "text": "School calendar integration for planning classes, meetings and school events."
+                },
+                {
+                  "title": "My students",
+                  "text": "Student profile with academic information. Health certificate. Attendance record. Digital report card and academic reports."
+                }
+              ]
+            }
           ]
         },
         {
           "id": "information-architecture",
           "number": "4. Information architecture",
           "blocks": [
-            {"type": "paragraph", "text": "Based on the scope defined for the MVP, the system information architecture was designed and validated, organizing features around the main needs of the teacher user within the institutional environment."},
-            {"type": "heading", "text": "System entry"},
-            {"type": "paragraph", "text": "In an institutional environment with multiple user profiles, entering the system is treated as a first moment of orientation. <strong>Selecting the user type at this stage makes it possible to adapt the later path.</strong>"},
-            {"type": "paragraph", "text": "<strong>Accessibility options are also incorporated</strong> from the initial screen, ensuring an inclusive and equitable experience for diverse users."},
-            {"type": "heading", "text": "Inbox and student management"},
-            {"type": "paragraph", "text": "The system differentiates <strong>two types of communication</strong>: <strong>private communication</strong>, organized through the inbox, and <strong>public institutional communication</strong>, managed through classroom announcement boards."},
-            {"type": "paragraph", "text": "The My students section does not function as a communication space in itself, but as <strong>operational support that centralizes the information needed to contextualize exchanges with families.</strong> From each student's profile, in addition to viewing available information, the system allows the teacher to start a new message, offering direct access to private communication without losing the usage context."},
-            {"type": "heading", "text": "Communities"},
-            {"type": "paragraph", "text": "The Communities section centralizes public communication between the school and families, organized by classroom and oriented toward transmitting institutional information clearly, orderly and with formal backing."},
-            {"type": "paragraph", "text": "Because the same teacher may work across multiple classrooms or shifts, <strong>the system incorporates a classroom selection instance</strong> that makes it possible to contextualize communication before accessing the corresponding board."},
-            {"type": "heading", "text": "Settings and notifications"},
-            {"type": "paragraph", "text": "<strong>Notification and settings configuration allows teachers to adapt system behavior to their times and needs</strong>, establishing clear boundaries between work and personal space. This section reinforces a design logic centered not only on system efficiency, but also on user care and the sustainability of platform use over time."}
+            {
+              "type": "paragraph",
+              "text": "Based on the scope defined for the MVP, the system information architecture was designed and validated, organizing features around the main needs of the teacher user within the institutional environment."
+            },
+            {
+              "type": "heading",
+              "text": "System entry"
+            },
+            {
+              "type": "paragraph",
+              "text": "In an institutional environment with multiple user profiles, entering the system is treated as a first moment of orientation. <strong>Selecting the user type at this stage makes it possible to adapt the later path.</strong>\n\n<strong>Accessibility options are also incorporated</strong> from the initial screen, ensuring an inclusive and equitable experience for diverse users."
+            },
+            {
+              "type": "heading",
+              "text": "Inbox and student management"
+            },
+            {
+              "type": "paragraph",
+              "text": "The system differentiates <strong>two types of communication</strong>: <strong>private communication</strong>, organized through the inbox, and <strong>public institutional communication</strong>, managed through classroom announcement boards.\n\nThe My students section does not function as a communication space in itself, but as <strong>operational support that centralizes the information needed to contextualize exchanges with families.</strong> From each student's profile, in addition to viewing available information, the system allows the teacher to start a new message, offering direct access to private communication without losing the usage context."
+            },
+            {
+              "type": "heading",
+              "text": "Communities"
+            },
+            {
+              "type": "paragraph",
+              "text": "The Communities section centralizes public communication between the school and families, organized by classroom and oriented toward transmitting institutional information clearly, orderly and with formal backing.\n\nBecause the same teacher may work across multiple classrooms or shifts, <strong>the system incorporates a classroom selection instance</strong> that makes it possible to contextualize communication before accessing the corresponding board."
+            },
+            {
+              "type": "heading",
+              "text": "Settings and notifications"
+            },
+            {
+              "type": "paragraph",
+              "text": "<strong>Notification and settings configuration allows teachers to adapt system behavior to their times and needs</strong>, establishing clear boundaries between work and personal space. This section reinforces a design logic centered not only on system efficiency, but also on user care and the sustainability of platform use over time."
+            }
           ]
         },
         {
           "id": "flows",
           "number": "5. User flows",
           "blocks": [
-            {"type": "paragraph", "text": "<strong>The flows were defined from the teacher role perspective, mapping the paths that reflect real everyday tasks within the system.</strong>"},
-            {"type": "paragraph", "text": "The central design decision in this section was to recognize that <strong>the same action —sending a message— can begin from two different contexts</strong>: the inbox, when the teacher is already managing communications, and a student's profile, when the starting point is a specific person and their information."},
-            {"type": "paragraph", "text": "These are not two versions of the same flow. They represent two different cognitive states: one organized around tasks, the other around context. Designing both entry points —and ensuring they converge in a consistent experience— was a deliberate structural decision, not an additional feature."},
-            {"type": "paragraph", "text": "The diagram below maps both paths, distinguishing between user actions and system states."}
+            {
+              "type": "paragraph",
+              "text": "<strong>The flows were defined from the teacher role perspective, mapping the paths that reflect real everyday tasks within the system.</strong>\n\nThe central design decision in this section was to recognize that <strong>the same action —sending a message— can begin from two different contexts</strong>: the inbox, when the teacher is already managing communications, and a student's profile, when the starting point is a specific person and their information.\n\nThese are not two versions of the same flow. They represent two different cognitive states: one organized around tasks, the other around context. Designing both entry points —and ensuring they converge in a consistent experience— was a deliberate structural decision, not an additional feature.\n\nThe diagram below maps both paths, distinguishing between user actions and system states."
+            }
           ]
         },
         {
           "id": "interface",
           "number": "6. Interface",
           "blocks": [
-            {"type": "heading", "text": "Visual direction"},
-            {"type": "paragraph", "text": "<strong>The visual decisions reinforce the system's strategic logic.</strong> The color palette and aesthetic were aligned with the ABC platform to maintain continuity with an institutional environment already known by teachers —reducing the cognitive distance between a new tool and an existing one, and supporting adoption from the first interaction."},
-            {"type": "heading", "text": "Application in the interface"},
-            {"type": "paragraph", "text": "<strong>The interface takes shape as a direct consequence of the system structure.</strong> The onboarding flow illustrates one of its central decisions: in a multi-role environment, <strong>selecting the user type on entry is not a formality, but the moment when the system orients itself.</strong> From there, each screen, available action and visible information is conditioned by that initial context."},
-            {"type": "paragraph", "text": "<strong>The announcement board flow illustrates how institutional rules translate into interface decisions.</strong> Creating an announcement is not simply writing text — it requires defining a title, date, category, and choosing whether replies are enabled or a digital signature is requested. These options are not features: they are the way the system formalizes an act of communication. The confirmation step before publishing reinforces that institutional weight, making the action deliberate rather than immediate."}
+            {
+              "type": "heading",
+              "text": "Visual direction"
+            },
+            {
+              "type": "paragraph",
+              "text": "<strong>The visual decisions reinforce the system's strategic logic.</strong> The color palette and aesthetic were aligned with the ABC platform to maintain continuity with an institutional environment already known by teachers —reducing the cognitive distance between a new tool and an existing one, and supporting adoption from the first interaction."
+            },
+            {
+              "type": "heading",
+              "text": "Application in the interface"
+            },
+            {
+              "type": "paragraph",
+              "text": "<strong>The interface takes shape as a direct consequence of the system structure.</strong> The onboarding flow illustrates one of its central decisions: in a multi-role environment, <strong>selecting the user type on entry is not a formality, but the moment when the system orients itself.</strong> From there, each screen, available action and visible information is conditioned by that initial context.\n\n<strong>The announcement board flow illustrates how institutional rules translate into interface decisions.</strong> Creating an announcement is not simply writing text — it requires defining a title, date, category, and choosing whether replies are enabled or a digital signature is requested. These options are not features: they are the way the system formalizes an act of communication. The confirmation step before publishing reinforces that institutional weight, making the action deliberate rather than immediate."
+            }
           ]
         },
         {
           "id": "conclusion",
           "number": "7. Conclusion",
           "blocks": [
-            {"type": "paragraph", "text": "This project approaches school communication not as an isolated feature, but as a need framed within an institutional system shaped by rules, roles and responsibilities."},
-            {"type": "paragraph", "text": "<strong>The design focused on organizing and structuring that complexity, prioritizing clarity, traceability and care for the teacher role within a real public education context.</strong>"},
-            {"type": "paragraph", "text": "<strong>The resulting platform does not seek to replace existing relationships, but to offer a legitimate and sustainable digital framework</strong> that supports institutional dynamics, showing how systems design can improve everyday experience without detaching from its social and organizational context."}
+            {
+              "type": "paragraph",
+              "text": "This project approaches school communication not as an isolated feature, but as a need framed within an institutional system shaped by rules, roles and responsibilities.\n\n<strong>The design focused on organizing and structuring that complexity, prioritizing clarity, traceability and care for the teacher role within a real public education context.</strong>\n\n<strong>The resulting platform does not seek to replace existing relationships, but to offer a legitimate and sustainable digital framework</strong> that supports institutional dynamics, showing how systems design can improve everyday experience without detaching from its social and organizational context."
+            }
           ]
         }
       ]

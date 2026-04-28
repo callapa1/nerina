@@ -1,6 +1,6 @@
 {
   "Nav": {
-    "about": "Sobre mi",
+    "about": "Sobre mí",
     "resume": "Ver CV",
     "contact": "Contacto",
     "localeLabel": "Idioma",
@@ -19,129 +19,325 @@
     "role": "UX/UI"
   },
   "About": {
-    "title": "Sobre mi",
-    "description": "Como llegue al diseño de sistemas",
+    "title": "Sobre mí",
+    "description": "Cómo llegué al diseño de sistemas",
     "paragraph1": "Llegué al diseño de sistemas por un camino distinto. Inicié mi recorrido en las Artes Plásticas, especializándome en el arte público: en lo que sucede en los espacios que transitamos cotidianamente. <b>Durante años trabajé en cómo el contexto da forma a lo que producimos y en cómo las comunidades se apropian de esas producciones</b>. Participé y dirigí proyectos en distintos territorios, investigué y trabajé en instituciones educativas.\n\nEsa experiencia entrenó algo concreto: la capacidad de leer interrelaciones, redes y sistemas; de entender roles, reglas y dinámicas antes de introducir estructuras externas. Y de comprender que <b>ninguna producción existe de forma aislada: se configura dentro de un entramado de actores, condiciones y usos que la transforman constantemente.</b>",
-    "paragraph2": "Cuando me acerqué a la tecnología, primero a través del QA y luego hacia el UX/UI, reaparecieron las mismas preguntas:\n\n<b>¿Qué sentido tiene lo que producimos sin un contexto que lo habilite y lo sostenga?\n¿Cómo se organizan las relaciones que le dan forma?\n¿Qué hace que una estructura se adoptada y apropiada en un entorno real?</b>",
+    "paragraph2": "Cuando me acerqué a la tecnología, primero a través del QA y luego hacia el UX/UI, reaparecieron las mismas preguntas:\n\n<b>¿Qué sentido tiene lo que producimos sin un contexto que lo habilite y lo sostenga?\n¿Cómo se organizan las relaciones que le dan forma?\n¿Qué hace que una estructura sea adoptada y apropiada en un entorno real?</b>",
     "paragraph3": "Hoy trabajo en la intersección de esas preguntas. <b>Diseño sistemas, no interfaces</b>: priorizo las interrelaciones, la lógica interna y los flujos que dan forma a un producto antes de definir cómo se ve.\n\nMi interés en el aseguramiento de calidad, campo en el que continúo formándome, influye directamente en cómo diseño: <b>incorporo criterios de calidad</b> desde etapas tempranas, anticipando fricciones, contemplando casos borde y buscando que los sistemas respondan de forma clara, consistente y confiable a necesidades reales.\nEn esta línea, exploro también la automatización como una forma de extender las capacidades de un sistema sin agregar fricción para quienes lo usan.\n<b>Me interesan los contextos complejos pero profundamente humanos</b>: entornos con múltiples roles donde la estructura organizacional forma parte del problema de diseño. <b>Es ahí donde el diseño de sistemas cobra mayor sentido.</b>"
   },
   "Work": {
     "heroTitle": "Hola, soy Nerina",
-    "heroDescription": "Disenadora UX/UI enfocada en sistemas, flujos y experiencias digitales estructuradas.",
+    "heroDescription": "Diseñadora UX/UI enfocada en sistemas, flujos y experiencias digitales estructuradas.",
     "heading": "Mi trabajo",
     "intro": "Proyectos seleccionados centrados en sistemas, flujos y estructura para contextos complejos.",
     "projectLabel": "Proyecto",
-    "descriptionLabel": "Descripcion",
+    "descriptionLabel": "Descripción",
     "projectCtaLabel": "Ver proyecto",
     "project": {
       "name": "ABC Comunidad",
-      "discipline": "Diseño de sistemas · Arquitectura de informacion · Diseño UI",
-      "summary": "Diseño de sistema de comunicacion estructurada, enfocado en arquitectura y flujo de decisiones entre equipos institucionales.",
-      "context": "Educacion publica · Provincia de Buenos Aires, Argentina · 2025"
+      "discipline": "Diseño de sistemas · Arquitectura de información · Diseño UI",
+      "summary": "Diseño de sistema de comunicación estructurada, enfocado en arquitectura y flujo de decisiones entre equipos institucionales.",
+      "context": "Educación pública · Provincia de Buenos Aires, Argentina · 2025"
     },
     "caseStudy": {
       "hero": {
-        "blurb": "Diseño de una plataforma de comunicacion institucional estructurada para entornos educativos."
+        "blurb": "Diseño de una plataforma de comunicación institucional estructurada para entornos educativos."
       },
       "topLabel": "Inicio",
       "rail": [
-        {"label": "Contexto", "items": ["Origen", "Propuesta", "Decision clave"]},
-        {"label": "Usuarios", "items": ["Rol docente", "Hallazgos"]},
-        {"label": "MVP", "items": []},
-        {"label": "Estructura", "items": ["Ingreso", "Canales privados", "Comunidades", "Ajustes"]},
-        {"label": "Flujos", "items": []},
-        {"label": "Interfaz", "items": ["Visual", "Aplicacion"]},
-        {"label": "Conclusion", "items": []}
+        {
+          "label": "Contexto",
+          "items": [
+            "Origen",
+            "Propuesta",
+            "Decisión clave"
+          ]
+        },
+        {
+          "label": "Usuarios",
+          "items": [
+            "Rol docente",
+            "Hallazgos"
+          ]
+        },
+        {
+          "label": "MVP",
+          "items": []
+        },
+        {
+          "label": "Estructura",
+          "items": [
+            "Ingreso",
+            "Canales privados",
+            "Comunidades",
+            "Ajustes"
+          ]
+        },
+        {
+          "label": "Flujos",
+          "items": []
+        },
+        {
+          "label": "Interfaz",
+          "items": [
+            "Visual",
+            "Aplicación"
+          ]
+        },
+        {
+          "label": "Conclusión",
+          "items": []
+        }
       ],
       "sections": [
         {
           "id": "context",
           "number": "1. Contexto",
           "blocks": [
-            {"type": "heading", "text": "¿Cómo surge la iniciativa?"},
-            {"type": "paragraph", "text": "A partir de la experiencia personal en docencia en la provincia de Buenos Aires, Argentina, notamos que al año 2025 <strong>la comunicacion</strong> entre las <strong>instituciones educativas publicas</strong> y las <strong>familias</strong> se caracteriza por una coexistencia de <strong>medios tradicionales formales</strong> (cuadernos de comunicacion, notas, reuniones presenciales) y <strong>medios tecnologicos informales</strong> (grupos de mensajeria instantanea)."},
-            {"type": "paragraph", "text": "Si bien existe un proceso de transicion hacia plataformas digitales, este se ve atravesado por desafios propios del sistema de educacion publica: una fuerte centralizacion administrativa, una gran diversidad de necesidades y una alta cantidad de usuarios involucrados."},
-            {"type": "paragraph", "text": "Esta situacion genera <strong>dificultades para garantizar una comunicacion clara, centralizada y con respaldo institucional.</strong>"},
-            {"type": "heading", "text": "Propuesta"},
-            {"type": "paragraph", "text": "Diseñar una solucion digital que:"},
-            {"type": "bullets", "items": ["Centralice y estructure la comunicacion entre docentes y familias dentro de un marco institucional.", "Optimice los flujos de intercambio, garantizando seguridad, trazabilidad y claridad de la informacion.", "Acompañe las dinamicas de trabajo docente, considerando las reglas y limitaciones del sistema educativo publico."]},
-            {"type": "heading", "text": "Decision clave de diseño"},
-            {"type": "paragraph", "text": "Una decision fundamental del proyecto fue <strong>integrar la plataforma al entorno educativo ABC</strong>, dependiente de la Direccion General de Cultura y Educacion de la Provincia de Buenos Aires (Argentina), en lugar de diseñar una solucion independiente. Esta integracion no responde unicamente a una decision tecnica, sino a una definicion estrategica vinculada a legitimidad, adopcion y sostenibilidad institucional."},
-            {"type": "subheading", "text": "¿Por que ABC?"},
-            {"type": "definitionList", "items": [{"title": "Unificacion de servicios", "text": "Los usuarios no necesitan gestionar multiples plataformas. Una unica credencial de acceso simplifica la experiencia de uso."}, {"title": "Mayor adopcion y legitimidad", "text": "Al formar parte del ecosistema ABC, la plataforma adquiere respaldo institucional y aumenta la posibilidad de adopcion real por parte de las escuelas."}, {"title": "Aprovechamiento de la infraestructura existente", "text": "La solucion se apoya en el marco tecnico y de seguridad ya disponible en ABC, evitando replicar desde cero aspectos como autenticacion, almacenamiento de datos o gestion de usuarios."}, {"title": "Datos centralizados", "text": "La informacion academica y administrativa se mantiene dentro de un unico sistema: menos duplicacion de registros, menos errores en la gestion de la informacion."}, {"title": "Escalabilidad y sostenibilidad", "text": "Al integrarse a un sistema centralizado y oficial, la plataforma puede sostenerse y evolucionar en el tiempo como parte de un desarrollo continuo."}]}
+            {
+              "type": "heading",
+              "text": "¿Cómo surge la iniciativa?"
+            },
+            {
+              "type": "paragraph",
+              "text": "A partir de la experiencia personal en docencia en la provincia de Buenos Aires, Argentina, notamos que al año 2025 <strong>la comunicación</strong> entre las <strong>instituciones educativas públicas</strong> y las <strong>familias</strong> se caracteriza por una coexistencia de <strong>medios tradicionales formales</strong> (cuadernos de comunicación, notas, reuniones presenciales) y <strong>medios tecnológicos informales</strong> (grupos de mensajería instantánea).\n\nSi bien existe un proceso de transición hacia plataformas digitales, este se ve atravesado por desafíos propios del sistema de educación pública: una fuerte centralización administrativa, una gran diversidad de necesidades y una alta cantidad de usuarios involucrados.\n\nEsta situación genera <strong>dificultades para garantizar una comunicación clara, centralizada y con respaldo institucional.</strong>"
+            },
+            {
+              "type": "heading",
+              "text": "Propuesta"
+            },
+            {
+              "type": "paragraph",
+              "text": "Diseñar una solución digital que:"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Centralice y estructure la comunicación entre docentes y familias dentro de un marco institucional.",
+                "Optimice los flujos de intercambio, garantizando seguridad, trazabilidad y claridad de la información.",
+                "Acompañe las dinámicas de trabajo docente, considerando las reglas y limitaciones del sistema educativo público."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Decisión clave de diseño"
+            },
+            {
+              "type": "paragraph",
+              "text": "Una decisión fundamental del proyecto fue <strong>integrar la plataforma al entorno educativo ABC</strong>, dependiente de la Dirección General de Cultura y Educación de la Provincia de Buenos Aires (Argentina), en lugar de diseñar una solución independiente. Esta integración no responde únicamente a una decisión técnica, sino a una definición estratégica vinculada a legitimidad, adopción y sostenibilidad institucional."
+            },
+            {
+              "type": "subheading",
+              "text": "¿Por qué ABC?"
+            },
+            {
+              "type": "definitionList",
+              "items": [
+                {
+                  "title": "Unificación de servicios",
+                  "text": "Los usuarios no necesitan gestionar múltiples plataformas. Una única credencial de acceso simplifica la experiencia de uso."
+                },
+                {
+                  "title": "Mayor adopción y legitimidad",
+                  "text": "Al formar parte del ecosistema ABC, la plataforma adquiere respaldo institucional y aumenta la posibilidad de adopción real por parte de las escuelas."
+                },
+                {
+                  "title": "Aprovechamiento de la infraestructura existente",
+                  "text": "La solución se apoya en el marco técnico y de seguridad ya disponible en ABC, evitando replicar desde cero aspectos como autenticación, almacenamiento de datos o gestión de usuarios."
+                },
+                {
+                  "title": "Datos centralizados",
+                  "text": "La información académica y administrativa se mantiene dentro de un único sistema: menos duplicación de registros, menos errores en la gestión de la información."
+                },
+                {
+                  "title": "Escalabilidad y sostenibilidad",
+                  "text": "Al integrarse a un sistema centralizado y oficial, la plataforma puede sostenerse y evolucionar en el tiempo como parte de un desarrollo continuo."
+                }
+              ]
+            }
           ]
         },
         {
           "id": "users",
           "number": "2. Usuarios",
           "blocks": [
-            {"type": "heading", "text": "Rol docente"},
-            {"type": "paragraph", "text": "Dado el alcance del sistema y la diversidad de actores involucrados, se definio un recorte intencional del foco de diseño."},
-            {"type": "paragraph", "text": "Si bien la plataforma contempla multiples roles institucionales —familias, directivos y equipos de gestion—, <strong>el proyecto se centro especificamente en usuario docente</strong>, no solo porque funciona como el nodo central del sistema de comunicacion (siendo responsable de generar, organizar y validar la informacion que circula), sino tambien <strong>por concentrar la mayor carga operativa y los principales puntos de friccion del sistema actual.</strong>"},
-            {"type": "paragraph", "text": "Este recorte permitio profundizar en las problematicas reales del trabajo docente —como la sobrecarga de canales, la falta de formalidad, la gestion de autorizaciones y la disponibilidad permanente—, estableciendo una base estructural solida para la posterior extension del sistema a otros perfiles de usuario."},
-            {"type": "heading", "text": "Hallazgos"},
-            {"type": "paragraph", "text": "La investigacion incluyo encuestas y entrevistas a docentes de nivel primario de la Provincia de Buenos Aires. Los hallazgos revelaron un patron sistemico: <strong>la comunicacion digital en las escuelas ya esta ocurriendo, pero por fuera de los canales institucionales.</strong>"},
-            {"type": "definitionList", "items": [{"title": "Fragmentacion de canales por sobre las herramientas institucionales", "text": "WhatsApp —tanto grupos como mensajes directos— concentra mas del 50% de la comunicacion cotidiana con familias. La plataforma ABC, siendo una herramienta de gestion institucional, no cubre esa dimension comunicacional. Esto no refleja una preferencia por la informalidad, sino la ausencia de un canal digital estructurado dentro del entorno institucional para ese tipo de intercambio."}, {"title": "Friccion operativa en las tareas de mayor peso", "text": "Mientras que tareas rutinarias como consultar el calendario o acceder a la lista de alumnos fueron calificadas como faciles, la gestion de permisos y autorizaciones fue percibida sistematicamente como dificil: exactamente las tareas que requieren trazabilidad, formalidad y registro claro."}, {"title": "Demanda de estructura, no solo funcionalidades", "text": "Las funcionalidades mas solicitadas —confirmaciones de lectura, firma digital y envio de documentos— no son caracteristicas aisladas. Reflejan la necesidad de una comunicacion que deje registro formal y tenga peso institucional."}, {"title": "La proteccion del tiempo como requisito de diseño", "text": "Los mensajes fuera del horario laboral fueron identificados como el principal problema. No se trata de una preferencia de notificaciones: es una necesidad estructural de definir donde termina el tiempo institucional y donde empieza el personal."}]},
-            {"type": "callout", "text": "El 100% de los participantes manifesto interes en una solucion digital unificada, no como una herramienta nueva, sino con un marco institucional legitimo para una comunicacion que ya existe."}
+            {
+              "type": "heading",
+              "text": "Rol docente"
+            },
+            {
+              "type": "paragraph",
+              "text": "Dado el alcance del sistema y la diversidad de actores involucrados, se definió un recorte intencional del foco de diseño.\n\nSi bien la plataforma contempla múltiples roles institucionales —familias, directivos y equipos de gestión—, <strong>el proyecto se centró específicamente en usuario docente</strong>, no solo porque funciona como el nodo central del sistema de comunicación (siendo responsable de generar, organizar y validar la información que circula), sino también <strong>por concentrar la mayor carga operativa y los principales puntos de fricción del sistema actual.</strong>\n\nEste recorte permitió profundizar en las problemáticas reales del trabajo docente —como la sobrecarga de canales, la falta de formalidad, la gestión de autorizaciones y la disponibilidad permanente—, estableciendo una base estructural sólida para la posterior extensión del sistema a otros perfiles de usuario."
+            },
+            {
+              "type": "heading",
+              "text": "Hallazgos"
+            },
+            {
+              "type": "paragraph",
+              "text": "La investigación incluyó encuestas y entrevistas a docentes de nivel primario de la Provincia de Buenos Aires. Los hallazgos revelaron un patrón sistémico: <strong>la comunicación digital en las escuelas ya está ocurriendo, pero por fuera de los canales institucionales.</strong>"
+            },
+            {
+              "type": "definitionList",
+              "items": [
+                {
+                  "title": "Fragmentación de canales por sobre las herramientas institucionales",
+                  "text": "WhatsApp —tanto grupos como mensajes directos— concentra más del 50% de la comunicación cotidiana con familias. La plataforma ABC, siendo una herramienta de gestión institucional, no cubre esa dimensión comunicacional. Esto no refleja una preferencia por la informalidad, sino la ausencia de un canal digital estructurado dentro del entorno institucional para ese tipo de intercambio."
+                },
+                {
+                  "title": "Fricción operativa en las tareas de mayor peso",
+                  "text": "Mientras que tareas rutinarias como consultar el calendario o acceder a la lista de alumnos fueron calificadas como fáciles, la gestión de permisos y autorizaciones fue percibida sistemáticamente como difícil: exactamente las tareas que requieren trazabilidad, formalidad y registro claro."
+                },
+                {
+                  "title": "Demanda de estructura, no solo funcionalidades",
+                  "text": "Las funcionalidades más solicitadas —confirmaciones de lectura, firma digital y envío de documentos— no son características aisladas. Reflejan la necesidad de una comunicación que deje registro formal y tenga peso institucional."
+                },
+                {
+                  "title": "La protección del tiempo como requisito de diseño",
+                  "text": "Los mensajes fuera del horario laboral fueron identificados como el principal problema. No se trata de una preferencia de notificaciones: es una necesidad estructural de definir dónde termina el tiempo institucional y dónde empieza el personal."
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "text": "El 100% de los participantes manifestó interés en una solución digital unificada, no como una herramienta nueva, sino con un marco institucional legítimo para una comunicación que ya existe."
+            }
           ]
         },
         {
           "id": "mvp",
           "number": "3. MVP",
           "blocks": [
-            {"type": "paragraph", "text": "<strong>El Producto Minimo Viable se definio priorizando las funcionalidades indispensables para validar el funcionamiento del sistema de comunicacion y aliviar los principales puntos de friccion del docente.</strong>"},
-            {"type": "heading", "text": "Imprescindible"},
-            {"type": "definitionList", "items": [{"title": "Autenticacion de usuario", "text": "Inicio de sesion para docentes."}, {"title": "Comunicacion", "text": "Mensajeria privada con confirmacion de entrega y lectura. Tablero de anuncios con informacion jerarquizada de acuerdo al nivel de prioridad y con la posibilidad de admitir o no respuestas. Sistema de notificaciones. Firma digital de docente y responsables de familia."}, {"title": "Mis alumnos", "text": "Listado de alumnos con informacion de contacto."}, {"title": "Ajustes", "text": "Preferencias de horarios para recibir notificaciones."}]},
-            {"type": "heading", "text": "Deseable"},
-            {"type": "definitionList", "items": [{"title": "Calendario", "text": "Integracion del calendario escolar para planificar clases, reuniones y eventos escolares."}, {"title": "Mis alumnos", "text": "Perfil del alumno con informacion academica. Certificado de salud. Registro de asistencia. Boletin digital e informes academicos."}]}
+            {
+              "type": "paragraph",
+              "text": "<strong>El Producto Mínimo Viable se definió priorizando las funcionalidades indispensables para validar el funcionamiento del sistema de comunicación y aliviar los principales puntos de fricción del docente.</strong>"
+            },
+            {
+              "type": "heading",
+              "text": "Imprescindible"
+            },
+            {
+              "type": "definitionList",
+              "items": [
+                {
+                  "title": "Autenticación de usuario",
+                  "text": "Inicio de sesión para docentes."
+                },
+                {
+                  "title": "Comunicación",
+                  "text": "Mensajería privada con confirmación de entrega y lectura. Tablero de anuncios con información jerarquizada de acuerdo al nivel de prioridad y con la posibilidad de admitir o no respuestas. Sistema de notificaciones. Firma digital de docente y responsables de familia."
+                },
+                {
+                  "title": "Mis alumnos",
+                  "text": "Listado de alumnos con información de contacto."
+                },
+                {
+                  "title": "Ajustes",
+                  "text": "Preferencias de horarios para recibir notificaciones."
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Deseable"
+            },
+            {
+              "type": "definitionList",
+              "items": [
+                {
+                  "title": "Calendario",
+                  "text": "Integración del calendario escolar para planificar clases, reuniones y eventos escolares."
+                },
+                {
+                  "title": "Mis alumnos",
+                  "text": "Perfil del alumno con información académica. Certificado de salud. Registro de asistencia. Boletín digital e informes académicos."
+                }
+              ]
+            }
           ]
         },
         {
           "id": "information-architecture",
-          "number": "4. Arquitectura de la informacion",
+          "number": "4. Arquitectura de la información",
           "blocks": [
-            {"type": "paragraph", "text": "A partir del alcance definido para el MVP, se diseño y valido la arquitectura de la informacion del sistema, organizando las funcionalidades en torno a las principales necesidades del usuario docente dentro del entorno institucional."},
-            {"type": "heading", "text": "Ingreso al sistema"},
-            {"type": "paragraph", "text": "En un entorno institucional con multiples perfiles de usuario, el ingreso al sistema se plantea como un primer momento de orientacion. <strong>La seleccion del tipo de usuario en esta etapa permite adaptar el recorrido posterior.</strong>"},
-            {"type": "paragraph", "text": "Tambien se <strong>incorporan opciones de accesibilidad</strong> desde la pantalla inicial, asegurando una experiencia de uso inclusiva y equitativa a la diversidad de usuarios."},
-            {"type": "heading", "text": "Bandeja de entrada y gestion de alumnos"},
-            {"type": "paragraph", "text": "El sistema diferencia <strong>dos tipos de comunicacion</strong>: la <strong>comunicacion privada</strong>, organizada a traves de la bandeja de entrada, y la <strong>comunicacion publica institucional</strong>, gestionada mediante tableros de anuncios por aula."},
-            {"type": "paragraph", "text": "La seccion Mis alumnos no funciona como un espacio de comunicacion en si mismo, sino como <strong>soporte operativo que centraliza la informacion necesaria para contextualizar los intercambios con las familias.</strong> Desde el perfil de cada alumno, ademas de ver la informacion disponible, el sistema permite iniciar un nuevo mensaje, ofreciendo un acceso directo a la comunicacion privada sin perder el contexto de uso."},
-            {"type": "heading", "text": "Comunidades"},
-            {"type": "paragraph", "text": "La seccion Comunidades centraliza la comunicacion publica entre la escuela y las familias, organizada por aula y orientada a transmitir informacion institucional de manera clara, ordenada y con respaldo formal."},
-            {"type": "paragraph", "text": "Dado que un mismo docente puede desempeñarse en multiples aulas o turnos, <strong>el sistema incorpora una instancia de seleccion de aula</strong> que permite contextualizar la comunicacion antes de acceder al tablero correspondiente."},
-            {"type": "heading", "text": "Ajustes y notificaciones"},
-            {"type": "paragraph", "text": "<strong>La configuracion de notificaciones y ajustes permite al docente adaptar el funcionamiento del sistema a sus tiempos y necesidades</strong>, estableciendo limites claros entre el espacio laboral y el personal. Esta seccion refuerza una logica de diseño centrada no solo en la eficiencia del sistema, sino tambien en el cuidado del usuario y en la sostenibilidad del uso de la plataforma en el tiempo."}
+            {
+              "type": "paragraph",
+              "text": "A partir del alcance definido para el MVP, se diseñó y validó la arquitectura de la información del sistema, organizando las funcionalidades en torno a las principales necesidades del usuario docente dentro del entorno institucional."
+            },
+            {
+              "type": "heading",
+              "text": "Ingreso al sistema"
+            },
+            {
+              "type": "paragraph",
+              "text": "En un entorno institucional con múltiples perfiles de usuario, el ingreso al sistema se plantea como un primer momento de orientación. <strong>La selección del tipo de usuario en esta etapa permite adaptar el recorrido posterior.</strong>\n\nTambién se <strong>incorporan opciones de accesibilidad</strong> desde la pantalla inicial, asegurando una experiencia de uso inclusiva y equitativa a la diversidad de usuarios."
+            },
+            {
+              "type": "heading",
+              "text": "Bandeja de entrada y gestión de alumnos"
+            },
+            {
+              "type": "paragraph",
+              "text": "El sistema diferencia <strong>dos tipos de comunicación</strong>: la <strong>comunicación privada</strong>, organizada a través de la bandeja de entrada, y la <strong>comunicación pública institucional</strong>, gestionada mediante tableros de anuncios por aula.\n\nLa sección Mis alumnos no funciona como un espacio de comunicación en sí mismo, sino como <strong>soporte operativo que centraliza la información necesaria para contextualizar los intercambios con las familias.</strong> Desde el perfil de cada alumno, además de ver la información disponible, el sistema permite iniciar un nuevo mensaje, ofreciendo un acceso directo a la comunicación privada sin perder el contexto de uso."
+            },
+            {
+              "type": "heading",
+              "text": "Comunidades"
+            },
+            {
+              "type": "paragraph",
+              "text": "La sección Comunidades centraliza la comunicación pública entre la escuela y las familias, organizada por aula y orientada a transmitir información institucional de manera clara, ordenada y con respaldo formal.\n\nDado que un mismo docente puede desempeñarse en múltiples aulas o turnos, <strong>el sistema incorpora una instancia de selección de aula</strong> que permite contextualizar la comunicación antes de acceder al tablero correspondiente."
+            },
+            {
+              "type": "heading",
+              "text": "Ajustes y notificaciones"
+            },
+            {
+              "type": "paragraph",
+              "text": "<strong>La configuración de notificaciones y ajustes permite al docente adaptar el funcionamiento del sistema a sus tiempos y necesidades</strong>, estableciendo límites claros entre el espacio laboral y el personal. Esta sección refuerza una lógica de diseño centrada no solo en la eficiencia del sistema, sino también en el cuidado del usuario y en la sostenibilidad del uso de la plataforma en el tiempo."
+            }
           ]
         },
         {
           "id": "flows",
           "number": "5. Flujos de usuario",
           "blocks": [
-            {"type": "paragraph", "text": "<strong>Los flujos fueron definidos desde la perspectiva del rol docente, mapeando los recorridos que reflejan las tareas cotidianas reales dentro del sistema.</strong>"},
-            {"type": "paragraph", "text": "La decision de diseño central en esta seccion fue reconocer que <strong>la misma accion —enviar un mensaje— puede iniciarse desde dos contextos distintos</strong>: la bandeja de entrada, cuando el docente ya esta gestionando comunicaciones, y el perfil de un alumno, cuando el punto de partida es una persona especifica y su informacion."},
-            {"type": "paragraph", "text": "No se trata de dos versiones del mismo flujo. Representan dos estados cognitivos diferentes: uno organizado en torno a tareas, el otro en torno a contexto. Diseñar ambos puntos de entrada —y asegurar que converjan en una experiencia consistente— fue una decision estructural deliberada, no una funcionalidad adicional."},
-            {"type": "paragraph", "text": "El diagrama a continuacion mapea ambos recorridos, distinguiendo entre acciones del usuario y estados del sistema."}
+            {
+              "type": "paragraph",
+              "text": "<strong>Los flujos fueron definidos desde la perspectiva del rol docente, mapeando los recorridos que reflejan las tareas cotidianas reales dentro del sistema.</strong>\n\nLa decisión de diseño central en esta sección fue reconocer que <strong>la misma acción —enviar un mensaje— puede iniciarse desde dos contextos distintos</strong>: la bandeja de entrada, cuando el docente ya está gestionando comunicaciones, y el perfil de un alumno, cuando el punto de partida es una persona específica y su información.\n\nNo se trata de dos versiones del mismo flujo. Representan dos estados cognitivos diferentes: uno organizado en torno a tareas, el otro en torno a contexto. Diseñar ambos puntos de entrada —y asegurar que converjan en una experiencia consistente— fue una decisión estructural deliberada, no una funcionalidad adicional.\n\nEl diagrama a continuación mapea ambos recorridos, distinguiendo entre acciones del usuario y estados del sistema."
+            }
           ]
         },
         {
           "id": "interface",
           "number": "6. Interfaz",
           "blocks": [
-            {"type": "heading", "text": "Direccion visual"},
-            {"type": "paragraph", "text": "<strong>Las decisiones visuales refuerzan la logica estrategica del sistema.</strong> La paleta de colores y la estetica se alinearon con la plataforma ABC para mantener continuidad con un entorno institucional ya conocido por los docentes —reduciendo la distancia cognitiva entre una herramienta nueva y una existente, y favoreciendo la adopcion desde la primera interaccion."},
-            {"type": "heading", "text": "Aplicacion en la interfaz"},
-            {"type": "paragraph", "text": "<strong>La interfaz toma forma como consecuencia directa de la estructura del sistema.</strong> El flujo de onboarding ilustra una de sus decisiones centrales: en un entorno multirrol, <strong>seleccionar el tipo de usuario al ingresar no es un tramite, es el momento en que el sistema se orienta.</strong> A partir de ahi, cada pantalla, accion disponible e informacion visible queda condicionada por ese contexto inicial."},
-            {"type": "paragraph", "text": "<strong>El flujo del tablero de anuncios ilustra como las reglas institucionales se traducen en decisiones de interfaz.</strong> Crear un anuncio no es simplemente escribir un texto — requiere definir un titulo, fecha, categoria, y elegir si se habilitan respuestas o se solicita firma digital. Estas opciones no son funcionalidades: son la forma en que el sistema formaliza un acto de comunicacion. El paso de confirmacion antes de publicar refuerza ese peso institucional, haciendo que la accion sea deliberada y no inmediata."}
+            {
+              "type": "heading",
+              "text": "Dirección visual"
+            },
+            {
+              "type": "paragraph",
+              "text": "<strong>Las decisiones visuales refuerzan la lógica estratégica del sistema.</strong> La paleta de colores y la estética se alinearon con la plataforma ABC para mantener continuidad con un entorno institucional ya conocido por los docentes —reduciendo la distancia cognitiva entre una herramienta nueva y una existente, y favoreciendo la adopción desde la primera interacción."
+            },
+            {
+              "type": "heading",
+              "text": "Aplicación en la interfaz"
+            },
+            {
+              "type": "paragraph",
+              "text": "<strong>La interfaz toma forma como consecuencia directa de la estructura del sistema.</strong> El flujo de onboarding ilustra una de sus decisiones centrales: en un entorno multirrol, <strong>seleccionar el tipo de usuario al ingresar no es un trámite, es el momento en que el sistema se orienta.</strong> A partir de ahí, cada pantalla, acción disponible e información visible queda condicionada por ese contexto inicial.\n\n<strong>El flujo del tablero de anuncios ilustra cómo las reglas institucionales se traducen en decisiones de interfaz.</strong> Crear un anuncio no es simplemente escribir un texto — requiere definir un título, fecha, categoría, y elegir si se habilitan respuestas o se solicita firma digital. Estas opciones no son funcionalidades: son la forma en que el sistema formaliza un acto de comunicación. El paso de confirmación antes de publicar refuerza ese peso institucional, haciendo que la acción sea deliberada y no inmediata."
+            }
           ]
         },
         {
           "id": "conclusion",
-          "number": "7. Conclusion",
+          "number": "7. Conclusión",
           "blocks": [
-            {"type": "paragraph", "text": "Este proyecto aborda la comunicacion escolar no como una funcionalidad aislada, sino como una necesidad enmarcada en un sistema institucional atravesado por reglas, roles y responsabilidades."},
-            {"type": "paragraph", "text": "<strong>El diseño se centro en ordenar y estructurar esa complejidad, priorizando la claridad, la trazabilidad y el cuidado del rol docente dentro de un contexto real de educacion publica.</strong>"},
-            {"type": "paragraph", "text": "<strong>La plataforma resultante no busca reemplazar vinculos existentes, sino ofrecer un marco digital legitimo y sostenible</strong> que acompañe las dinamicas institucionales, demostrando como el diseño de sistemas puede mejorar la experiencia cotidiana sin desligarse de su contexto social y organizacional."}
+            {
+              "type": "paragraph",
+              "text": "Este proyecto aborda la comunicación escolar no como una funcionalidad aislada, sino como una necesidad enmarcada en un sistema institucional atravesado por reglas, roles y responsabilidades.\n\n<strong>El diseño se centró en ordenar y estructurar esa complejidad, priorizando la claridad, la trazabilidad y el cuidado del rol docente dentro de un contexto real de educación pública.</strong>\n\n<strong>La plataforma resultante no busca reemplazar vínculos existentes, sino ofrecer un marco digital legítimo y sostenible</strong> que acompañe las dinámicas institucionales, demostrando cómo el diseño de sistemas puede mejorar la experiencia cotidiana sin desligarse de su contexto social y organizacional."
+            }
           ]
         }
       ]
@@ -156,7 +352,7 @@
       "emailLabel": "Email",
       "emailPlaceholder": "Tu email",
       "messageLabel": "Tu mensaje",
-      "messagePlaceholder": "Escribe aqui...",
+      "messagePlaceholder": "Escribe aquí...",
       "submitLabel": "Enviar"
     },
     "links": [

@@ -71,7 +71,7 @@ function renderBlock(block: CaseStudyBlock, sectionId: string, index: number) {
   }
 
   if (block.type === 'paragraph') {
-    return <p key={index}>{renderRichText(block.text)}</p>;
+    return <p key={index} className="whitespace-pre-line">{renderRichText(block.text)}</p>;
   }
 
   if (block.type === 'callout') {
