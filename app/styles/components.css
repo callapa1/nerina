@@ -132,6 +132,14 @@
   height: 63px;
 }
 
+.work-case-final-logo-mark {
+  width: 348px;
+  height: 320px;
+  background: #2ea7a1;
+  -webkit-mask: url('/illustrations/abcComunidad.svg') center / contain no-repeat;
+  mask: url('/illustrations/abcComunidad.svg') center / contain no-repeat;
+}
+
 .locale-switch {
   display: flex;
   height: 37px;
