@@ -27,14 +27,14 @@ export function WorkFeature({heroTitle, heroDescription, heading, intro, project
     <section id="work-feature" className="space-y-8">
       <div id="work-hero" className="enter-fade flex flex-col items-center justify-center py-6 text-center">
         <h2 className="type-title-30">{heroTitle}</h2>
-        <p className="mx-auto mt-3 w-[700px] text-center text-[30px] font-normal leading-[140%] tracking-[0.02em] text-black/85">
+        <p className="mx-auto mt-3 w-[700px] text-center text-[length:var(--fs-4xl)] font-normal leading-[140%] tracking-[0.02em] text-black/85">
           {heroDescription}
         </p>
       </div>
 
       <div id="work-intro" className="enter-fade px-9 [animation-delay:80ms]">
         <h3 className="type-title-30">{heading}</h3>
-        <p className="mt-3 max-w-5xl text-[28px] font-light italic leading-[140%] tracking-[0.02em] text-black/85">{intro}</p>
+        <p className="mt-3 max-w-5xl text-[length:var(--fs-3xl)] font-light italic leading-[140%] tracking-[0.02em] text-black/85">{intro}</p>
       </div>
 
       <article id="work-project-card" className="enter-fade mx-9 flex flex-col gap-0 [animation-delay:140ms]">
@@ -59,13 +59,13 @@ export function WorkFeature({heroTitle, heroDescription, heading, intro, project
         <div id="work-project-meta" className="mt-6 grid w-full gap-x-4 gap-y-0 pb-4 text-black/85 sm:grid-cols-[140px_1fr] sm:items-start">
           <p className="type-meta-label tracking-[0]">{projectLabel}</p>
           <div id="work-project-title-block" className="self-start">
-            <h3 className="m-0 text-[26px] font-semibold leading-[140%] tracking-[0]">{project.name}</h3>
+            <h3 className="m-0 text-[length:var(--fs-2xl)] font-semibold leading-[140%] tracking-[0]">{project.name}</h3>
             <p className="type-meta-label mt-1 tracking-[0]">{project.discipline}</p>
           </div>
 
           <p className="type-meta-label tracking-[0]">{descriptionLabel}</p>
           <div id="work-project-description-block" className="self-start">
-            <p className="text-[20px] font-medium leading-[140%] tracking-[0] text-black">{project.summary}</p>
+            <p className="text-[length:var(--fs-base)] font-medium leading-[140%] tracking-[0] text-black">{project.summary}</p>
             <p className="type-meta-label tracking-[0]">
               {contextLines.map((line) => (
                 <span className="block" key={line}>

@@ -10,10 +10,10 @@ export function RichTextBlock({id, paragraphs, card = false}: RichTextBlockProps
       {paragraphs.map((paragraph, index) =>
         card ? (
           <div key={index} id={id ? `${id}-panel-${index + 1}` : undefined} className="panel">
-            <p className="text-lg leading-relaxed sm:text-xl">{paragraph}</p>
+            <p className="text-[length:var(--fs-base)] leading-relaxed">{paragraph}</p>
           </div>
         ) : (
-          <p key={index} className="max-w-5xl text-lg leading-relaxed sm:text-xl">
+          <p key={index} className="max-w-5xl text-[length:var(--fs-base)] leading-relaxed">
             {paragraph}
           </p>
         )

@@ -56,7 +56,7 @@ function renderRichText(text: string): ReactNode {
 function renderBlock(block: CaseStudyBlock, sectionId: string, index: number) {
   if (block.type === 'heading') {
     return (
-      <h3 key={index} className="mt-6 text-[30px] font-semibold leading-[120%] tracking-[-0.022em] text-[#075e65] first:mt-0">
+      <h3 key={index} className="mt-6 w-fit border-b-2 border-[#075e65] pb-[4px] text-[length:var(--fs-4xl)] font-semibold leading-[120%] tracking-[-0.022em] text-[#075e65] first:mt-0">
         {block.text}
       </h3>
     );
@@ -64,7 +64,7 @@ function renderBlock(block: CaseStudyBlock, sectionId: string, index: number) {
 
   if (block.type === 'subheading') {
     return (
-      <h4 key={index} className="mt-6 text-[18px] font-bold leading-[145%] text-black">
+      <h4 key={index} className="ml-10 mt-6 text-[length:var(--fs-lg)] font-bold leading-[145%] text-black">
         {block.text}
       </h4>
     );
@@ -94,7 +94,7 @@ function renderBlock(block: CaseStudyBlock, sectionId: string, index: number) {
 
   if (block.type === 'definitionList') {
     return (
-    <div key={index} id={`${sectionId}-definition-list-${index + 1}`} className="space-y-4">
+    <div key={index} id={`${sectionId}-definition-list-${index + 1}`} className="ml-10 space-y-4">
       {block.items.map((item) => (
         <div key={item.title}>
           <p className="font-bold text-black">{item.title}</p>
@@ -117,14 +117,14 @@ export function WorkCaseStudy({caseStudy}: WorkCaseStudyProps) {
 
         <div id="work-case-hero-content" className="absolute inset-0 z-10 flex flex-col items-center justify-center px-6 text-center text-white">
           <Image src="/illustrations/abcComunidad.svg" alt="" aria-hidden="true" width={300} height={220} className="h-auto w-[300px]" />
-          <div id="work-case-hero-blurb" className="mt-12 w-full max-w-[800px] rounded-[40px] bg-white px-8 py-4 text-[28px] font-normal leading-[140%] tracking-[0.01em] text-[#0b6f79] shadow-[0_4px_20px_rgba(0,0,0,0.12)]">
+          <div id="work-case-hero-blurb" className="mt-12 w-full max-w-[800px] rounded-[40px] bg-white px-8 py-4 text-[length:var(--fs-3xl)] font-normal leading-[140%] tracking-[0.01em] text-[#0b6f79] shadow-[0_4px_20px_rgba(0,0,0,0.12)]">
             {caseStudy.hero.blurb}
           </div>
         </div>
       </section>
 
       <section id="work-case-content" className="flex w-full bg-white">
-        <aside id="work-case-rail" className="box-border flex h-[661px] w-[198px] shrink-0 flex-col items-center justify-center gap-[60px] border-b border-r border-black bg-[#d7eeee] pb-[40px] pl-[36px] pr-[16px] pt-[20px] text-[15px] leading-[140%] text-black/85 shadow-[3px_3px_3px_#075e65,3px_3px_3px_#075e65]">
+        <aside id="work-case-rail" className="box-border flex h-[661px] w-[198px] shrink-0 flex-col items-center justify-center gap-[60px] border-b border-r border-black bg-[#d7eeee] pb-[40px] pl-[36px] pr-[16px] pt-[20px] text-[length:var(--fs-sm)] leading-[140%] text-black/85 shadow-[3px_3px_3px_#075e65,3px_3px_3px_#075e65]">
           <div id="work-case-rail-content" className="flex h-full flex-col justify-between pr-4">
             <div id="work-case-rail-items" className="space-y-4">
               {caseStudy.rail.map((item) => (
@@ -137,18 +137,18 @@ export function WorkCaseStudy({caseStudy}: WorkCaseStudyProps) {
               ))}
             </div>
 
-            <a id="work-case-rail-top-link" className="inline-flex items-center justify-center gap-2 text-[20px] font-medium leading-[140%] text-black" href="#work-case-hero">
+            <a id="work-case-rail-top-link" className="inline-flex items-center justify-center gap-2 text-[length:var(--fs-base)] font-medium leading-[140%] text-black" href="#work-case-hero">
               {caseStudy.topLabel}
               <Image src="/icons/top.svg" alt="" aria-hidden="true" width={24} height={15} className="h-[15px] w-6" />
             </a>
           </div>
         </aside>
 
-        <div id="work-case-body" className="flex-1 space-y-12 px-8 py-4">
+        <div id="work-case-body" className="flex-1 space-y-12 px-16 py-4">
           {caseStudy.sections.map((section) => (
             <section id={`work-case-section-${section.id}`} key={section.id} className="max-w-[980px]">
-              <h2 className="text-[35px] font-bold leading-[120%] text-[#424343]">{section.number}</h2>
-              <div id={`work-case-text-block-${section.id}`} className="mt-4 space-y-5 text-[20px] leading-[150%] tracking-[0.01em] text-black/85">
+              <h2 className="mb-10 text-[length:var(--fs-5xl)] font-bold leading-[120%] text-[#424343]">{section.number}</h2>
+              <div id={`work-case-text-block-${section.id}`} className="mt-4 space-y-5 text-[length:var(--fs-base)] leading-[150%] tracking-[0.01em] text-black/85">
                 {section.blocks.map((block, index) => renderBlock(block, section.id, index))}
               </div>
             </section>

@@ -43,7 +43,7 @@ export function Footer({emailHref, emailLabel, linkedInLabel, linkedInHref, text
           id="footer-copy-block"
           className="box-border flex h-[48px] w-[211px] flex-col items-center justify-start gap-2.5 pt-[8px]"
         >
-          <p className="w-[212px] text-center text-[14px] font-[400] not-italic leading-[140%] tracking-[0] text-black/70">{text}</p>
+          <p className="w-[212px] text-center text-[length:var(--fs-xs)] font-[400] not-italic leading-[140%] tracking-[0] text-black/70">{text}</p>
         </div>
       </div>
     </footer>

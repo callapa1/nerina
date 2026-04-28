@@ -23,10 +23,10 @@ export function Header({locale, labels}: HeaderProps) {
               href={`/${locale}`}
               className="block h-[84px] w-[248px] shrink-0 text-center text-black/90"
             >
-              <span className="block text-[30px] font-[600] leading-[140%] tracking-[0.02em]">Nerina Berthelot</span>
-              <span className="block text-[30px] font-[400] leading-[140%] tracking-[0.02em]">{labels.role}</span>
+              <span className="block text-[length:var(--fs-4xl)] font-[600] leading-[140%] tracking-[0.02em]">Nerina Berthelot</span>
+              <span className="block text-[length:var(--fs-4xl)] font-[400] leading-[140%] tracking-[0.02em]">{labels.role}</span>
             </Link>
-            <nav id="header-nav-buttons" className="flex h-[57px] w-full max-w-[800px] items-center justify-between text-sm max-[500px]:hidden">
+            <nav id="header-nav-buttons" className="flex h-[57px] w-full max-w-[800px] items-center justify-between max-[500px]:hidden">
               <Link className="nav-button" href={`/${locale}/about`}>
                 {labels.about}
               </Link>
@@ -42,7 +42,7 @@ export function Header({locale, labels}: HeaderProps) {
         <div id="header-locale-row" className="h-[37px]">
           <div
             id="header-locale-switch"
-            className="flex h-[37px] w-[158px] items-center justify-center gap-[8px] !pl-9 !pr-9 text-xs uppercase tracking-[0.15em] text-black/80"
+            className="flex h-[37px] w-[158px] items-center justify-center gap-[8px] !pl-9 !pr-9 uppercase tracking-[0.15em] text-black/80"
           >
             <span className="sr-only">{labels.localeLabel}</span>
             <Link className="teal-chip" href="/en">
