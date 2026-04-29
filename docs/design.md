@@ -1,6 +1,6 @@
 # Design Spec
 
-Last updated: 2026-04-25
+Last updated: 2026-04-29
 
 ## Scope
 
@@ -32,6 +32,7 @@ This file captures the current visual rules implemented from screenshot referenc
 - Brand block target: fixed 248x84.
 - Nav button row: desktop/tablet visible, hidden at `<=500px`.
 - Nav row uses fixed 800px width.
+- Header `Ver CV` / `Resume` button opens `/documents/NerinaCV.pdf` in a new tab.
 
 ### Nav Button States
 
@@ -88,13 +89,19 @@ This file captures the current visual rules implemented from screenshot referenc
 - `#work-case-hero-blurb`: max width 800px, 28px text, 40px radius white card, teal text.
 - Case-study content uses a dynamic turquoise left rail plus section-driven content from `messages/*.json`.
 - `#work-case-rail`: 198×661px, flex column centered, gap 60px, padding `20px 16px 40px 36px`, background `#D7EEEE`, right+bottom black border, duplicate teal shadow `3px 3px 3px #075E65`.
-- `#work-case-rail-content` includes a bottom `#work-case-rail-top-link` (`Inicio`/`Top`) with `top.svg` icon on the right, linking to `#work-case-hero`; text uses Inter 500, 20px, 140% line-height.
+- `#work-case-rail-content` includes a bottom `#work-case-rail-top-link` (`Inicio`/`Top`) styled as `nav-button`, with `top.svg` icon on the right. It uses `SmoothHashLink` for manual eased scrolling to `#work-case-hero`.
 - `caseStudy.sections[]` is the source for numbered sections and supports `heading`, `subheading`, `paragraph`, `bullets`, `definitionList`, and `callout` blocks.
 - Case-study section numbers use Inter 700, 35px, 120% line-height, `#424343`.
 - Case-study `heading` blocks use Inter 600, 30px, 120% line-height, `-0.022em` tracking, `#075E65`.
 - Case-study `subheading` blocks use Inter 700, 18px, 145% line-height.
 - Current implemented case-study sections: Context, Users, MVP, Information Architecture, User Flows, Interface, Conclusion.
-- Screenshot diagrams/interface images are not yet wired as production assets; original images should be added separately and referenced by stable image IDs when available.
+- Case-study imagery is wired from `public/images/work`.
+- Information Architecture section uses localized diagrams: `01_*` for login, `02_*` for inbox/students, `03_*` for communities, and `04_*` for settings.
+- IA layout: login and communities use two-column copy/image rows; inbox and settings stack the image below the copy.
+- IA image sizing: login uses fixed 500px height with auto width on desktop, inbox maxes at 640px, communities maxes at 600px, settings maxes at 842px.
+- User Flows section renders the localized `05_*` diagram as a wide standalone figure.
+- Interface section renders `Concept_board.png` below the Visual Direction paragraph at text-block width, then renders `07.png` and `08.png` as standalone interface screenshot figures after the application paragraph.
+- Standalone case-study figures are horizontally centered.
 
 ## Selector Hooks
 
@@ -116,7 +123,7 @@ This file captures the current visual rules implemented from screenshot referenc
 - Tailwind v4 (`tailwindcss@4.2.2`) with `@tailwindcss/postcss@4.2.2`.
 - CSS entrypoint: `@import "tailwindcss"` in `app/globals.css` (v3-style `@tailwind` directives removed).
 - `app/globals.css` now acts as import hub for `app/styles/base.css`, `components.css`, and `pages.css`.
-- `tailwind.config.ts` is a legacy artifact and has no effect in v4; config lives in CSS via `@theme`.
+- `tailwind.config.ts` remains for content/theme defaults; most project-level visual tokens live in `app/styles/base.css`.
 
 ## Notes
 

@@ -222,6 +222,10 @@
   max-width: 842px;
 }
 
+.work-case-image-concept-board {
+  width: 100%;
+}
+
 .work-case-image-row h3,
 .work-case-image-stack h3 {
   margin-top: 0;

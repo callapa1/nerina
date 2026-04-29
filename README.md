@@ -1,24 +1,25 @@
 # Nerina Portfolio
 
-Bilingual portfolio scaffold built with Next.js App Router, TypeScript, Tailwind CSS and `next-intl`.
+Bilingual UX/UI portfolio built with Next.js App Router, TypeScript, Tailwind CSS and `next-intl`.
 
 ## Current Status
 
-- Done: Project scaffold (Next.js + TypeScript + Tailwind)
-- Done: Locale routing (`/en`, `/es`) with `next-intl`
-- Done: Shared component system (layout/sections/ui)
-- Done: Screenshot-based composition for Home/Hi/About/Contact core layouts
-- Done: Dedicated localized Work case-study route with full-bleed hero, section-driven EN/ES content, shared footer/header alignment refinements and stable selector hooks
-- In progress: Responsive polish + final visual parity pass
-- Done: Next.js 16 warning cleanup (`proxy.ts` migration + ESLint flat config)
-- Done: Local Inter font integration and component-level typography tuning
+- Done: Next.js 16 app scaffold with TypeScript, Tailwind CSS v4 and ESLint flat config.
+- Done: Locale routing for `/en` and `/es` with `next-intl`.
+- Done: Shared layout, section and UI component system.
+- Done: Header, footer, home, about, work and contact page composition from screenshot references.
+- Done: Dedicated localized Work case-study route with full-bleed hero, left rail, smooth top link, section-driven copy and production image assets.
+- Done: Local CV PDF linked from the `Ver CV` / `Resume` nav button in a new tab.
+- Remaining: final responsive QA pass and final screenshot comparison.
 
 ## Stack
 
-- Next.js 16 (App Router)
+- Node `v22.13.0` (`.nvmrc`)
+- Next.js 16 App Router
+- React 19
 - TypeScript
-- Tailwind CSS
-- next-intl (locale routes)
+- Tailwind CSS 4
+- next-intl
 
 ## Routes
 
@@ -75,9 +76,10 @@ components/
     WorkCaseStudy.tsx
     ContactForm.tsx
   ui/
-    SectionHeading.tsx
     ProjectCard.tsx
     RichTextBlock.tsx
+    SectionHeading.tsx
+    SmoothHashLink.tsx
 
 i18n/
   routing.ts
@@ -88,21 +90,34 @@ messages/
   es.json
 
 public/
+  documents/
+    NerinaCV.pdf
+  icons/
+    top.svg
+  illustrations/
+    abcComunidad.svg
+    maestra.svg
   images/
     portfolio/
       abc.png
       aula.png
       persona.jpg
       telefono.png
+    work/
+      01_EN.png ... 05_EN.png
+      01_ES.png ... 05_ES.png
+      07.png
+      08.png
+      Concept_board.png
 
 proxy.ts
 next.config.ts
 eslint.config.mjs
 
 docs/
+  agents.md
   design.md
   portfolio-build-plan.md
-  agents.md
   progress.md
 
 agents/
@@ -112,26 +127,33 @@ agents/
   qa-guardian.md
 ```
 
+## Work Case Study
+
+- `/{locale}/work` renders `Work.caseStudy` from `messages/*.json`.
+- Supported block types: `heading`, `subheading`, `paragraph`, `bullets`, `definitionList`, and `callout`.
+- Work IA diagrams use localized assets from `public/images/work/*_EN.png` and `*_ES.png`.
+- Interface images use shared assets `07.png`, `08.png` and `Concept_board.png`.
+- The left rail uses `SmoothHashLink` for reliable animated scrolling back to `#work-case-hero`.
+
 ## Agent Workflow
 
 This repository uses role-based working guides in `agents/`.
 
-- `architect`: keeps structure consistent with the plan
-- `ui-builder`: implements visual layout and reusable components
-- `i18n-curator`: keeps EN/ES copy in sync and clean
-- `qa-guardian`: validates routes, build and quality gates
+- `architect`: keeps structure consistent with the plan.
+- `ui-builder`: implements visual layout and reusable components.
+- `i18n-curator`: keeps EN/ES copy in sync and clean.
+- `qa-guardian`: validates routes, build and quality gates.
 
-The active decisions and status log are tracked in:
+Active decisions and status log live in:
 
 - `docs/agents.md`
 - `docs/design.md`
 - `docs/progress.md`
 
-## Definition Of Done Per Step
+## Definition Of Done
 
-- Build passes (`npm run build`)
-- Lint passes (`npm run lint`)
-- Root route stays at `/` and locale routes work for EN and ES
-- No hardcoded bilingual copy inside reusable components
-- Before any push, check whether docs need updating
-- Progress and agent docs updated
+- `npm run build` passes.
+- `npm run lint` passes.
+- Root route stays at `/` and locale routes work for EN and ES.
+- No hardcoded bilingual copy inside reusable components unless it is asset metadata or accessibility-only fallback text.
+- Before any push, check whether docs need updating.

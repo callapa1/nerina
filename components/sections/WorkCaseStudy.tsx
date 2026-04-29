@@ -198,6 +198,10 @@ function renderSectionImage(sectionId: string, blockIndex: number, locale: strin
     );
   }
 
+  if (sectionId === 'interface' && blockIndex === 1) {
+    return <WorkImage key="concept-board-image" src="/images/work/Concept_board.png" alt={locale === 'en' ? 'Visual direction concept board' : 'Concept board de dirección visual'} width={590} height={416} className="work-case-image-concept-board" />;
+  }
+
   return null;
 }
 

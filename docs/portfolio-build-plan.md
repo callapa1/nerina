@@ -33,6 +33,7 @@ Componentes compartidos:
 - `ContactLinks`: email/redes/CTA.
 - `WorkFeature`: bloque de Home localizado con proyecto destacado e imagenes hover.
 - `WorkCaseStudy`: pagina de caso dedicada para `/{locale}/work`.
+- `SmoothHashLink`: enlace hash con scroll animado manual para evitar saltos instantaneos del navegador.
 
 Contenido:
 
@@ -91,6 +92,8 @@ messages/
 - `/{locale}/work` funciona como pagina de case study dedicada basada en `screenshots/Work.PNG`.
 - El hero de `/{locale}/work` usa imagen full-bleed, mantiene ratio 3:2, se superpone bajo los botones EN/ES y muestra logo ABC blanco + blurb card.
 - El contenido del case study vive en `messages/*.json` bajo `Work.caseStudy.sections[]`, con bloques tipados para texto, listas, definiciones y destacados.
+- Las imagenes del case study viven en `public/images/work`: diagramas IA localizados (`01_*` a `04_*`), flujo localizado (`05_*`), capturas compartidas (`07.png`, `08.png`) y concept board (`Concept_board.png`).
+- El boton de CV del header abre `/documents/NerinaCV.pdf` en una nueva pestana.
 - `/{locale}`, `/{locale}/about`, `/{locale}/work` y `/{locale}/contact` comparten layout de `app/[locale]/(site)/layout.tsx`.
 
 ## Estado actual de referencias visuales

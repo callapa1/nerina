@@ -1,6 +1,6 @@
 # Progress Log
 
-Last updated: 2026-04-25
+Last updated: 2026-04-29
 
 ## Milestones
 
@@ -61,14 +61,20 @@ Last updated: 2026-04-25
 53. Added stable IDs to relevant structural wrappers, work feature blocks, case-study hero/content blocks, and rich text panels.
 54. Refactored Work case-study messages into a section/block model and populated EN/ES content from `screenshots/Work1.png` through `Work9.png`.
 55. Updated `WorkCaseStudy` to render dynamic rail items and text blocks (`heading`, `subheading`, `paragraph`, `bullets`, `definitionList`, `callout`) from messages.
+56. Added production Work case-study imagery from `public/images/work`, including localized IA diagrams, localized flow diagrams, shared interface screenshots, and the visual direction concept board.
+57. Updated the Work case-study IA image layout: login and communities are copy/image rows, inbox and settings stack images below text, and standalone figures are centered.
+58. Replaced the external resume link with local `/documents/NerinaCV.pdf`, opened from the header CV button in a new tab.
+59. Added `SmoothHashLink` so the Work rail top link animates reliably instead of relying on browser hash scrolling.
+60. Reviewed and synced README/design/progress/plan docs with the current project state.
 
 ### Next
 
 1. Final responsive pass for mobile/tablet spacing on all pages.
-2. Add original case-study diagrams/interface assets and wire them into section image blocks.
-3. Capture final screenshot set and compare against refs one-by-one.
+2. Capture final screenshot set and compare against refs one-by-one.
+3. Optional: extract Work case-study image metadata/layout rules if the section grows further.
 
 ## Quality Notes
 
 - `middleware.ts` deprecation warning resolved by migration to `proxy.ts`.
 - Turbopack root warning resolved by explicit `turbopack.root` config.
+- 2026-04-29: `npm run lint` and `npm run build` passed after Work imagery, CV link, and docs updates.
