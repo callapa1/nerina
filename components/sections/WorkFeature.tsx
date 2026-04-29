@@ -49,7 +49,7 @@ export function WorkFeature({heroTitle, heroDescription, heading, intro, project
             <Image src="/images/portfolio/persona.jpg" alt="" aria-hidden="true" width={456} height={303} className="h-full w-full object-cover" />
           </div>
           <Link
-            href="./work"
+            href="./ABC-Comunidad"
             className="teal-cta-button work-grid-cta pointer-events-none absolute bottom-8 left-1/2 z-10 -translate-x-1/2 opacity-0 transition-opacity duration-150 group-hover:pointer-events-auto group-hover:opacity-100"
           >
             {projectCtaLabel}
