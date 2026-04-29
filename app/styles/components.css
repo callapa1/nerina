@@ -155,9 +155,117 @@
   mask: url('/illustrations/maestra.svg') center / contain no-repeat;
 }
 
+.work-case-image {
+  width: min(100%, 980px);
+  margin: 32px 0 48px;
+  overflow: hidden;
+}
+
+.work-case-image-row {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
+  align-items: start;
+  gap: 40px;
+  margin: 36px 0 56px;
+}
+
+.work-case-image-row-copy {
+  display: grid;
+  gap: 20px;
+}
+
+.work-case-image-stack {
+  display: grid;
+  gap: 24px;
+  margin: 36px 0 56px;
+}
+
+.work-case-image-row .work-case-image {
+  width: 100%;
+  margin: 0;
+}
+
+.work-case-image-stack .work-case-image {
+  width: 100%;
+  margin: 0;
+}
+
+.work-case-image-stack .work-case-image,
+.work-case-image-wide,
+.work-case-interface-images {
+  justify-self: center;
+}
+
+.work-case-image-row-large {
+  grid-template-columns: minmax(0, 0.7fr) minmax(420px, 1.43fr);
+}
+
+.work-case-image-login {
+  width: fit-content;
+}
+
+.work-case-image-login img {
+  width: auto;
+  height: 500px;
+  max-width: 100%;
+}
+
+.work-case-image-inbox {
+  max-width: 640px;
+}
+
+.work-case-image-communities {
+  max-width: 600px;
+}
+
+.work-case-image-settings {
+  max-width: 842px;
+}
+
+.work-case-image-row h3,
+.work-case-image-stack h3 {
+  margin-top: 0;
+}
+
+.work-case-image img {
+  display: block;
+}
+
+.work-case-image-wide {
+  width: min(100%, 1120px);
+  margin-left: -24px;
+}
+
+.work-case-interface-images {
+  display: grid;
+  width: min(100%, 1120px);
+  gap: 32px;
+  margin: 32px 0 48px -24px;
+}
+
+.work-case-interface-images .work-case-image {
+  width: 100%;
+  margin: 0;
+}
+
 @media (max-width: 900px) {
   .work-case-maestra-illustration {
     display: none;
+  }
+
+  .work-case-image-wide,
+  .work-case-interface-images {
+    margin-left: 0;
+  }
+
+  .work-case-image-row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .work-case-image-login img {
+    width: 100%;
+    height: auto;
   }
 }
 
