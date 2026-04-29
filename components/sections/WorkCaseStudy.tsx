@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import type {ReactNode} from 'react';
+import {SmoothHashLink} from '@/components/ui/SmoothHashLink';
 
 type WorkCaseStudyProps = {
   caseStudy: CaseStudyContent;
@@ -55,8 +56,10 @@ function renderRichText(text: string): ReactNode {
 
 function renderBlock(block: CaseStudyBlock, sectionId: string, index: number) {
   if (block.type === 'heading') {
+    const isMvpScopeHeading = ['Imprescindible', 'Deseable', 'Essential', 'Desirable'].includes(block.text);
+
     return (
-      <h3 key={index} className="mt-6 w-fit border-b-2 border-[#075e65] pb-[4px] text-[length:var(--fs-4xl)] font-semibold leading-[120%] tracking-[-0.022em] text-[#075e65] first:mt-0">
+      <h3 key={index} className={`${isMvpScopeHeading ? 'ml-10 ' : ''}mt-6 w-fit border-b-2 border-[#075e65] pb-[4px] text-[length:var(--fs-4xl)] font-semibold leading-[120%] tracking-[-0.022em] text-[#075e65] first:mt-0`}>
         {block.text}
       </h3>
     );
@@ -125,7 +128,7 @@ export function WorkCaseStudy({caseStudy}: WorkCaseStudyProps) {
 
       <section id="work-case-content" className="flex w-full bg-white">
         <aside id="work-case-rail" className="box-border flex h-[661px] w-[198px] shrink-0 flex-col items-center justify-center gap-[60px] border-b border-r border-black bg-[#d7eeee] pb-[40px] pl-[36px] pr-[16px] pt-[20px] text-[length:var(--fs-sm)] leading-[140%] text-black/85 shadow-[3px_3px_3px_#075e65,3px_3px_3px_#075e65]">
-          <div id="work-case-rail-content" className="flex h-full flex-col justify-between pr-4">
+          <div id="work-case-rail-content" className="flex h-[620px] flex-col justify-between pr-4">
             <div id="work-case-rail-items" className="space-y-4">
               {caseStudy.rail.map((item) => (
                 <div id={`work-case-rail-${item.label.toLowerCase().replaceAll(' ', '-')}`} key={item.label}>
@@ -137,19 +140,20 @@ export function WorkCaseStudy({caseStudy}: WorkCaseStudyProps) {
               ))}
             </div>
 
-            <a id="work-case-rail-top-link" className="inline-flex items-center justify-center gap-2 text-[length:var(--fs-base)] font-medium leading-[140%] text-black" href="#work-case-hero">
+            <SmoothHashLink id="work-case-rail-top-link" className="nav-button gap-2 text-black" href="#work-case-hero">
               {caseStudy.topLabel}
               <Image src="/icons/top.svg" alt="" aria-hidden="true" width={24} height={15} className="h-[15px] w-6" />
-            </a>
+            </SmoothHashLink>
           </div>
         </aside>
 
-        <div id="work-case-main" className="flex-1">
-          <div id="work-case-body" className="space-y-12 px-16 py-4">
+        <div id="work-case-main" className="relative flex-1 overflow-hidden">
+          <div id="work-case-body" className="relative z-10 space-y-12 px-16 py-4">
             {caseStudy.sections.map((section) => (
-              <section id={`work-case-section-${section.id}`} key={section.id} className="max-w-[980px]">
-                <h2 className="mb-10 text-[length:var(--fs-5xl)] font-bold leading-[120%] text-[#424343]">{section.number}</h2>
-                <div id={`work-case-text-block-${section.id}`} className="mt-4 space-y-5 text-[length:var(--fs-base)] leading-[150%] tracking-[0.01em] text-black/85">
+              <section id={`work-case-section-${section.id}`} key={section.id} className="relative max-w-[980px]">
+                {section.id === 'users' ? <div id="work-case-maestra-illustration" className="work-case-maestra-illustration" aria-hidden="true" /> : null}
+                <h2 className="relative z-10 mb-10 text-[length:var(--fs-5xl)] font-bold leading-[120%] text-[#424343]">{section.number}</h2>
+                <div id={`work-case-text-block-${section.id}`} className="relative z-10 mt-4 space-y-5 text-[length:var(--fs-base)] leading-[150%] tracking-[0.01em] text-black/85">
                   {section.blocks.map((block, index) => renderBlock(block, section.id, index))}
                 </div>
               </section>

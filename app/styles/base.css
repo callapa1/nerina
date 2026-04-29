@@ -24,7 +24,8 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -47,6 +48,10 @@ p {
 
 @media (prefers-reduced-motion: reduce) {
   html {
+    scroll-behavior: auto;
+  }
+
+  body {
     scroll-behavior: auto;
   }
 }
