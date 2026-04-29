@@ -201,7 +201,13 @@
 }
 
 .work-case-image-row-login {
-  grid-template-columns: minmax(240px, 250px) max-content;
+  display: flex;
+  align-items: flex-start;
+}
+
+.work-case-image-row-login > .work-case-image-row-copy,
+.work-case-image-row-login > .work-case-image-login {
+  width: 50%;
 }
 
 .work-case-image-login {
@@ -209,9 +215,8 @@
 }
 
 .work-case-image-login img {
-  width: 450px;
+  width: 100%;
   height: auto;
-  max-width: none;
 }
 
 .work-case-image-inbox {
@@ -271,9 +276,18 @@
     gap: 24px;
   }
 
+  .work-case-image-row-login {
+    display: grid;
+  }
+
   .work-case-image-login img {
     width: 100%;
     height: auto;
+  }
+
+  .work-case-image-row-login > .work-case-image-row-copy,
+  .work-case-image-row-login > .work-case-image-login {
+    width: 100%;
   }
 }
 
