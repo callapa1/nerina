@@ -200,14 +200,18 @@
   grid-template-columns: minmax(0, 0.7fr) minmax(420px, 1.43fr);
 }
 
+.work-case-image-row-login {
+  grid-template-columns: minmax(240px, 250px) max-content;
+}
+
 .work-case-image-login {
-  width: fit-content;
+  width: max-content;
 }
 
 .work-case-image-login img {
-  width: auto;
-  height: 500px;
-  max-width: 100%;
+  width: 450px;
+  height: auto;
+  max-width: none;
 }
 
 .work-case-image-inbox {

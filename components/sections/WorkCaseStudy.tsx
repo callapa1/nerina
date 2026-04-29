@@ -207,7 +207,7 @@ function renderSectionImage(sectionId: string, blockIndex: number, locale: strin
 
 function renderInformationArchitectureBlocks(section: CaseStudySection, locale: string) {
   const rows = [
-    {headingIndex: 1, paragraphIndex: 2, imageIndex: 2, layout: 'side'},
+    {headingIndex: 1, paragraphIndex: 2, imageIndex: 2, layout: 'side', className: 'work-case-image-row-login'},
     {headingIndex: 3, paragraphIndex: 4, imageIndex: 4, layout: 'below'},
     {headingIndex: 5, paragraphIndex: 6, imageIndex: 6, layout: 'side-large'},
     {headingIndex: 7, paragraphIndex: 8, imageIndex: 8, layout: 'below'}
@@ -233,7 +233,7 @@ function renderInformationArchitectureBlocks(section: CaseStudySection, locale: 
       }
 
       return (
-        <div key={`${section.id}-row-${row.headingIndex}`} className={`work-case-image-row ${row.layout === 'side-large' ? 'work-case-image-row-large' : ''}`.trim()}>
+        <div key={`${section.id}-row-${row.headingIndex}`} className={`work-case-image-row ${row.layout === 'side-large' ? 'work-case-image-row-large' : ''} ${row.className ?? ''}`.trim()}>
           {copy}
           {renderSectionImage(section.id, row.imageIndex, locale)}
         </div>
