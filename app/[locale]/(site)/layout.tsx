@@ -15,18 +15,18 @@ export default async function SiteLayout({children, params}: SiteLayoutProps) {
 
   return (
     <SiteShell>
-      <div id="site-page-frame" className="px-6 sm:px-9">
-        <Header
-          locale={locale}
-          labels={{
-            about: nav('about'),
-            resume: nav('resume'),
-            contact: nav('contact'),
-            localeLabel: nav('localeLabel'),
-            role: nav('role'),
-            resumeHref: nav('resumeHref')
-          }}
-        />
+      <Header
+        locale={locale}
+        labels={{
+          about: nav('about'),
+          resume: nav('resume'),
+          contact: nav('contact'),
+          localeLabel: nav('localeLabel'),
+          role: nav('role'),
+          resumeHref: nav('resumeHref')
+        }}
+      />
+      <div id="site-page-frame" className="px-9">
         <main id="site-main" className="mx-auto w-full max-w-[1440px]">{children}</main>
       </div>
       <Footer

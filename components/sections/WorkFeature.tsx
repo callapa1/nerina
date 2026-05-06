@@ -24,8 +24,8 @@ export function WorkFeature({heroTitle, heroDescription, heading, intro, project
     .filter(Boolean);
 
   return (
-    <section id="work-feature" className="space-y-8">
-      <div id="work-hero" className="enter-fade flex flex-col items-center justify-center py-6 text-center">
+    <section id="work-feature" className="space-y-[40px]">
+      <div id="work-hero" className="enter-fade mt-[40px] flex flex-col items-center justify-center text-center">
         <h2 className="type-title-30">{heroTitle}</h2>
         <p className="mx-auto mt-3 w-[700px] text-center text-[length:var(--fs-4xl)] font-normal leading-[140%] tracking-[0.02em] text-black/85">
           {heroDescription}
