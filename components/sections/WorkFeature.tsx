@@ -32,12 +32,12 @@ export function WorkFeature({heroTitle, heroDescription, heading, intro, project
         </p>
       </div>
 
-      <div id="work-intro" className="enter-fade px-9 [animation-delay:80ms]">
+      <div id="work-intro" className="enter-fade [animation-delay:80ms]">
         <h3 className="type-title-30">{heading}</h3>
         <p className="mt-3 max-w-5xl text-[length:var(--fs-3xl)] font-light italic leading-[140%] tracking-[0.02em] text-black/85">{intro}</p>
       </div>
 
-      <article id="work-project-card" className="enter-fade mx-9 flex flex-col gap-0 [animation-delay:140ms]">
+      <article id="work-project-card" className="enter-fade flex flex-col gap-0 [animation-delay:140ms]">
         <div id="work-image-grid" className="group relative grid gap-0 sm:grid-cols-3">
           <div id="work-image-tile-brand" className="image-tile grid place-items-center bg-[linear-gradient(150deg,#7ba18f,#b4cec0)]">
             <Image src="/images/portfolio/abc.png" alt="" aria-hidden="true" width={456} height={303} className="h-full w-full object-cover" />

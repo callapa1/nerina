@@ -110,6 +110,11 @@
   text-underline-offset: 3px;
 }
 
+.teal-chip:hover {
+  box-shadow: 3px 3px 3px #075e65, 3px 3px 3px #075e65;
+}
+
+.teal-chip:active,
 .teal-chip[aria-current='true'] {
   box-shadow: inset 4px 4px 4px #075e65;
 }
