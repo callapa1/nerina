@@ -67,27 +67,26 @@
   border: 1px solid #505050;
   border-radius: 8px;
   background: #ffffff;
-  box-shadow: 3px 3px 3px #075e65;
+  box-shadow: 4px 4px 8px #075e65;
   padding: 12px 16px;
   font-size: var(--fs-md);
   font-weight: 400;
   line-height: 140%;
   white-space: nowrap;
-  transition: background-color 250ms ease-in-out, color 250ms ease-in-out, transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
+  transition: background-color 150ms ease, color 150ms ease, transform 150ms ease, box-shadow 150ms ease;
 }
 
 .nav-button:hover {
   border-width: 1.5px;
   transform: translate(-1px, -1px);
-  box-shadow: 4px 4px 3px #075e65;
+  box-shadow: 5px 5px 9px #075e65;
 }
 
 .nav-button:active,
 .nav-button[aria-current='page'] {
   border-width: 1px;
-  background: #075e65;
+  background: #0f666d;
   color: #f4f4f4;
-  box-shadow: inset 3px 3px 3px #000000;
 }
 
 .teal-button:hover {
@@ -108,15 +107,6 @@
   color: #000;
   text-decoration: underline;
   text-underline-offset: 3px;
-}
-
-.teal-chip:hover {
-  box-shadow: 3px 3px 3px #075e65, 3px 3px 3px #075e65;
-}
-
-.teal-chip:active,
-.teal-chip[aria-current='true'] {
-  box-shadow: inset 4px 4px 4px #075e65;
 }
 
 .teal-cta-button {
