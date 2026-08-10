@@ -34,6 +34,8 @@
     "projectLabel": "Project",
     "descriptionLabel": "Description",
     "projectCtaLabel": "View project",
+    "beforeDigitalTitle": "Before digital systems",
+    "beforeDigitalSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "project": {
       "name": "ABC Comunidad",
       "discipline": "Systems design · Information architecture · UI design",
