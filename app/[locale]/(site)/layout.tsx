@@ -20,6 +20,7 @@ export default async function SiteLayout({children, params}: SiteLayoutProps) {
           locale={locale}
           labels={{
             about: nav('about'),
+            projects: nav('projects'),
             resume: nav('resume'),
             contact: nav('contact'),
             localeLabel: nav('localeLabel'),

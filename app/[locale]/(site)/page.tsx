@@ -1,26 +1,12 @@
 import {getTranslations} from 'next-intl/server';
-import {WorkFeature} from '@/components/sections/WorkFeature';
+import {HomeHero} from '@/components/sections/HomeHero';
 
 export default async function LocalizedHomePage() {
   const t = await getTranslations('Work');
 
   return (
-    <section id="work-page" className="pb-8">
-      <WorkFeature
-        heroTitle={t('heroTitle')}
-        heroDescription={t('heroDescription')}
-        heading={t('heading')}
-        intro={t('intro')}
-        projectLabel={t('projectLabel')}
-        descriptionLabel={t('descriptionLabel')}
-        projectCtaLabel={t('projectCtaLabel')}
-        project={{
-          name: t('project.name'),
-          discipline: t('project.discipline'),
-          summary: t('project.summary'),
-          context: t('project.context')
-        }}
-      />
+    <section id="home-page" className="pb-8">
+      <HomeHero title={t('heroTitle')} description={t('heroDescription')} />
     </section>
   );
 }

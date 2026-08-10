@@ -4,6 +4,7 @@ type HeaderProps = {
   locale: string;
   labels: {
     about: string;
+    projects: string;
     resume: string;
     contact: string;
     localeLabel: string;
@@ -28,9 +29,12 @@ export function Header({locale, labels}: HeaderProps) {
                 <span className="block text-[length:var(--fs-4xl)] font-[400] leading-[140%] tracking-[0.02em]">{labels.role}</span>
               </div>
             </Link>
-            <nav id="header-nav-buttons" className="flex h-[57px] w-full max-w-[800px] items-center justify-between max-[500px]:hidden">
+            <nav id="header-nav-buttons" className="flex h-[57px] w-full max-w-[820px] items-center justify-between gap-6 max-[500px]:hidden">
               <Link className="nav-button" href={`/${locale}/about`}>
                 {labels.about}
+              </Link>
+              <Link className="nav-button" href={`/${locale === 'es' ? 'proyectos' : 'projects'}`}>
+                {labels.projects}
               </Link>
               <a className="nav-button" href={labels.resumeHref} target="_blank" rel="noreferrer">
                 {labels.resume}

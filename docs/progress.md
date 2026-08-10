@@ -1,6 +1,6 @@
 # Progress Log
 
-Last updated: 2026-04-29
+Last updated: 2026-08-10
 
 ## Milestones
 
@@ -66,6 +66,11 @@ Last updated: 2026-04-29
 58. Replaced the external resume link with local `/documents/NerinaCV.pdf`, opened from the header CV button in a new tab.
 59. Added `SmoothHashLink` so the Work rail top link animates reliably instead of relying on browser hash scrolling.
 60. Reviewed and synced README/design/progress/plan docs with the current project state.
+61. Added localized `pathnames` (`/projects` en / `/proyectos` es) and a navigation helper via `createNavigation`.
+62. Split `WorkFeature` into `HomeHero` (home only) and the projects feature block, moved the project intro + card to a new `/projects` page.
+63. Moved the ABC Comunidad case study under `/projects` and localized its URL (`/projects/ABC-Comunidad` en / `/proyectos/ABC-Comunidad` es).
+64. Added the Projects/Proyectos header nav button and re-spaced `#header-nav-buttons` (max-w 820px + gap-6) for four buttons.
+65. Added `Nav.projects` to EN/ES messages and verified build, lint and localized routes at runtime.
 
 ### Next
 

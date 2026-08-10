@@ -9,6 +9,7 @@ Bilingual UX/UI portfolio built with Next.js App Router, TypeScript, Tailwind CS
 - Done: Shared layout, section and UI component system.
 - Done: Header, footer, home, about, work and contact page composition from screenshot references.
 - Done: Dedicated localized Work case-study route with full-bleed hero, left rail, smooth top link, section-driven copy and production image assets.
+- Done: Dedicated localized Projects page (`/projects` / `/proyectos`) hosting the project intro + cards, with the ABC Comunidad case study nested under it.
 - Done: Local CV PDF linked from the `Ver CV` / `Resume` nav button in a new tab.
 - Remaining: final responsive QA pass and final screenshot comparison.
 
@@ -26,11 +27,13 @@ Bilingual UX/UI portfolio built with Next.js App Router, TypeScript, Tailwind CS
 - `/`
 - `/en`
 - `/en/about`
-- `/en/work`
+- `/en/projects`
+- `/en/projects/ABC-Comunidad`
 - `/en/contact`
 - `/es`
 - `/es/about`
-- `/es/work`
+- `/es/proyectos`
+- `/es/proyectos/ABC-Comunidad`
 - `/es/contact`
 
 ## Commands
@@ -52,7 +55,8 @@ app/
     (site)/
       page.tsx
       about/page.tsx
-      work/page.tsx
+      projects/page.tsx
+      projects/ABC-Comunidad/page.tsx
       contact/page.tsx
     layout.tsx
   globals.css
@@ -69,6 +73,7 @@ components/
     Footer.tsx
   sections/
     Hero.tsx
+    HomeHero.tsx
     PageIntro.tsx
     ProjectGrid.tsx
     ContactLinks.tsx
@@ -127,9 +132,10 @@ agents/
   qa-guardian.md
 ```
 
-## Work Case Study
+## Projects & Case Study
 
-- `/{locale}/work` renders `Work.caseStudy` from `messages/*.json`.
+- `/{locale}/projects` renders the project intro + cards from `Work` messages (`/projects` EN, `/proyectos` ES).
+- `/{locale}/projects/ABC-Comunidad` renders `Work.caseStudy` from `messages/*.json` (`/projects/ABC-Comunidad` EN, `/proyectos/ABC-Comunidad` ES).
 - Supported block types: `heading`, `subheading`, `paragraph`, `bullets`, `definitionList`, and `callout`.
 - Work IA diagrams use localized assets from `public/images/work/*_EN.png` and `*_ES.png`.
 - Interface images use shared assets `07.png`, `08.png` and `Concept_board.png`.

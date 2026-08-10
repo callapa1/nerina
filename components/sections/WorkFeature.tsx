@@ -1,9 +1,7 @@
-import Link from 'next/link';
 import Image from 'next/image';
+import {Link} from '@/i18n/navigation';
 
 type WorkFeatureProps = {
-  heroTitle: string;
-  heroDescription: string;
   heading: string;
   intro: string;
   projectLabel: string;
@@ -17,7 +15,7 @@ type WorkFeatureProps = {
   };
 };
 
-export function WorkFeature({heroTitle, heroDescription, heading, intro, projectLabel, descriptionLabel, projectCtaLabel, project}: WorkFeatureProps) {
+export function WorkFeature({heading, intro, projectLabel, descriptionLabel, projectCtaLabel, project}: WorkFeatureProps) {
   const contextLines = project.context
     .split('·')
     .map((item) => item.trim())
@@ -25,13 +23,6 @@ export function WorkFeature({heroTitle, heroDescription, heading, intro, project
 
   return (
     <section id="work-feature" className="space-y-[40px]">
-      <div id="work-hero" className="enter-fade mt-[40px] flex flex-col items-center justify-center text-center">
-        <h2 className="type-title-30">{heroTitle}</h2>
-        <p className="mx-auto mt-3 w-[700px] text-center text-[length:var(--fs-4xl)] font-normal leading-[140%] tracking-[0.02em] text-black/85">
-          {heroDescription}
-        </p>
-      </div>
-
       <div id="work-intro" className="enter-fade [animation-delay:80ms]">
         <h3 className="type-title-30">{heading}</h3>
         <p className="mt-3 max-w-5xl text-[length:var(--fs-3xl)] font-light italic leading-[140%] tracking-[0.02em] text-black/85">{intro}</p>
@@ -49,7 +40,7 @@ export function WorkFeature({heroTitle, heroDescription, heading, intro, project
             <Image src="/images/portfolio/persona.jpg" alt="" aria-hidden="true" width={456} height={303} className="h-full w-full object-cover" />
           </div>
           <Link
-            href="./ABC-Comunidad"
+            href="/projects/ABC-Comunidad"
             className="teal-cta-button work-grid-cta pointer-events-none absolute bottom-8 left-1/2 z-10 -translate-x-1/2 opacity-0 transition-opacity duration-150 group-hover:pointer-events-auto group-hover:opacity-100"
           >
             {projectCtaLabel}
