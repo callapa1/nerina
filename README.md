@@ -29,11 +29,15 @@ Bilingual UX/UI portfolio built with Next.js App Router, TypeScript, Tailwind CS
 - `/en/about`
 - `/en/projects`
 - `/en/projects/ABC-Comunidad`
+- `/en/projects/quieren-taparme`
+- `/en/projects/estetica-relacional`
 - `/en/contact`
 - `/es`
 - `/es/about`
 - `/es/proyectos`
 - `/es/proyectos/ABC-Comunidad`
+- `/es/proyectos/quieren-taparme`
+- `/es/proyectos/estetica-relacional`
 - `/es/contact`
 
 ## Commands
@@ -57,6 +61,8 @@ app/
       about/page.tsx
       projects/page.tsx
       projects/ABC-Comunidad/page.tsx
+      projects/quieren-taparme/page.tsx
+      projects/estetica-relacional/page.tsx
       contact/page.tsx
     layout.tsx
   globals.css
@@ -136,6 +142,7 @@ agents/
 
 - `/{locale}/projects` renders the project intro + cards from `Work` messages (`/projects` EN, `/proyectos` ES).
 - `/{locale}/projects/ABC-Comunidad` renders `Work.caseStudy` from `messages/*.json` (`/projects/ABC-Comunidad` EN, `/proyectos/ABC-Comunidad` ES).
+- `/{locale}/projects/quieren-taparme` and `/{locale}/projects/estetica-relacional` are placeholder case studies (lorem ipsum, no hero) rendering `Work.quierenTaparme.caseStudy` and `Work.esteticaRelacional.caseStudy`.
 - Supported block types: `heading`, `subheading`, `paragraph`, `bullets`, `definitionList`, and `callout`.
 - Work IA diagrams use localized assets from `public/images/work/*_EN.png` and `*_ES.png`.
 - Interface images use shared assets `07.png`, `08.png` and `Concept_board.png`.

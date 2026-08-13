@@ -73,6 +73,7 @@ Last updated: 2026-08-10
 65. Added `Nav.projects` to EN/ES messages and verified build, lint and localized routes at runtime.
 66. Anchored the header locale switch to the same centered container as the brand block (`max-w-[1368px]` + `pl-9/pr-9`) so EN/ES chips stay aligned with `#branding` at any viewport width.
 67. Standardized vertical rhythm to a fixed 80px gap on localized pages: `pt-20`/`pb-20` per page between header and content and between content and footer; case-study page keeps its full-bleed hero unchanged and only applies the bottom 80px gap.
+68. Added placeholder case-study routes for the two secondary projects under `before digital systems`: `/projects/quieren-taparme` and `/projects/estetica-relacional` (`/proyectos/*` in ES). Pages reuse the `WorkCaseStudy` template (left rail + sections) with lorem ipsum copy, no hero (`showHero` prop) and no images; they inherit the shared header/footer via the `(site)` layout.
 
 ### Next
 

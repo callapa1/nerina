@@ -5,6 +5,7 @@ import {SmoothHashLink} from '@/components/ui/SmoothHashLink';
 type WorkCaseStudyProps = {
   caseStudy: CaseStudyContent;
   locale: string;
+  showHero?: boolean;
 };
 
 type WorkCaseImage = {
@@ -242,20 +243,22 @@ function renderInformationArchitectureBlocks(section: CaseStudySection, locale: 
   ];
 }
 
-export function WorkCaseStudy({caseStudy, locale}: WorkCaseStudyProps) {
+export function WorkCaseStudy({caseStudy, locale, showHero = true}: WorkCaseStudyProps) {
   return (
     <section id="work-case-study" className="pb-0">
-      <section id="work-case-hero" className="relative left-1/2 -mt-[89px] w-screen -translate-x-1/2 overflow-hidden">
-        <Image src="/images/portfolio/aula.png" alt="" aria-hidden="true" width={1536} height={1024} priority className="h-auto w-full" />
-        <div id="work-case-hero-overlay" className="absolute inset-0 bg-black/10" />
+      {showHero ? (
+        <section id="work-case-hero" className="relative left-1/2 -mt-[89px] w-screen -translate-x-1/2 overflow-hidden">
+          <Image src="/images/portfolio/aula.png" alt="" aria-hidden="true" width={1536} height={1024} priority className="h-auto w-full" />
+          <div id="work-case-hero-overlay" className="absolute inset-0 bg-black/10" />
 
-        <div id="work-case-hero-content" className="absolute inset-0 z-10 flex flex-col items-center justify-center px-6 text-center text-white">
-          <Image src="/illustrations/abcComunidad.svg" alt="" aria-hidden="true" width={300} height={220} className="h-auto w-[300px]" />
-          <div id="work-case-hero-blurb" className="mt-12 w-full max-w-[800px] rounded-[40px] bg-white px-8 py-4 text-[length:var(--fs-3xl)] font-normal leading-[140%] tracking-[0.01em] text-[#0b6f79] shadow-[0_4px_20px_rgba(0,0,0,0.12)]">
-            {caseStudy.hero.blurb}
+          <div id="work-case-hero-content" className="absolute inset-0 z-10 flex flex-col items-center justify-center px-6 text-center text-white">
+            <Image src="/illustrations/abcComunidad.svg" alt="" aria-hidden="true" width={300} height={220} className="h-auto w-[300px]" />
+            <div id="work-case-hero-blurb" className="mt-12 w-full max-w-[800px] rounded-[40px] bg-white px-8 py-4 text-[length:var(--fs-3xl)] font-normal leading-[140%] tracking-[0.01em] text-[#0b6f79] shadow-[0_4px_20px_rgba(0,0,0,0.12)]">
+              {caseStudy.hero.blurb}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : null}
 
       <section id="work-case-content" className="flex w-full bg-white">
         <aside id="work-case-rail" className="box-border flex h-[661px] w-[198px] shrink-0 flex-col items-center justify-center gap-[60px] border-b border-r border-black bg-[#d7eeee] pb-[40px] pl-[36px] pr-[16px] pt-[20px] text-[length:var(--fs-sm)] leading-[140%] text-black/85 shadow-[3px_3px_3px_#075e65,3px_3px_3px_#075e65]">
@@ -294,9 +297,11 @@ export function WorkCaseStudy({caseStudy, locale}: WorkCaseStudyProps) {
           </div>
         </div>
       </section>
-      <div id="work-case-final-logo" className="flex w-full justify-center py-12">
-        <div className="work-case-final-logo-mark" aria-hidden="true" />
-      </div>
+      {showHero ? (
+        <div id="work-case-final-logo" className="flex w-full justify-center py-12">
+          <div className="work-case-final-logo-mark" aria-hidden="true" />
+        </div>
+      ) : null}
     </section>
   );
 }

@@ -344,6 +344,182 @@
           ]
         }
       ]
+    },
+    "quierenTaparme": {
+      "caseStudy": {
+        "hero": {
+          "blurb": ""
+        },
+        "topLabel": "Top",
+        "rail": [
+          {
+            "label": "Context",
+            "items": [
+              "Origin",
+              "Proposal"
+            ]
+          },
+          {
+            "label": "Process",
+            "items": [
+              "Research",
+              "Decisions"
+            ]
+          },
+          {
+            "label": "Conclusion",
+            "items": []
+          }
+        ],
+        "sections": [
+          {
+            "id": "context",
+            "number": "1. Context",
+            "blocks": [
+              {
+                "type": "heading",
+                "text": "Lorem ipsum dolor sit amet"
+              },
+              {
+                "type": "paragraph",
+                "text": "Consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+              },
+              {
+                "type": "subheading",
+                "text": "Lorem ipsum subheading"
+              },
+              {
+                "type": "paragraph",
+                "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+              }
+            ]
+          },
+          {
+            "id": "process",
+            "number": "2. Process",
+            "blocks": [
+              {
+                "type": "heading",
+                "text": "Lorem ipsum dolor sit"
+              },
+              {
+                "type": "paragraph",
+                "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "Sed do eiusmod tempor incididunt ut labore et dolore.",
+                  "Ut enim ad minim veniam, quis nostrud exercitation."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "conclusion",
+            "number": "3. Conclusion",
+            "blocks": [
+              {
+                "type": "heading",
+                "text": "Lorem ipsum dolor"
+              },
+              {
+                "type": "paragraph",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "esteticaRelacional": {
+      "caseStudy": {
+        "hero": {
+          "blurb": ""
+        },
+        "topLabel": "Top",
+        "rail": [
+          {
+            "label": "Context",
+            "items": [
+              "Origin",
+              "Proposal"
+            ]
+          },
+          {
+            "label": "Process",
+            "items": [
+              "Research",
+              "Decisions"
+            ]
+          },
+          {
+            "label": "Conclusion",
+            "items": []
+          }
+        ],
+        "sections": [
+          {
+            "id": "context",
+            "number": "1. Context",
+            "blocks": [
+              {
+                "type": "heading",
+                "text": "Lorem ipsum dolor sit amet"
+              },
+              {
+                "type": "paragraph",
+                "text": "Consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+              },
+              {
+                "type": "subheading",
+                "text": "Lorem ipsum subheading"
+              },
+              {
+                "type": "paragraph",
+                "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+              }
+            ]
+          },
+          {
+            "id": "process",
+            "number": "2. Process",
+            "blocks": [
+              {
+                "type": "heading",
+                "text": "Lorem ipsum dolor sit"
+              },
+              {
+                "type": "paragraph",
+                "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "Sed do eiusmod tempor incididunt ut labore et dolore.",
+                  "Ut enim ad minim veniam, quis nostrud exercitation."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "conclusion",
+            "number": "3. Conclusion",
+            "blocks": [
+              {
+                "type": "heading",
+                "text": "Lorem ipsum dolor"
+              },
+              {
+                "type": "paragraph",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   "Contact": {

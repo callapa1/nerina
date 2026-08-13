@@ -11,6 +11,14 @@ export const routing = defineRouting({
     '/projects/ABC-Comunidad': {
       en: '/projects/ABC-Comunidad',
       es: '/proyectos/ABC-Comunidad'
+    },
+    '/projects/quieren-taparme': {
+      en: '/projects/quieren-taparme',
+      es: '/proyectos/quieren-taparme'
+    },
+    '/projects/estetica-relacional': {
+      en: '/projects/estetica-relacional',
+      es: '/proyectos/estetica-relacional'
     }
   }
 });
