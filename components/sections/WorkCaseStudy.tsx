@@ -244,7 +244,7 @@ function renderInformationArchitectureBlocks(section: CaseStudySection, locale: 
 
 export function WorkCaseStudy({caseStudy, locale}: WorkCaseStudyProps) {
   return (
-    <section id="work-case-study" className="pb-8">
+    <section id="work-case-study" className="pb-0">
       <section id="work-case-hero" className="relative left-1/2 -mt-[89px] w-screen -translate-x-1/2 overflow-hidden">
         <Image src="/images/portfolio/aula.png" alt="" aria-hidden="true" width={1536} height={1024} priority className="h-auto w-full" />
         <div id="work-case-hero-overlay" className="absolute inset-0 bg-black/10" />

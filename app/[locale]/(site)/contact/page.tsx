@@ -12,7 +12,7 @@ export default async function ContactPage() {
   ];
 
   return (
-    <section id="contact-page" className="mx-auto w-[95%] space-y-12 pb-8 pt-8">
+    <section id="contact-page" className="mx-auto w-[95%] space-y-12 pt-20 pb-20">
       <PageIntro
         id="contact-page-intro"
         className="h-[81px] w-[446px]"

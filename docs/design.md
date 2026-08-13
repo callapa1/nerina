@@ -72,6 +72,13 @@ This file captures the current visual rules implemented from screenshot referenc
 - Shared localized `main` uses fixed `max-w-[1440px]` and is centered.
 - Root `/` main also uses fixed `max-w-[1440px]` and is centered.
 
+## Vertical Rhythm
+
+- Localized pages keep a fixed 80px gap between the header (including the EN/ES locale row) and the first content block, and 80px between the last content block and the footer (`pt-20`/`pb-20` on each page wrapper).
+- Header locale switch is anchored to the same centered container as the brand block (`max-w-[1368px]` + `pl-9`/`pr-9`) so it stays aligned with `#branding` at any viewport width.
+- The ABC Comunidad case-study page is the exception on top: its full-bleed hero keeps tucking under the header (no top gap); only the bottom 80px gap applies.
+- The root `/` landing stays full-screen (`h-screen`) with no vertical rhythm changes.
+
 ## Work Page
 
 - Localized root Work hero uses centered typography: title 30px bold, subtitle 30px regular.

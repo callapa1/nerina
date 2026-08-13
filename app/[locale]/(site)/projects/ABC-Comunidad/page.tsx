@@ -10,7 +10,7 @@ export default async function WorkPage({params}: WorkPageProps) {
   const t = await getTranslations('Work');
 
   return (
-    <section id="work-page" className="pb-8">
+    <section id="work-page" className="pb-20">
       <WorkCaseStudy caseStudy={t.raw('caseStudy')} locale={locale} />
     </section>
   );

@@ -5,7 +5,7 @@ export default async function ProjectsPage() {
   const t = await getTranslations('Work');
 
   return (
-    <section id="projects-page" className="pb-8">
+    <section id="projects-page" className="pt-20 pb-20">
       <WorkFeature
         heading={t('heading')}
         intro={t('intro')}

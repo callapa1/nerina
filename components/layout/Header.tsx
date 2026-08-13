@@ -45,10 +45,10 @@ export function Header({locale, labels}: HeaderProps) {
             </nav>
           </div>
         </div>
-        <div id="header-locale-row" className="h-[37px]">
+        <div id="header-locale-row" className="h-[37px] w-full pl-9 pr-9">
           <div
             id="header-locale-switch"
-            className="flex h-[37px] w-[158px] items-center justify-center gap-[8px] !pl-9 !pr-9 uppercase tracking-[0.15em] text-black/80"
+            className="mx-auto flex h-[37px] w-full max-w-[1368px] items-center gap-[8px] uppercase tracking-[0.15em] text-black/80"
           >
             <span className="sr-only">{labels.localeLabel}</span>
             <Link className="teal-chip" href="/en" aria-current={locale === 'en' ? 'true' : undefined}>

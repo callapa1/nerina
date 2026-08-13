@@ -9,7 +9,7 @@ export default async function AboutPage() {
   };
 
   return (
-    <section id="about-page" className="space-y-8 pb-8">
+    <section id="about-page" className="space-y-8 pt-20 pb-20">
       <PageIntro
         id="about-page-intro"
         title={t('title')}
