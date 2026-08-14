@@ -118,10 +118,13 @@ This file captures the current visual rules implemented from screenshot referenc
 ## Contact Page
 
 - `#contact-page-intro`: 446×81px. Title: Inter 700, 30px, 140% line-height, 2% tracking. Subtitle: Inter 400 italic, 28px, 140% line-height, 2% tracking.
-- `#contact-content-grid`: 1372px wide, `mx-auto`, `justify-items-center`.
-- `#contact-form` (`ContactForm`): 500×485px, max-w-500px, gap 40px, px 36px.
-- Submit button: 107×66, background `#00B2C1`, radius 8px, shadow `6px 6px 4px #075E65`, white 24px semibold text.
-- `#contact-links-wrap`: 415×168px, gap 8px, px 40px, py 44px.
+- `#contact-content-grid`: 1372px wide, `mx-auto`, `justify-items-center`, no fixed height (`h-auto`) so the form can grow when validation/status messages appear without overlapping the footer.
+- `#contact-form` (`ContactForm`): 500×485px (`min-h-[485px]`, grows when a status message is shown), max-w-500px, gap 40px, px 36px.
+- Submit button: 107×66, background `#00B2C1`, radius 8px, shadow `6px 6px 4px #075E65`, white 24px semibold text. Disabled state (while sending): background `#7fcbd2`, no shadow, `cursor: not-allowed`.
+- Form is a client component: fields are `required`, validation runs on submit (`noValidate`) with inline errors (`.field-input-error` red border + `.form-error-text`) and focuses the first invalid field.
+- Submission posts via AJAX to `https://formsubmit.co/ajax/nerinaberthelot@gmail.com` (Formsubmit.co) with hidden `_subject` and `_captcha=false`; the button shows `submittingLabel` while in flight.
+- Success/error feedback appears below the button: `.form-success-text` (green, `enter-fade` animation) or `.form-error-text` (red); on success the fields are cleared and the form stays visible.
+- `#contact-links-wrap`: 168px tall, `w-fit` (adapts to link content width), gap 8px, px 40px, py 44px.
 - Contact links use dedicated mail/linkedin SVGs with `#333333` icon fill.
 - Font rule: Inter only — ignore any other font specs, they are outdated.
 

@@ -532,7 +532,13 @@
       "emailPlaceholder": "Your email",
       "messageLabel": "Your message",
       "messagePlaceholder": "Text here...",
-      "submitLabel": "Send"
+      "submitLabel": "Send",
+      "submittingLabel": "Sending...",
+      "requiredError": "This field is required.",
+      "invalidEmail": "Enter a valid email address.",
+      "success": "Message sent, thank you!",
+      "error": "Something went wrong. Please try again.",
+      "subject": "New message from your portfolio"
     },
     "links": [
       {

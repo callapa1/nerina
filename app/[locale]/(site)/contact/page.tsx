@@ -22,7 +22,7 @@ export default async function ContactPage() {
         subtitleClassName="type-subtitle-28-italic"
       />
 
-      <div id="contact-content-grid" className="mx-auto flex h-[485px] w-[1372px] items-start justify-center gap-10">
+      <div id="contact-content-grid" className="mx-auto flex w-[1372px] items-start justify-center gap-10">
         <div id="contact-form-wrap">
           <ContactForm
             fullNameLabel={t('form.fullNameLabel')}
@@ -32,10 +32,16 @@ export default async function ContactPage() {
             messageLabel={t('form.messageLabel')}
             messagePlaceholder={t('form.messagePlaceholder')}
             submitLabel={t('form.submitLabel')}
+            submittingLabel={t('form.submittingLabel')}
+            requiredError={t('form.requiredError')}
+            invalidEmail={t('form.invalidEmail')}
+            success={t('form.success')}
+            error={t('form.error')}
+            subject={t('form.subject')}
           />
         </div>
 
-        <div id="contact-links-wrap" className="flex h-[168px] w-[415px] flex-col gap-[8px] px-[40px] py-[44px]">
+        <div id="contact-links-wrap" className="flex h-[168px] w-fit flex-col gap-[8px] px-[40px] py-[44px]">
           <ContactLinks items={links} />
         </div>
       </div>

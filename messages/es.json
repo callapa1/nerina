@@ -532,7 +532,13 @@
       "emailPlaceholder": "Tu email",
       "messageLabel": "Tu mensaje",
       "messagePlaceholder": "Escribe aquí...",
-      "submitLabel": "Enviar"
+      "submitLabel": "Enviar",
+      "submittingLabel": "Enviando...",
+      "requiredError": "Este campo es obligatorio.",
+      "invalidEmail": "Ingresá un email válido.",
+      "success": "Mensaje enviado, ¡gracias!",
+      "error": "Algo salió mal. Intentá de nuevo.",
+      "subject": "Nuevo mensaje desde tu portafolio"
     },
     "links": [
       {
