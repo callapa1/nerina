@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/callapa1/nerina#readme",
   "dependencies": {
+    "cartography": "github:nerinaberthelot/cartography",
     "next": "^16.2.4",
     "next-intl": "^4.9.1",
     "react": "^19.2.5",
