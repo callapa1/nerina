@@ -23,7 +23,7 @@ type CaseStudyContent = {
   topLabel: string;
   rail: Array<{
     label: string;
-    items: string[];
+    items: Array<string | {text: string; target?: string}>;
   }>;
   sections: CaseStudySection[];
 };
@@ -37,6 +37,7 @@ type CaseStudySection = {
 type TextBlock = {
   type: 'heading' | 'subheading' | 'paragraph' | 'callout';
   text: string;
+  id?: string;
 };
 
 type CaseStudyBlock =
@@ -115,7 +116,11 @@ function renderBlock(block: CaseStudyBlock, sectionId: string, index: number) {
     const isMvpScopeHeading = ['Imprescindible', 'Deseable', 'Essential', 'Desirable'].includes(block.text);
 
     return (
-      <h3 key={index} className={`${isMvpScopeHeading ? 'ml-10 ' : ''}mt-6 w-fit border-b-2 border-[#075e65] pb-[4px] text-[length:var(--fs-4xl)] font-semibold leading-[120%] tracking-[-0.022em] text-[#075e65] first:mt-0`}>
+      <h3
+        key={index}
+        id={block.id ? `work-case-section-${sectionId}-${block.id}` : undefined}
+        className={`${isMvpScopeHeading ? 'ml-10 ' : ''}mt-6 w-fit border-b-2 border-[#075e65] pb-[4px] text-[length:var(--fs-4xl)] font-semibold leading-[120%] tracking-[-0.022em] text-[#075e65] first:mt-0`}
+      >
         {block.text}
       </h3>
     );
@@ -123,7 +128,7 @@ function renderBlock(block: CaseStudyBlock, sectionId: string, index: number) {
 
   if (block.type === 'subheading') {
     return (
-      <h4 key={index} className="mb-0 ml-10 mt-6 text-[length:var(--fs-lg)] font-bold leading-[145%] text-black">
+      <h4 key={index} id={block.id ? `work-case-section-${sectionId}-${block.id}` : undefined} className="mb-0 ml-10 mt-6 text-[length:var(--fs-lg)] font-bold leading-[145%] text-black">
         {block.text}
       </h4>
     );
@@ -261,27 +266,45 @@ export function WorkCaseStudy({caseStudy, locale, showHero = true}: WorkCaseStud
       ) : null}
 
       <section id="work-case-content" className="flex w-full bg-white">
-        <aside id="work-case-rail" className="box-border flex h-[661px] w-[198px] shrink-0 flex-col items-center justify-center gap-[60px] border-b border-r border-black bg-[#d7eeee] pb-[40px] pl-[36px] pr-[16px] pt-[20px] text-[length:var(--fs-sm)] leading-[140%] text-black/85 shadow-[3px_3px_3px_#075e65,3px_3px_3px_#075e65]">
-          <div id="work-case-rail-content" className="flex h-[620px] flex-col justify-between pr-4">
-            <div id="work-case-rail-items" className="space-y-4">
-              {caseStudy.rail.map((item) => (
-                <div id={`work-case-rail-${item.label.toLowerCase().replaceAll(' ', '-')}`} key={item.label}>
-                  <p className="font-semibold">{item.label}</p>
-                  {item.items.map((railItem) => (
-                    <p key={railItem}>-{railItem}</p>
-                  ))}
-                </div>
-              ))}
-            </div>
+        <aside id="work-case-rail" className="sticky top-0 z-10 w-[198px] shrink-0 self-start py-8 pr-4 text-[length:var(--fs-sm)] leading-[140%] text-black">
+          <nav id="work-case-rail-items" className="space-y-5">
+            {caseStudy.rail.map((item, index) => {
+              const target = caseStudy.sections[index]?.id ?? 'work-case-hero';
 
-            <SmoothHashLink id="work-case-rail-top-link" className="nav-button gap-2 text-black" href="#work-case-hero">
-              {caseStudy.topLabel}
-              <Image src="/icons/top.svg" alt="" aria-hidden="true" width={24} height={15} className="h-[15px] w-6" />
-            </SmoothHashLink>
-          </div>
+              return (
+                <div id={`work-case-rail-${item.label.toLowerCase().replaceAll(' ', '-')}`} key={item.label}>
+                  <SmoothHashLink href={`#work-case-section-${target}`} className="font-semibold">
+                    {item.label}
+                  </SmoothHashLink>
+                  {item.items.length > 0 ? (
+                    <ul className="mt-1 space-y-1 pl-3">
+                      {item.items.map((railItem) => {
+                        const isObject = typeof railItem !== 'string';
+                        const text = isObject ? railItem.text : railItem;
+                        const href = isObject && railItem.target
+                          ? `#work-case-section-${target}-${railItem.target}`
+                          : `#work-case-section-${target}`;
+
+                        return (
+                          <li key={text}>
+                            <SmoothHashLink href={href as `#${string}`}>{text}</SmoothHashLink>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  ) : null}
+                </div>
+              );
+            })}
+          </nav>
+
+          <SmoothHashLink id="work-case-rail-top-link" className="nav-button mt-8 gap-2 text-black" href="#work-case-hero">
+            {caseStudy.topLabel}
+            <Image src="/icons/top.svg" alt="" aria-hidden="true" width={24} height={15} className="h-[15px] w-6" />
+          </SmoothHashLink>
         </aside>
 
-        <div id="work-case-main" className="relative flex-1 overflow-hidden">
+        <div id="work-case-main" className="relative flex-1">
           <div id="work-case-body" className="relative z-10 space-y-12 px-16 py-4">
             {caseStudy.sections.map((section) => (
               <section id={`work-case-section-${section.id}`} key={section.id} className="relative max-w-[980px]">

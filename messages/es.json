@@ -51,16 +51,31 @@
         {
           "label": "Contexto",
           "items": [
-            "Origen",
-            "Propuesta",
-            "Decisión clave"
+            {
+              "text": "Origen",
+              "target": "origin"
+            },
+            {
+              "text": "Propuesta",
+              "target": "proposal"
+            },
+            {
+              "text": "Decisión clave",
+              "target": "key-design-decision"
+            }
           ]
         },
         {
           "label": "Usuarios",
           "items": [
-            "Rol docente",
-            "Hallazgos"
+            {
+              "text": "Rol docente",
+              "target": "teacher-role"
+            },
+            {
+              "text": "Hallazgos",
+              "target": "findings"
+            }
           ]
         },
         {
@@ -70,10 +85,22 @@
         {
           "label": "Estructura",
           "items": [
-            "Ingreso",
-            "Canales privados",
-            "Comunidades",
-            "Ajustes"
+            {
+              "text": "Ingreso",
+              "target": "system-entry"
+            },
+            {
+              "text": "Canales privados",
+              "target": "inbox-students"
+            },
+            {
+              "text": "Comunidades",
+              "target": "communities"
+            },
+            {
+              "text": "Ajustes",
+              "target": "settings-notifications"
+            }
           ]
         },
         {
@@ -83,8 +110,14 @@
         {
           "label": "Interfaz",
           "items": [
-            "Visual",
-            "Aplicación"
+            {
+              "text": "Visual",
+              "target": "visual-direction"
+            },
+            {
+              "text": "Aplicación",
+              "target": "interface-application"
+            }
           ]
         },
         {
@@ -99,6 +132,7 @@
           "blocks": [
             {
               "type": "heading",
+              "id": "origin",
               "text": "¿Cómo surge la iniciativa?"
             },
             {
@@ -107,6 +141,7 @@
             },
             {
               "type": "heading",
+              "id": "proposal",
               "text": "Propuesta"
             },
             {
@@ -123,6 +158,7 @@
             },
             {
               "type": "heading",
+              "id": "key-design-decision",
               "text": "Decisión clave de diseño"
             },
             {
@@ -166,6 +202,7 @@
           "blocks": [
             {
               "type": "heading",
+              "id": "teacher-role",
               "text": "Rol docente"
             },
             {
@@ -174,6 +211,7 @@
             },
             {
               "type": "heading",
+              "id": "findings",
               "text": "Hallazgos"
             },
             {
@@ -269,6 +307,7 @@
             },
             {
               "type": "heading",
+              "id": "system-entry",
               "text": "Ingreso al sistema"
             },
             {
@@ -277,6 +316,7 @@
             },
             {
               "type": "heading",
+              "id": "inbox-students",
               "text": "Bandeja de entrada y gestión de alumnos"
             },
             {
@@ -285,6 +325,7 @@
             },
             {
               "type": "heading",
+              "id": "communities",
               "text": "Comunidades"
             },
             {
@@ -293,6 +334,7 @@
             },
             {
               "type": "heading",
+              "id": "settings-notifications",
               "text": "Ajustes y notificaciones"
             },
             {
@@ -317,6 +359,7 @@
           "blocks": [
             {
               "type": "heading",
+              "id": "visual-direction",
               "text": "Dirección visual"
             },
             {
@@ -325,6 +368,7 @@
             },
             {
               "type": "heading",
+              "id": "interface-application",
               "text": "Aplicación en la interfaz"
             },
             {

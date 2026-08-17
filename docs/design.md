@@ -94,9 +94,10 @@ This file captures the current visual rules implemented from screenshot referenc
 - Case-study hero overlay centers the all-white `abcComunidad.svg` logo above the blurb card.
 - Case-study hero tagline text is removed.
 - `#work-case-hero-blurb`: max width 800px, 28px text, 40px radius white card, teal text.
-- Case-study content uses a dynamic turquoise left rail plus section-driven content from `messages/*.json`.
-- `#work-case-rail`: 198×661px, flex column centered, gap 60px, padding `20px 16px 40px 36px`, background `#D7EEEE`, right+bottom black border, duplicate teal shadow `3px 3px 3px #075E65`.
-- `#work-case-rail-content` includes a bottom `#work-case-rail-top-link` (`Inicio`/`Top`) styled as `nav-button`, with `top.svg` icon on the right. It uses `SmoothHashLink` for manual eased scrolling to `#work-case-hero`.
+- Case-study content uses a sticky flat left rail index plus section-driven content from `messages/*.json`.
+- `#work-case-rail`: flat index (no background, border or shadow), `w-[198px]`, `position: sticky; top: 0` with `align-self: flex-start` so it follows the scroll within the case-study column; natural height, `py-8`, text `--fs-sm` black.
+- `#work-case-rail-items` (a `<nav>`) lists the sections: each label and each sub-item renders as a `SmoothHashLink` to `#work-case-section-{target}`, where `target` is derived by index from `caseStudy.sections[i].id` (rail order mirrors section order). Sub-items link to the section of their label; they are listed without the `-` prefix.
+- `#work-case-rail-top-link` (`Inicio`/`Top`) styled as `nav-button`, with `top.svg` icon on the right, sits below the items. It uses `SmoothHashLink` for manual eased scrolling to `#work-case-hero`.
 - `caseStudy.sections[]` is the source for numbered sections and supports `heading`, `subheading`, `paragraph`, `bullets`, `definitionList`, and `callout` blocks.
 - Case-study section numbers use Inter 700, 35px, 120% line-height, `#424343`.
 - Case-study `heading` blocks use Inter 600, 30px, 120% line-height, `-0.022em` tracking, `#075E65`.

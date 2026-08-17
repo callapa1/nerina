@@ -51,16 +51,31 @@
         {
           "label": "Context",
           "items": [
-            "Origin",
-            "Proposal",
-            "Core decision"
+            {
+              "text": "Origin",
+              "target": "origin"
+            },
+            {
+              "text": "Proposal",
+              "target": "proposal"
+            },
+            {
+              "text": "Core decision",
+              "target": "key-design-decision"
+            }
           ]
         },
         {
           "label": "Users",
           "items": [
-            "Teacher role",
-            "Findings"
+            {
+              "text": "Teacher role",
+              "target": "teacher-role"
+            },
+            {
+              "text": "Findings",
+              "target": "findings"
+            }
           ]
         },
         {
@@ -70,10 +85,22 @@
         {
           "label": "Structure",
           "items": [
-            "Entry",
-            "Private channels",
-            "Communities",
-            "Settings"
+            {
+              "text": "Entry",
+              "target": "system-entry"
+            },
+            {
+              "text": "Private channels",
+              "target": "inbox-students"
+            },
+            {
+              "text": "Communities",
+              "target": "communities"
+            },
+            {
+              "text": "Settings",
+              "target": "settings-notifications"
+            }
           ]
         },
         {
@@ -83,8 +110,14 @@
         {
           "label": "Interface",
           "items": [
-            "Visual",
-            "Application"
+            {
+              "text": "Visual",
+              "target": "visual-direction"
+            },
+            {
+              "text": "Application",
+              "target": "interface-application"
+            }
           ]
         },
         {
@@ -99,6 +132,7 @@
           "blocks": [
             {
               "type": "heading",
+              "id": "origin",
               "text": "How did this initiative emerge?"
             },
             {
@@ -107,6 +141,7 @@
             },
             {
               "type": "heading",
+              "id": "proposal",
               "text": "Proposal"
             },
             {
@@ -123,6 +158,7 @@
             },
             {
               "type": "heading",
+              "id": "key-design-decision",
               "text": "Key design decision"
             },
             {
@@ -166,6 +202,7 @@
           "blocks": [
             {
               "type": "heading",
+              "id": "teacher-role",
               "text": "Teacher role"
             },
             {
@@ -174,6 +211,7 @@
             },
             {
               "type": "heading",
+              "id": "findings",
               "text": "Findings"
             },
             {
@@ -269,6 +307,7 @@
             },
             {
               "type": "heading",
+              "id": "system-entry",
               "text": "System entry"
             },
             {
@@ -277,6 +316,7 @@
             },
             {
               "type": "heading",
+              "id": "inbox-students",
               "text": "Inbox and student management"
             },
             {
@@ -285,6 +325,7 @@
             },
             {
               "type": "heading",
+              "id": "communities",
               "text": "Communities"
             },
             {
@@ -293,6 +334,7 @@
             },
             {
               "type": "heading",
+              "id": "settings-notifications",
               "text": "Settings and notifications"
             },
             {
@@ -317,6 +359,7 @@
           "blocks": [
             {
               "type": "heading",
+              "id": "visual-direction",
               "text": "Visual direction"
             },
             {
@@ -325,6 +368,7 @@
             },
             {
               "type": "heading",
+              "id": "interface-application",
               "text": "Application in the interface"
             },
             {
