@@ -30,7 +30,7 @@ export function Header({locale, labels}: HeaderProps) {
               </div>
             </Link>
             <nav id="header-nav-buttons" className="flex h-[57px] w-full max-w-[820px] items-center justify-between gap-6 max-[500px]:hidden">
-              <Link className="nav-button" href={`/${locale}/about`}>
+              <Link className="nav-button" href={`/${locale}/${locale === 'es' ? 'sobre-mi' : 'about-me'}`}>
                 {labels.about}
               </Link>
               <Link className="nav-button" href={`/${locale === 'es' ? 'proyectos' : 'projects'}`}>

@@ -7,7 +7,7 @@ Last updated: 2026-04-29
 This file captures the current visual rules implemented from screenshot references.
 
 - Root landing page (`/`) has no top header and uses hero + shared footer.
-- Localized pages (`/[locale]`, `/[locale]/about`, `/[locale]/work`, `/[locale]/contact`) use shared header/footer layout.
+- Localized pages (`/[locale]`, `/[locale]/about`, `/[locale]/work`, `/[locale]/contacto`) use shared header/footer layout.
 - Primary references: `screenshots/home.png`, `screenshots/Hi.png`, `screenshots/Work.PNG`, `screenshots/About.png`, `screenshots/Contact.png`, `screenshots/navButtonStates.png`.
 
 ## Typography

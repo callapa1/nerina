@@ -94,7 +94,7 @@ messages/
 - El contenido del case study vive en `messages/*.json` bajo `Work.caseStudy.sections[]`, con bloques tipados para texto, listas, definiciones y destacados.
 - Las imagenes del case study viven en `public/images/work`: diagramas IA localizados (`01_*` a `04_*`), flujo localizado (`05_*`), capturas compartidas (`07.png`, `08.png`) y concept board (`Concept_board.png`).
 - El boton de CV del header abre `/documents/NerinaCV.pdf` en una nueva pestana.
-- `/{locale}`, `/{locale}/about`, `/{locale}/work` y `/{locale}/contact` comparten layout de `app/[locale]/(site)/layout.tsx`.
+- `/{locale}`, `/{locale}/about`, `/{locale}/work` y `/{locale}/contacto` comparten layout de `app/[locale]/(site)/layout.tsx`.
 
 ## Estado actual de referencias visuales
 

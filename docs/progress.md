@@ -78,6 +78,8 @@ Last updated: 2026-08-10
 70. Removed the fixed `h-[485px]` from `#contact-content-grid` (`h-auto`) so the form can grow when validation/status messages appear without overlapping the footer.
 71. Reworked the case-study left rail into a flat sticky index: removed the teal background, borders and shadows and the fixed 198×661 box; the rail now uses `position: sticky; top: 0; align-self: flex-start` (`w-[198px]`, natural height) so it follows the scroll. Each rail label and sub-item is now a `SmoothHashLink` to its section (`#work-case-section-{target}`, `target` derived by index from `caseStudy.sections[i].id`); sub-items no longer render the `-` prefix and link to the section of their label.
 72. Aligned the Contact page intro with the About page intro: removed the `mx-auto w-[95%]` section wrapper and the fixed `h-[81px] w-[446px]` box on `#contact-page-intro`; section now uses the same `space-y-8 pt-20 pb-20` rhythm so title/subtitle sit identically to About in both `/en/contact` and `/es/contacto`.
+73. Localized the About page paths via `pathnames`: `/about-me` en / `/sobre-mi` es, and updated the header nav link accordingly (old `/en/about` and `/es/about` now redirect).
+74. Verified all internal routes preserve the current locale (EN/ES): header nav, project CTA and brand links resolve to the same locale; the only locale-changing links are the EN/ES chips. No locale leakage found.
 
 ### Next
 

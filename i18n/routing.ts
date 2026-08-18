@@ -4,6 +4,10 @@ export const routing = defineRouting({
   locales: ['en', 'es'],
   defaultLocale: 'en',
   pathnames: {
+    '/about': {
+      en: '/about-me',
+      es: '/sobre-mi'
+    },
     '/contact': {
       en: '/contact',
       es: '/contacto'

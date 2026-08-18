@@ -26,14 +26,14 @@ Bilingual UX/UI portfolio built with Next.js App Router, TypeScript, Tailwind CS
 
 - `/`
 - `/en`
-- `/en/about`
+- `/en/about-me`
 - `/en/projects`
 - `/en/projects/ABC-Comunidad`
 - `/en/projects/quieren-taparme`
 - `/en/projects/estetica-relacional`
 - `/en/contact`
 - `/es`
-- `/es/about`
+- `/es/sobre-mi`
 - `/es/proyectos`
 - `/es/proyectos/ABC-Comunidad`
 - `/es/proyectos/quieren-taparme`
