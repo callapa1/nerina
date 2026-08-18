@@ -38,7 +38,7 @@ Bilingual UX/UI portfolio built with Next.js App Router, TypeScript, Tailwind CS
 - `/es/proyectos/ABC-Comunidad`
 - `/es/proyectos/quieren-taparme`
 - `/es/proyectos/estetica-relacional`
-- `/es/contact`
+- `/es/contacto`
 
 ## Commands
 

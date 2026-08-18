@@ -39,7 +39,7 @@ export function Header({locale, labels}: HeaderProps) {
               <a className="nav-button" href={labels.resumeHref} target="_blank" rel="noreferrer">
                 {labels.resume}
               </a>
-              <Link className="nav-button" href={`/${locale}/contact`}>
+              <Link className="nav-button" href={`/${locale}/${locale === 'es' ? 'contacto' : 'contact'}`}>
                 {labels.contact}
               </Link>
             </nav>

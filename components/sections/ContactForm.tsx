@@ -1,7 +1,7 @@
 'use client';
 
 import {useRef, useState} from 'react';
-import type {FormEvent} from 'react';
+import type {FormEvent, RefObject} from 'react';
 
 type ContactFormProps = {
   fullNameLabel: string;
@@ -54,10 +54,10 @@ export function ContactForm({
   const emailRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
 
-  const fieldRefs: Record<FieldName, HTMLInputElement | HTMLTextAreaElement | null> = {
-    fullName: fullNameRef.current,
-    email: emailRef.current,
-    message: messageRef.current
+  const fieldRefs: Record<FieldName, RefObject<HTMLInputElement | HTMLTextAreaElement | null>> = {
+    fullName: fullNameRef,
+    email: emailRef,
+    message: messageRef
   };
 
   const validate = (): Errors => {
@@ -106,7 +106,7 @@ export function ContactForm({
 
     if (Object.keys(nextErrors).length > 0) {
       const firstInvalid = (['fullName', 'email', 'message'] as FieldName[]).find((field) => nextErrors[field]);
-      const firstRef = firstInvalid ? fieldRefs[firstInvalid] : null;
+      const firstRef = firstInvalid ? fieldRefs[firstInvalid].current : null;
       firstRef?.focus();
       return;
     }
