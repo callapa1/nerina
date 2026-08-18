@@ -118,7 +118,7 @@ This file captures the current visual rules implemented from screenshot referenc
 
 ## Contact Page
 
-- `#contact-page-intro`: 446×81px. Title: Inter 700, 30px, 140% line-height, 2% tracking. Subtitle: Inter 400 italic, 28px, 140% line-height, 2% tracking.
+- `#contact-page-intro`: no fixed box; position/spacing match the About page intro (section `space-y-8`, no width constraint). Title: Inter 700, 30px, 140% line-height, 2% tracking. Subtitle: Inter 400 italic, 28px, 140% line-height, 2% tracking.
 - `#contact-content-grid`: 1372px wide, `mx-auto`, `justify-items-center`, no fixed height (`h-auto`) so the form can grow when validation/status messages appear without overlapping the footer.
 - `#contact-form` (`ContactForm`): 500×485px (`min-h-[485px]`, grows when a status message is shown), max-w-500px, gap 40px, px 36px.
 - Submit button: 107×66, background `#00B2C1`, radius 8px, shadow `6px 6px 4px #075E65`, white 24px semibold text. Disabled state (while sending): background `#7fcbd2`, no shadow, `cursor: not-allowed`.

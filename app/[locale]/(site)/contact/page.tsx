@@ -12,10 +12,9 @@ export default async function ContactPage() {
   ];
 
   return (
-    <section id="contact-page" className="mx-auto w-[95%] space-y-12 pt-20 pb-20">
+    <section id="contact-page" className="space-y-8 pt-20 pb-20">
       <PageIntro
         id="contact-page-intro"
-        className="h-[81px] w-[446px]"
         title={t('title')}
         description={t('description')}
         titleClassName="type-title-30"
