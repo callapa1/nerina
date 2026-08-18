@@ -25,7 +25,7 @@ export function WorkFeature({heading, intro, projectLabel, descriptionLabel, pro
     <section id="work-feature" className="space-y-[40px]">
       <div id="work-intro" className="enter-fade [animation-delay:80ms]">
         <h3 className="type-title-30">{heading}</h3>
-        <p className="mt-3 max-w-5xl text-[length:var(--fs-3xl)] font-light italic leading-[140%] tracking-[0.02em] text-black/85">{intro}</p>
+        <p className="mt-3 text-[length:var(--fs-3xl)] font-light italic leading-[140%] tracking-[0.02em] text-black/85">{intro}</p>
       </div>
 
       <article id="work-project-card" className="enter-fade flex flex-col gap-0 [animation-delay:140ms]">

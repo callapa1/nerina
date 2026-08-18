@@ -22,7 +22,7 @@ export default async function ProjectsPage() {
 
       <div id="work-intro-before-digital" className="enter-fade mt-[40px] [animation-delay:220ms]">
         <h3 className="type-title-30">{t('beforeDigitalTitle')}</h3>
-        <p className="mt-3 max-w-5xl text-[length:var(--fs-3xl)] font-light italic leading-[140%] tracking-[0.02em] text-black/85">{t('beforeDigitalSubtitle')}</p>
+        <p className="mt-3 text-[length:var(--fs-3xl)] font-light italic leading-[140%] tracking-[0.02em] text-black/85">{t('beforeDigitalSubtitle')}</p>
       </div>
     </section>
   );
