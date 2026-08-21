@@ -28,8 +28,8 @@ export default async function SiteLayout({children, params}: SiteLayoutProps) {
             resumeHref: nav('resumeHref')
           }}
         />
-        <div id="site-page-frame" className="flex-1 px-9">
-          <main id="site-main" className="mx-auto w-full max-w-[1440px]">{children}</main>
+        <div id="site-page-frame" className="flex flex-1 flex-col px-9">
+          <main id="site-main" className="mx-auto flex w-full max-w-[1440px] flex-1 flex-col">{children}</main>
         </div>
       </div>
       <Footer
